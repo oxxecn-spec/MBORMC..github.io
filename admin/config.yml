@@ -1,13 +1,16 @@
-﻿backend:
-  name: git-gateway
+backend:
+  name: github
+  repo: oxxecn-spec/MBORMC.github.io  # 你的 GitHub 用户名/仓库名
   branch: main
+  base_url: https://mbormc123.oxxecn.workers.dev  # 你的网站地址
+  auth_endpoint: /api/auth
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "images/uploads"   # 图片上传后的存放路径
+public_folder: "/images/uploads"  # 图片在网页上的访问路径
 
 collections:
-  - name: "products"
-    label: "产品展示"
+  - name: "products"        # 产品集合
+    label: "产品展示"        # 后台显示的标签
     folder: "content/products"
     create: true
     slug: "{{slug}}"
