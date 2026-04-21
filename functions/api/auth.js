@@ -1,31 +1,30 @@
 export async function onRequest(context) {
-    const {
-        request, // same as existing Worker API
-        env, // same as existing Worker API
-        params, // if filename includes [id] or [[path]]
-        waitUntil, // same as ctx.waitUntil in existing Worker API
-        next, // used for middleware or to fetch assets
-        data, // arbitrary space for passing data between middlewares
-    } = context;
+    const { request, env } = context;
+    const url = new URL(request.url);
+    
+    // 直接在这里写死你的 Client ID 和 Client Secret
+    const client_id = "Ov23li8pUv6GDuikIMI";      // 替换成你的 Client ID
+    const client_secret = "2dbe6a11741871c9ee2550849befb0bc74a36a7"; // 替换成你的 Client Secret
 
-    const client_id = env.GITHUB_CLIENT_ID;
-
-    try {
-        const url = new URL(request.url);
-        const redirectUrl = new URL('https://github.com/login/oauth/authorize');
-        redirectUrl.searchParams.set('client_id', client_id);
-        redirectUrl.searchParams.set('redirect_uri', url.origin + '/api/callback');
-        redirectUrl.searchParams.set('scope', 'repo user');
-        redirectUrl.searchParams.set(
-            'state',
-            crypto.getRandomValues(new Uint8Array(12)).join(''),
-        );
-        return Response.redirect(redirectUrl.href, 301);
-
-    } catch (error) {
-        console.error(error);
-        return new Response(error.message, {
-            status: 500,
-        });
+    if (url.pathname === '/api/auth') {
+        const redirectUri = `https://github.com/login/oauth/authorize?client_id=${client_id}&scope=repo`;
+        return Response.redirect(redirectUri, 302);
     }
+
+    if (url.pathname === '/api/callback') {
+        const code = url.searchParams.get('code');
+        const tokenResponse = await fetch('https://github.com/login/oauth/access_token', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+            body: JSON.stringify({ client_id: client_id, client_secret: client_secret, code })
+        });
+        const tokenData = await tokenResponse.json();
+        const html = `<script>
+            window.opener.postMessage({ auth: { token: "${tokenData.access_token}" } }, '*');
+            window.close();
+        </script>`;
+        return new Response(html, { headers: { 'Content-Type': 'text/html' } });
+    }
+
+    return new Response('Not Found', { status: 404 });
 }
