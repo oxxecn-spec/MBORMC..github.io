@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>XX纱窗 | 专业定制 免费测量 上门安装</title>
-    <meta name="description" content="专业纱窗定制服务，金刚网纱窗、隐形折叠纱窗、推拉纱窗等。免费上门测量，量身定制，安装快捷。">
+    <title>PRO SCREEN | Custom Window Screens & Insect Mesh</title>
+    <meta name="description" content="Professional custom window screens – insect screens, security mesh, pleated screens. Free measure, custom made, fast installation. Get a quote today.">
     <style>
         * {
             margin: 0;
@@ -13,23 +13,23 @@
         }
 
         body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background: #ffffff;
-            color: #1e1e2a;
+            color: #1e2a3a;
             line-height: 1.5;
+            scroll-behavior: smooth;
         }
 
-        /* 变量 */
         :root {
-            --primary: #e7a922;
-            --primary-dark: #c48b1a;
-            --gray-100: #f8f9fa;
-            --gray-200: #e9ecef;
-            --gray-700: #495057;
-            --gray-800: #343a40;
-            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
-            --radius-lg: 1rem;
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
         }
 
         .container {
@@ -38,7 +38,7 @@
             padding: 0 1.5rem;
         }
 
-        /* 导航 */
+        /* navigation */
         .navbar {
             background: white;
             box-shadow: var(--shadow-sm);
@@ -54,14 +54,20 @@
             flex-wrap: wrap;
         }
         .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-dark);
+            font-size: 1.6rem;
+            font-weight: 800;
             text-decoration: none;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             letter-spacing: -0.3px;
         }
         .logo span {
-            color: #1e1e2a;
+            color: var(--dark);
+            background: none;
+            -webkit-background-clip: unset;
+            background-clip: unset;
         }
         .nav-links {
             display: flex;
@@ -70,8 +76,8 @@
         }
         .nav-links a {
             text-decoration: none;
-            color: var(--gray-800);
             font-weight: 500;
+            color: var(--dark);
             transition: color 0.2s;
         }
         .nav-links a:hover {
@@ -82,10 +88,10 @@
             align-items: center;
             gap: 0.5rem;
             background: var(--primary);
-            color: #1e1e2a;
+            color: #1e2a3a;
             font-weight: 600;
-            padding: 0.6rem 1.2rem;
-            border-radius: 2rem;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
             text-decoration: none;
             transition: all 0.2s;
             border: none;
@@ -98,17 +104,25 @@
         }
         .btn-outline:hover {
             background: var(--primary);
-            color: #1e1e2a;
+            color: #1e2a3a;
         }
-        .btn:hover {
-            background: var(--primary-dark);
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
             transform: translateY(-2px);
         }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
 
-        /* Hero */
+        /* hero */
         .hero {
-            background: linear-gradient(135deg, #fff9ef 0%, #ffffff 100%);
-            padding: 4rem 0 3rem;
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
         }
         .hero-grid {
             display: grid;
@@ -119,11 +133,11 @@
         .hero-badge {
             display: inline-block;
             background: var(--primary);
-            padding: 0.2rem 0.8rem;
+            padding: 0.2rem 0.9rem;
             border-radius: 2rem;
             font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
         }
         .hero h1 {
             font-size: 2.8rem;
@@ -135,55 +149,50 @@
             color: var(--primary);
             font-style: normal;
         }
-        .hero p {
+        .hero-desc {
             font-size: 1.1rem;
-            color: var(--gray-700);
+            color: var(--text-muted);
             margin-bottom: 1.8rem;
         }
         .hero-stats {
             display: flex;
             gap: 2rem;
-            margin-top: 2rem;
+            margin: 2rem 0 1rem;
         }
         .stat {
-            text-align: center;
+            text-align: left;
         }
         .stat-num {
             font-size: 1.8rem;
             font-weight: 800;
             color: var(--primary-dark);
         }
-        .hero-img {
-            background: var(--gray-200);
-            border-radius: var(--radius-lg);
-            padding: 1rem;
-            text-align: center;
-        }
         .hero-img img {
-            max-width: 100%;
-            border-radius: 0.75rem;
+            width: 100%;
+            border-radius: var(--radius);
             box-shadow: var(--shadow-md);
+            background: var(--gray-border);
         }
 
-        /* 通用标题 */
-        .section-title {
+        /* section headings */
+        .section-head {
             text-align: center;
             margin-bottom: 3rem;
         }
-        .section-title h2 {
+        .section-head h2 {
             font-size: 2rem;
             margin-bottom: 0.75rem;
         }
-        .section-title p {
-            color: var(--gray-700);
-            max-width: 700px;
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
             margin: 0 auto;
         }
 
-        /* 产品网格 */
-        .products {
+        /* products grid */
+        .products-section {
             padding: 4rem 0;
-            background: var(--gray-100);
+            background: var(--gray-light);
         }
         .product-grid {
             display: grid;
@@ -192,7 +201,7 @@
         }
         .product-card {
             background: white;
-            border-radius: 1rem;
+            border-radius: var(--radius);
             overflow: hidden;
             box-shadow: var(--shadow-sm);
             transition: all 0.25s;
@@ -200,12 +209,12 @@
             color: inherit;
         }
         .product-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-6px);
             box-shadow: var(--shadow-md);
         }
         .product-img {
             aspect-ratio: 4/3;
-            background: var(--gray-200);
+            background: #f1f5f9;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -225,16 +234,16 @@
             margin-top: 0.5rem;
         }
 
-        /* 优势 */
-        .features {
+        /* features */
+        .features-section {
             padding: 4rem 0;
         }
-        .feature-grid {
+        .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 2rem;
         }
-        .feature-item {
+        .feature-card {
             text-align: center;
             padding: 1.5rem;
         }
@@ -243,33 +252,71 @@
             margin-bottom: 1rem;
         }
 
-        /* 联系表单与地图 */
-        .contact {
+        /* contact + form */
+        .contact-section {
             padding: 4rem 0;
-            background: var(--gray-100);
+            background: var(--gray-light);
         }
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 2rem;
+            gap: 2.5rem;
         }
         .form-group {
             margin-bottom: 1.2rem;
         }
         input, textarea, select {
             width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid var(--gray-200);
-            border-radius: 0.75rem;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.8rem;
             font-family: inherit;
+            background: white;
         }
         textarea {
             resize: vertical;
         }
+        .contact-info p {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+
+        /* footer */
         .footer {
-            background: #1e1e2a;
-            color: #ccc;
-            padding: 3rem 0 1.5rem;
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2.5rem 0 1.5rem;
             text-align: center;
         }
         .footer a {
@@ -277,12 +324,12 @@
             text-decoration: none;
         }
 
-        /* 移动端适应 */
+        /* responsive */
         .menu-toggle {
             display: none;
             background: none;
             border: none;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             cursor: pointer;
         }
         @media (max-width: 768px) {
@@ -305,32 +352,10 @@
             .hero h1 {
                 font-size: 2rem;
             }
-        }
-
-        /* 简单动画 */
-        .faq-item {
-            border-bottom: 1px solid var(--gray-200);
-            margin-bottom: 0.5rem;
-        }
-        .faq-question {
-            width: 100%;
-            background: none;
-            border: none;
-            text-align: left;
-            font-weight: 600;
-            padding: 1rem 0;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            font-size: 1rem;
-        }
-        .faq-answer {
-            display: none;
-            padding-bottom: 1rem;
-            color: var(--gray-700);
-        }
-        .faq-answer.show {
-            display: block;
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
         }
     </style>
 </head>
@@ -338,146 +363,148 @@
 
 <nav class="navbar">
     <div class="container nav-inner">
-        <a href="#" class="logo">XX<span>纱窗</span></a>
-        <button class="menu-toggle" id="mobileMenuBtn">☰</button>
+        <a href="#" class="logo">PRO<span>SCREEN</span></a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#home">首页</a></li>
-            <li><a href="#products">纱窗类型</a></li>
-            <li><a href="#features">为什么选择我们</a></li>
-            <li><a href="#contact">免费测量</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Screens</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Free Quote</a></li>
         </ul>
-        <a href="tel:13800000000" class="btn" style="background: #1e1e2a; color: white;">📞 咨询报价</a>
+        <a href="tel:+1234567890" class="btn btn-dark">📞 Call / WhatsApp</a>
     </div>
 </nav>
 
 <section id="home" class="hero">
     <div class="container hero-grid">
         <div>
-            <span class="hero-badge">本地工厂直供 · 免费上门测量</span>
-            <h1>专业纱窗定制 <em>防蚊虫 · 高透风 · 全屋定制</em></h1>
-            <p>金刚网纱窗、隐形折叠纱窗、推拉式纱窗、磁吸纱窗…… 任何窗型均可定制。免费设计，精准测量，快速安装。</p>
+            <span class="hero-badge">10+ Years Experience</span>
+            <h1>Custom <em>Insect Screens</em> & Mosquito Mesh</h1>
+            <p class="hero-desc">Made-to-measure window and door screens — stainless steel mesh, folding screens, roller screens. Any frame colour, free home measure, install in 3–5 days.</p>
             <div class="hero-stats">
-                <div class="stat"><div class="stat-num">10+年</div><div>行业经验</div></div>
-                <div class="stat"><div class="stat-num">5000+</div><div>家庭信赖</div></div>
-                <div class="stat"><div class="stat-num">2-5天</div><div>极速安装</div></div>
+                <div class="stat"><div class="stat-num">10+ yrs</div><div>Local expertise</div></div>
+                <div class="stat"><div class="stat-num">5k+</div><div>Happy homes</div></div>
+                <div class="stat"><div class="stat-num">3-5 days</div><div>Fast install</div></div>
             </div>
             <div style="margin-top: 2rem;">
-                <a href="#contact" class="btn">免费预约测量 →</a>
-                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">查看全部类型</a>
+                <a href="#contact" class="btn">Free Measurement →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">View All Types</a>
             </div>
         </div>
         <div class="hero-img">
-            <img src="https://placehold.co/600x400/e9ecef/495057?text=纱窗安装实景" alt="纱窗产品示意">
+            <img src="https://placehold.co/600x400/e9ecef/495057?text=Window+Screen+Installation" alt="Custom window screen installation">
         </div>
     </div>
 </section>
 
-<section id="products" class="products">
+<section id="products" class="products-section">
     <div class="container">
-        <div class="section-title">
-            <h2>我们的纱窗类型</h2>
-            <p>适用于平开窗、推拉窗、落地门、阳台等场景，按需定制</p>
+        <div class="section-head">
+            <h2>Our Screen Solutions</h2>
+            <p>Perfect for casement windows, sliding doors, balconies & large patios</p>
         </div>
         <div class="product-grid">
             <div class="product-card">
-                <div class="product-img">🪟</div>
+                <div class="product-img">🛡️</div>
                 <div class="product-body">
-                    <div class="product-title">金刚网纱窗</div>
-                    <p>高强度防盗，防剪防撬，寿命长达10年，适合低层住户。</p>
-                    <div class="product-price">¥XXX/平</div>
+                    <div class="product-title">Stainless Steel Mesh</div>
+                    <p>Heavy‑duty security screen, anti‑cut & anti‑corrosion. Ideal for ground floor homes.</p>
+                    <div class="product-price">From $X/sq ft</div>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-img">🌀</div>
                 <div class="product-body">
-                    <div class="product-title">隐形折叠纱窗</div>
-                    <p>可折叠收纳，不占空间，高透网纱，视野无遮挡。</p>
-                    <div class="product-price">¥XXX/平</div>
+                    <div class="product-title">Pleated / Folding Screen</div>
+                    <p>Foldable design, space‑saving, high transparency mesh. Available in multiple colors.</p>
+                    <div class="product-price">From $X/sq ft</div>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-img">↔️</div>
                 <div class="product-body">
-                    <div class="product-title">推拉式纱窗</div>
-                    <p>专用推拉窗设计，轨道顺滑，密封好，防蚊严密。</p>
-                    <div class="product-price">¥XXX/平</div>
+                    <div class="product-title">Sliding Screen</div>
+                    <p>Smooth sliding track, perfect for existing sliding windows and patio doors.</p>
+                    <div class="product-price">From $X/sq ft</div>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-img">🧲</div>
                 <div class="product-body">
-                    <div class="product-title">磁吸纱窗</div>
-                    <p>免打孔安装，拆卸方便，出租房、临时防护首选。</p>
-                    <div class="product-price">¥XXX/个</div>
+                    <div class="product-title">Magnetic Screen</div>
+                    <p>Tool‑free installation, self‑sealing. Great for rental apartments or temporary use.</p>
+                    <div class="product-price">From $X / unit</div>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-img">🚪</div>
                 <div class="product-body">
-                    <div class="product-title">阳台推拉门纱窗</div>
-                    <p>宽大落地门专用，带缓冲阻尼，进出顺畅。</p>
-                    <div class="product-price">¥XXX/扇</div>
+                    <div class="product-title">Retractable Door Screen</div>
+                    <p>For wide openings, with soft‑close mechanism. Disappears when not in use.</p>
+                    <div class="product-price">From $X / door</div>
                 </div>
             </div>
             <div class="product-card">
-                <div class="product-img">⚙️</div>
+                <div class="product-img">🪟</div>
                 <div class="product-body">
-                    <div class="product-title">上下卷帘纱窗</div>
-                    <p>可收卷至顶部，适合厨房、卫生间小窗。</p>
-                    <div class="product-price">¥XXX/扇</div>
+                    <div class="product-title">Roll‑up Screen</div>
+                    <p>Rolls into a slim cassette, suitable for kitchen or bathroom windows.</p>
+                    <div class="product-price">From $X / window</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="features" class="features">
+<section id="why" class="features-section">
     <div class="container">
-        <div class="section-title">
-            <h2>为什么选择我们</h2>
-            <p>自有工厂 ｜ 源头价格 ｜ 安装售后有保障</p>
+        <div class="section-head">
+            <h2>Why choose ProScreen?</h2>
+            <p>Quality materials · Factory direct · Full service warranty</p>
         </div>
-        <div class="feature-grid">
-            <div class="feature-item"><div class="feature-icon">📏</div><h3>免费上门测量</h3><p>工程师2小时内响应，精准量尺，给出专业方案。</p></div>
-            <div class="feature-item"><div class="feature-icon">🎨</div><h3>多种颜色可选</h3><p>纱网颜色、边框颜色可搭配家居风格。</p></div>
-            <div class="feature-item"><div class="feature-icon">🛠️</div><h3>自有安装团队</h3><p>不外包，统一培训，安装规范。</p></div>
-            <div class="feature-item"><div class="feature-icon">🔄</div><h3>3年质保</h3><p>纱网下垂、配件损坏免费维修。</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>Free Measure & Design</h3><p>We visit your home, take exact dimensions and suggest the best screen type.</p></div>
+            <div class="feature-card"><div class="feature-icon">🎨</div><h3>Any Frame Colour</h3><p>Custom powder coating to match your window frames perfectly.</p></div>
+            <div class="feature-card"><div class="feature-icon">⚡</div><h3>Fast 3‑5 Days Install</h3><p>From measurement to full installation, minimal disruption.</p></div>
+            <div class="feature-card"><div class="feature-icon">🛡️</div><h3>3‑Year Warranty</h3><p>Peace of mind with free repair or replacement for any defect.</p></div>
         </div>
     </div>
 </section>
 
-<!-- 常见问题板块（静态）-->
-<section style="padding: 3rem 0;">
+<!-- FAQ section -->
+<section class="faq-section">
     <div class="container">
-        <div class="section-title"><h2>纱窗常见问题</h2></div>
+        <div class="section-head"><h2>Frequently Asked Questions</h2></div>
         <div style="max-width: 800px; margin: 0 auto;">
-            <div class="faq-item"><button class="faq-question">纱窗可以定制尺寸吗？<span>+</span></button><div class="faq-answer">可以的，所有纱窗都是根据您的窗户尺寸定制，非标尺寸也无需加价。</div></div>
-            <div class="faq-item"><button class="faq-question">安装需要多久？<span>+</span></button><div class="faq-answer">测量后一般2-5天即可上门安装，复杂户型不超过7天。</div></div>
-            <div class="faq-item"><button class="faq-question">金刚网会生锈吗？<span>+</span></button><div class="faq-answer">采用304不锈钢材质，防锈耐腐蚀，正常使用10年不生锈。</div></div>
-            <div class="faq-item"><button class="faq-question">是否提供售后？<span>+</span></button><div class="faq-answer">提供3年免费质保，终身维护。</div></div>
+            <div class="faq-item"><button class="faq-question">Can you customise screens for non‑standard windows?<span>+</span></button><div class="faq-answer">Absolutely. Every screen is made to your exact window measurements, including arches and unusual shapes at no extra cost.</div></div>
+            <div class="faq-item"><button class="faq-question">What mesh material do you use?<span>+</span></button><div class="faq-answer">We use high‑quality fiberglass, PET or 304 stainless steel mesh – all rust‑proof, UV resistant, and pet‑friendly.</div></div>
+            <div class="faq-item"><button class="faq-question">How long does installation take?<span>+</span></button><div class="faq-answer">After free measurement, production takes 2–3 days and installation is completed within one day.</div></div>
+            <div class="faq-item"><button class="faq-question">Do you offer warranty?<span>+</span></button><div class="faq-answer">Yes, 3 years warranty on frames and mesh, plus lifetime technical support.</div></div>
         </div>
     </div>
 </section>
 
-<section id="contact" class="contact">
+<section id="contact" class="contact-section">
     <div class="container contact-grid">
         <div>
-            <h2 style="font-size: 1.8rem;">免费上门测量 ｜ 获取报价</h2>
-            <p style="margin: 1rem 0 1.5rem;">留下您的联系方式，我们会在24小时内安排师傅免费上门，提供设计方案和精确报价。</p>
-            <ul style="list-style: none; margin-top: 2rem;">
-                <li style="margin-bottom: 0.75rem;">📞 电话：<a href="tel:13800000000">138 0000 0000</a></li>
-                <li style="margin-bottom: 0.75rem;">📧 邮箱：service@yourbrand.com</li>
-                <li style="margin-bottom: 0.75rem;">📍 地址：XX市XX区纱窗工厂直营店</li>
-            </ul>
+            <h2 style="font-size: 1.8rem;">Get a free on‑site quote</h2>
+            <p style="margin: 1rem 0 1.5rem;">Fill the form or call us – we will respond within 2 hours. Free measurement available for all residential and commercial projects.</p>
+            <div class="contact-info">
+                <p>📞 <a href="tel:+1234567890" style="color: var(--primary-dark); text-decoration: none;">+1 234 567 890</a></p>
+                <p>✉️ <a href="mailto:sales@proscreen.com" style="color: var(--primary-dark); text-decoration: none;">sales@proscreen.com</a></p>
+                <p>📍 123 Main Street, Suite 200 – serving all metro areas</p>
+            </div>
         </div>
         <div>
+            <!-- Replace form action with your own endpoint (Formspree, Getform, etc.) -->
             <form action="https://formspree.io/f/xeqdkvgq" method="POST">
-                <div class="form-group"><input type="text" name="name" placeholder="您的姓名" required></div>
-                <div class="form-group"><input type="tel" name="phone" placeholder="手机号" required></div>
-                <div class="form-group"><input type="text" name="address" placeholder="所在小区/区域"></div>
-                <div class="form-group"><textarea rows="3" name="message" placeholder="备注信息：窗户类型/数量等"></textarea></div>
-                <button type="submit" class="btn" style="width:100%; justify-content: center;">提交免费预约</button>
-                <p style="font-size: 0.75rem; margin-top: 0.5rem; color: gray;">提交后客服会主动联系，请保持电话畅通。</p>
+                <div class="form-group"><input type="text" name="name" placeholder="Full name" required></div>
+                <div class="form-group"><input type="tel" name="phone" placeholder="Phone / WhatsApp" required></div>
+                <div class="form-group"><input type="email" name="email" placeholder="Email address"></div>
+                <div class="form-group"><input type="text" name="address" placeholder="Neighbourhood / City"></div>
+                <div class="form-group"><textarea rows="3" name="message" placeholder="Tell us about your windows/doors"></textarea></div>
+                <button type="submit" class="btn" style="width:100%; justify-content: center;">Request Free Measurement →</button>
+                <p class="form-note" style="font-size:0.7rem; margin-top:0.6rem; color: gray;">We respect your privacy – no spam.</p>
             </form>
         </div>
     </div>
@@ -485,29 +512,32 @@
 
 <footer class="footer">
     <div class="container">
-        <p>© 2025 XX纱窗 | 专注纱窗定制 | 本站仅为静态展示，欢迎咨询</p>
-        <p style="margin-top: 0.5rem;"><a href="#">隐私条款</a> | <a href="#">预约服务</a> | <a href="#">微信客服</a></p>
+        <p>© 2025 ProScreen – Custom Insect Screen Specialists</p>
+        <p style="margin-top: 0.5rem;"><a href="#">Privacy Policy</a> | <a href="#">Sitemap</a> | <a href="#">WhatsApp Support</a></p>
     </div>
 </footer>
 
-<!-- 移动端菜单与FAQ交互 -->
+<!-- Mobile menu & FAQ toggle scripts -->
 <script>
-    // 移动菜单
-    const menuBtn = document.getElementById('mobileMenuBtn');
-    const navLinks = document.getElementById('navLinks');
-    if(menuBtn) {
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
+    // mobile menu toggle
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
         });
     }
-    // FAQ 折叠
-    const faqBtns = document.querySelectorAll('.faq-question');
-    faqBtns.forEach(btn => {
+
+    // FAQ accordion
+    const faqButtons = document.querySelectorAll('.faq-question');
+    faqButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            const answer = btn.nextElementSibling;
-            answer.classList.toggle('show');
-            const span = btn.querySelector('span');
-            if(span) span.innerText = answer.classList.contains('show') ? '−' : '+';
+            const answerDiv = btn.nextElementSibling;
+            answerDiv.classList.toggle('show');
+            const symbol = btn.querySelector('span');
+            if(symbol) {
+                symbol.innerText = answerDiv.classList.contains('show') ? '−' : '+';
+            }
         });
     });
 </script>
