@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>PRO SCREEN | Custom Window Screens & Insect Mesh</title>
-    <meta name="description" content="Professional custom window screens – insect screens, security mesh, pleated screens. Free measure, custom made, fast installation. Get a quote today.">
+    <title>MBORMC | Custom Insect Screens Manufacturer – Foshan China</title>
+    <meta name="description" content="MBORMC – premium custom insect screens & window mesh from Foshan, China. Factory direct, free measure, fast shipping. WhatsApp +86 13536600067">
     <style>
         * {
             margin: 0;
@@ -66,8 +66,6 @@
         .logo span {
             color: var(--dark);
             background: none;
-            -webkit-background-clip: unset;
-            background-clip: unset;
         }
         .nav-links {
             display: flex;
@@ -174,7 +172,6 @@
             background: var(--gray-border);
         }
 
-        /* section headings */
         .section-head {
             text-align: center;
             margin-bottom: 3rem;
@@ -252,40 +249,110 @@
             margin-bottom: 1rem;
         }
 
-        /* contact + form */
-        .contact-section {
+        /* custom inquiry section (blended with global style) */
+        .inquiry-section {
             padding: 4rem 0;
-            background: var(--gray-light);
+            background: #ffffff;
         }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
         }
         .form-group {
             margin-bottom: 1.2rem;
         }
-        input, textarea, select {
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
             width: 100%;
-            padding: 0.8rem 1rem;
+            padding: 0.75rem 1rem;
             border: 1px solid var(--gray-border);
-            border-radius: 0.8rem;
+            border-radius: 0.75rem;
             font-family: inherit;
-            background: white;
+            transition: 0.2s;
         }
-        textarea {
-            resize: vertical;
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
         }
-        .contact-info p {
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
         }
 
-        /* faq */
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq & responsive */
         .faq-section {
             padding: 4rem 0;
+            background: var(--gray-light);
         }
         .faq-item {
             border-bottom: 1px solid var(--gray-border);
@@ -311,20 +378,6 @@
         .faq-answer.show {
             display: block;
         }
-
-        /* footer */
-        .footer {
-            background: #0f172a;
-            color: #94a3b8;
-            padding: 2.5rem 0 1.5rem;
-            text-align: center;
-        }
-        .footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        /* responsive */
         .menu-toggle {
             display: none;
             background: none;
@@ -346,7 +399,7 @@
             .menu-toggle {
                 display: block;
             }
-            .hero-grid, .contact-grid {
+            .hero-grid {
                 grid-template-columns: 1fr;
             }
             .hero h1 {
@@ -354,7 +407,10 @@
             }
             .hero-stats {
                 flex-wrap: wrap;
-                gap: 1rem;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
             }
         }
     </style>
@@ -363,36 +419,36 @@
 
 <nav class="navbar">
     <div class="container nav-inner">
-        <a href="#" class="logo">PRO<span>SCREEN</span></a>
+        <a href="#" class="logo">MBORMC<span> Screen</span></a>
         <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
-            <li><a href="#products">Screens</a></li>
-            <li><a href="#why">Why Us</a></li>
-            <li><a href="#contact">Free Quote</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#why">Advantages</a></li>
+            <li><a href="#inquiry">Inquiry</a></li>
         </ul>
-        <a href="tel:+1234567890" class="btn btn-dark">📞 Call / WhatsApp</a>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
     </div>
 </nav>
 
 <section id="home" class="hero">
     <div class="container hero-grid">
         <div>
-            <span class="hero-badge">10+ Years Experience</span>
-            <h1>Custom <em>Insect Screens</em> & Mosquito Mesh</h1>
-            <p class="hero-desc">Made-to-measure window and door screens — stainless steel mesh, folding screens, roller screens. Any frame colour, free home measure, install in 3–5 days.</p>
+            <span class="hero-badge">Factory Direct – Foshan, China</span>
+            <h1>Premium <em>Insect Screens</em> & Window Mesh</h1>
+            <p class="hero-desc">MBORMC – custom made-to-measure screens for windows, doors, patios. 10+ years manufacturing experience, free design, fast global shipping.</p>
             <div class="hero-stats">
-                <div class="stat"><div class="stat-num">10+ yrs</div><div>Local expertise</div></div>
-                <div class="stat"><div class="stat-num">5k+</div><div>Happy homes</div></div>
-                <div class="stat"><div class="stat-num">3-5 days</div><div>Fast install</div></div>
+                <div class="stat"><div class="stat-num">10+ yrs</div><div>OEM expertise</div></div>
+                <div class="stat"><div class="stat-num">80+</div><div>Countries served</div></div>
+                <div class="stat"><div class="stat-num">3-7 days</div><div>lead time</div></div>
             </div>
             <div style="margin-top: 2rem;">
-                <a href="#contact" class="btn">Free Measurement →</a>
-                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">View All Types</a>
+                <a href="#inquiry" class="btn">Send Inquiry →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">View all types</a>
             </div>
         </div>
         <div class="hero-img">
-            <img src="https://placehold.co/600x400/e9ecef/495057?text=Window+Screen+Installation" alt="Custom window screen installation">
+            <img src="https://placehold.co/600x400/e9ecef/495057?text=MBORMC+Factory+Sample" alt="MBORMC insect screen sample">
         </div>
     </div>
 </section>
@@ -401,145 +457,121 @@
     <div class="container">
         <div class="section-head">
             <h2>Our Screen Solutions</h2>
-            <p>Perfect for casement windows, sliding doors, balconies & large patios</p>
+            <p>Stainless steel mesh · folding · sliding · magnetic · roll-up · custom colors</p>
         </div>
         <div class="product-grid">
-            <div class="product-card">
-                <div class="product-img">🛡️</div>
-                <div class="product-body">
-                    <div class="product-title">Stainless Steel Mesh</div>
-                    <p>Heavy‑duty security screen, anti‑cut & anti‑corrosion. Ideal for ground floor homes.</p>
-                    <div class="product-price">From $X/sq ft</div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🌀</div>
-                <div class="product-body">
-                    <div class="product-title">Pleated / Folding Screen</div>
-                    <p>Foldable design, space‑saving, high transparency mesh. Available in multiple colors.</p>
-                    <div class="product-price">From $X/sq ft</div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">↔️</div>
-                <div class="product-body">
-                    <div class="product-title">Sliding Screen</div>
-                    <p>Smooth sliding track, perfect for existing sliding windows and patio doors.</p>
-                    <div class="product-price">From $X/sq ft</div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🧲</div>
-                <div class="product-body">
-                    <div class="product-title">Magnetic Screen</div>
-                    <p>Tool‑free installation, self‑sealing. Great for rental apartments or temporary use.</p>
-                    <div class="product-price">From $X / unit</div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🚪</div>
-                <div class="product-body">
-                    <div class="product-title">Retractable Door Screen</div>
-                    <p>For wide openings, with soft‑close mechanism. Disappears when not in use.</p>
-                    <div class="product-price">From $X / door</div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🪟</div>
-                <div class="product-body">
-                    <div class="product-title">Roll‑up Screen</div>
-                    <p>Rolls into a slim cassette, suitable for kitchen or bathroom windows.</p>
-                    <div class="product-price">From $X / window</div>
-                </div>
-            </div>
+            <div class="product-card"><div class="product-img">🛡️</div><div class="product-body"><div class="product-title">Stainless Steel Security Mesh</div><p>304/316 grade, anti-cut & anti-rust. Perfect for low‑floor homes.</p><div class="product-price">Inquiry for MOQ</div></div></div>
+            <div class="product-card"><div class="product-img">🌀</div><div class="product-body"><div class="product-title">Pleated / Folding Screen</div><p>Space-saving foldable design, high airflow, multiple frame colors.</p><div class="product-price">OEM price on request</div></div></div>
+            <div class="product-card"><div class="product-img">↔️</div><div class="product-body"><div class="product-title">Sliding Screen</div><p>Smooth track system for sliding windows/doors, durable fiber mesh.</p><div class="product-price">Factory direct</div></div></div>
+            <div class="product-card"><div class="product-img">🧲</div><div class="product-body"><div class="product-title">Magnetic Detachable Screen</div><p>Tool‑free installation, ideal for rentals or temporary use.</p><div class="product-price">Wholesale available</div></div></div>
+            <div class="product-card"><div class="product-img">🚪</div><div class="product-body"><div class="product-title">Retractable Door Screen</div><p>Soft‑close mechanism, disappears when not in use, wide openings.</p><div class="product-price">Custom size</div></div></div>
+            <div class="product-card"><div class="product-img">🎞️</div><div class="product-body"><div class="product-title">Roll‑up Screen</div><p>Compact cassette, suitable for kitchen, balcony or bathroom windows.</p><div class="product-price">Low MOQ</div></div></div>
         </div>
     </div>
 </section>
 
 <section id="why" class="features-section">
     <div class="container">
-        <div class="section-head">
-            <h2>Why choose ProScreen?</h2>
-            <p>Quality materials · Factory direct · Full service warranty</p>
-        </div>
+        <div class="section-head"><h2>Why Choose MBORMC?</h2><p>Built on quality, precision and global delivery</p></div>
         <div class="features-grid">
-            <div class="feature-card"><div class="feature-icon">📏</div><h3>Free Measure & Design</h3><p>We visit your home, take exact dimensions and suggest the best screen type.</p></div>
-            <div class="feature-card"><div class="feature-icon">🎨</div><h3>Any Frame Colour</h3><p>Custom powder coating to match your window frames perfectly.</p></div>
-            <div class="feature-card"><div class="feature-icon">⚡</div><h3>Fast 3‑5 Days Install</h3><p>From measurement to full installation, minimal disruption.</p></div>
-            <div class="feature-card"><div class="feature-icon">🛡️</div><h3>3‑Year Warranty</h3><p>Peace of mind with free repair or replacement for any defect.</p></div>
+            <div class="feature-card"><div class="feature-icon">🏭</div><h3>Factory Direct Pricing</h3><p>No middleman – we are the manufacturer based in Dali, Nanhai, Foshan.</p></div>
+            <div class="feature-card"><div class="feature-icon">🎨</div><h3>Any Colour / Any Size</h3><p>Custom RAL colors, frame profiles, and mesh types (grey, black, white).</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Global Shipping</h3><p>Fast sea/air freight, professional export packaging, door‑to‑door support.</p></div>
+            <div class="feature-card"><div class="feature-icon">🛡️</div><h3>Quality Warranty</h3><p>2‑year defect warranty & lifetime technical support.</p></div>
         </div>
     </div>
 </section>
 
-<!-- FAQ section -->
+<!-- FAQ -->
 <section class="faq-section">
     <div class="container">
         <div class="section-head"><h2>Frequently Asked Questions</h2></div>
         <div style="max-width: 800px; margin: 0 auto;">
-            <div class="faq-item"><button class="faq-question">Can you customise screens for non‑standard windows?<span>+</span></button><div class="faq-answer">Absolutely. Every screen is made to your exact window measurements, including arches and unusual shapes at no extra cost.</div></div>
-            <div class="faq-item"><button class="faq-question">What mesh material do you use?<span>+</span></button><div class="faq-answer">We use high‑quality fiberglass, PET or 304 stainless steel mesh – all rust‑proof, UV resistant, and pet‑friendly.</div></div>
-            <div class="faq-item"><button class="faq-question">How long does installation take?<span>+</span></button><div class="faq-answer">After free measurement, production takes 2–3 days and installation is completed within one day.</div></div>
-            <div class="faq-item"><button class="faq-question">Do you offer warranty?<span>+</span></button><div class="faq-answer">Yes, 3 years warranty on frames and mesh, plus lifetime technical support.</div></div>
+            <div class="faq-item"><button class="faq-question">Can you produce custom sizes?<span>+</span></button><div class="faq-answer">Absolutely. We cut every screen to your exact window/door dimensions – no extra charge for non‑standard shapes.</div></div>
+            <div class="faq-item"><button class="faq-question">What mesh materials do you offer?<span>+</span></button><div class="faq-answer">Fiberglass, PET, 304 stainless steel, aluminum mesh – all UV resistant and rustproof.</div></div>
+            <div class="faq-item"><button class="faq-question">Do you support small wholesale orders?<span>+</span></button><div class="faq-answer">Yes, we welcome small MOQ trial orders. Contact us for sample policy.</div></div>
+            <div class="faq-item"><button class="faq-question">How can I get a shipping quote?<span>+</span></button><div class="faq-answer">Send us your inquiry with quantities and destination port, we’ll reply within 24h.</div></div>
         </div>
     </div>
 </section>
 
-<section id="contact" class="contact-section">
-    <div class="container contact-grid">
-        <div>
-            <h2 style="font-size: 1.8rem;">Get a free on‑site quote</h2>
-            <p style="margin: 1rem 0 1.5rem;">Fill the form or call us – we will respond within 2 hours. Free measurement available for all residential and commercial projects.</p>
-            <div class="contact-info">
-                <p>📞 <a href="tel:+1234567890" style="color: var(--primary-dark); text-decoration: none;">+1 234 567 890</a></p>
-                <p>✉️ <a href="mailto:sales@proscreen.com" style="color: var(--primary-dark); text-decoration: none;">sales@proscreen.com</a></p>
-                <p>📍 123 Main Street, Suite 200 – serving all metro areas</p>
+<!-- Custom inquiry form (exactly as provided + integrated) -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>Send an Inquiry</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="John Doe" required>
             </div>
-        </div>
-        <div>
-            <!-- Replace form action with your own endpoint (Formspree, Getform, etc.) -->
-            <form action="https://formspree.io/f/xeqdkvgq" method="POST">
-                <div class="form-group"><input type="text" name="name" placeholder="Full name" required></div>
-                <div class="form-group"><input type="tel" name="phone" placeholder="Phone / WhatsApp" required></div>
-                <div class="form-group"><input type="email" name="email" placeholder="Email address"></div>
-                <div class="form-group"><input type="text" name="address" placeholder="Neighbourhood / City"></div>
-                <div class="form-group"><textarea rows="3" name="message" placeholder="Tell us about your windows/doors"></textarea></div>
-                <button type="submit" class="btn" style="width:100%; justify-content: center;">Request Free Measurement →</button>
-                <p class="form-note" style="font-size:0.7rem; margin-top:0.6rem; color: gray;">We respect your privacy – no spam.</p>
-            </form>
-        </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label>Country</label>
+                <input type="text" name="country" placeholder="Your Country" required>
+            </div>
+            <div class="form-group">
+                <label>Inquiry Content</label>
+                <textarea name="message" rows="5" placeholder="Please let us know your requirements or the models you are interested in (e.g., H01, FD02)..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">SUBMIT NOW</button>
+        </form>
     </div>
 </section>
+
+<!-- Contact bar with WeChat & WhatsApp -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (click to copy)</a>
+            <span>📍 MBORMC Production Base, Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+        </div>
+    </div>
+</div>
 
 <footer class="footer">
     <div class="container">
-        <p>© 2025 ProScreen – Custom Insect Screen Specialists</p>
-        <p style="margin-top: 0.5rem;"><a href="#">Privacy Policy</a> | <a href="#">Sitemap</a> | <a href="#">WhatsApp Support</a></p>
+        <p>© 2025 MBORMC Screen Tech – Professional Insect Screen Manufacturer</p>
+        <p class="footer-address">Factory: Dali, Nanhai, Foshan, China | Export & OEM since 2013</p>
+        <p><a href="#home">Home</a> | <a href="#products">Products</a> | <a href="#inquiry">Contact</a></p>
     </div>
 </footer>
 
-<!-- Mobile menu & FAQ toggle scripts -->
 <script>
     // mobile menu toggle
     const menuToggle = document.getElementById('mobileMenuBtn');
     const navList = document.getElementById('navLinks');
     if(menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('show');
-        });
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
     }
-
     // FAQ accordion
-    const faqButtons = document.querySelectorAll('.faq-question');
-    faqButtons.forEach(btn => {
+    document.querySelectorAll('.faq-question').forEach(btn => {
         btn.addEventListener('click', () => {
-            const answerDiv = btn.nextElementSibling;
-            answerDiv.classList.toggle('show');
-            const symbol = btn.querySelector('span');
-            if(symbol) {
-                symbol.innerText = answerDiv.classList.contains('show') ? '−' : '+';
-            }
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
         });
     });
+    // wechat copy function
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) {
+        wechatBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            try {
+                await navigator.clipboard.writeText('FSMBOR');
+                alert('WeChat ID "FSMBOR" copied to clipboard');
+            } catch (err) {
+                prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR');
+            }
+        });
+    }
 </script>
 </body>
 </html>
