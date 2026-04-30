@@ -337,7 +337,7 @@
             transform: translateY(-2px);
         }
 
-        /* contact bar */
+        /* contact bar (footer style) */
         .contact-bar {
             background: var(--gray-light);
             padding: 1.5rem 0;
@@ -414,7 +414,54 @@
             font-size: 1.6rem;
             cursor: pointer;
         }
+
+        /* ---------- 右侧浮动联系栏 ---------- */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 24px;
+            color: var(--dark);
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        /* 品牌颜色可选 */
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+        .contact-icon.facebook:hover { background: #1877F2; color: white; }
+        .contact-icon.instagram:hover { background: #E4405F; color: white; }
+        .contact-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+
         @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 20px;
+            }
             .nav-links {
                 display: none;
                 width: 100%;
@@ -445,6 +492,15 @@
     </style>
 </head>
 <body>
+
+<!-- 右侧浮动图标栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">📱</a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (click to copy)">💬</div>
+    <a href="#" class="contact-icon facebook" target="_blank" rel="noopener" title="Facebook">📘</a>
+    <a href="#" class="contact-icon instagram" target="_blank" rel="noopener" title="Instagram">📸</a>
+    <a href="#" class="contact-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">📕</a>
+</div>
 
 <nav class="navbar">
     <div class="container nav-inner">
@@ -648,19 +704,18 @@
             if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
         });
     });
-    // wechat copy
-    const wechatBtn = document.getElementById('wechatCopyBtn');
-    if(wechatBtn) {
-        wechatBtn.addEventListener('click', async (e) => {
-            e.preventDefault();
-            try {
-                await navigator.clipboard.writeText('FSMBOR');
-                alert('WeChat ID "FSMBOR" copied to clipboard');
-            } catch (err) {
-                prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR');
-            }
+    // 复制微信功能（底部栏 + 浮动图标）
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID "FSMBOR" copied to clipboard');
+        }).catch(() => {
+            prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR');
         });
     }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
 </script>
 </body>
 </html>
