@@ -337,6 +337,32 @@
             transform: translateY(-2px);
         }
 
+        /* 表单下方社交图标 */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.8rem;
+        }
+        .social-icon {
+            width: 44px;
+            height: 44px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon:hover {
+            transform: translateY(-3px);
+            background: var(--primary);
+            color: white;
+        }
+
         /* contact bar (footer style) */
         .contact-bar {
             background: var(--gray-light);
@@ -659,6 +685,14 @@
             </div>
             <button type="submit" class="submit-btn">Send DIY Inquiry →</button>
         </form>
+
+        <!-- 新增社交图标：Facebook、小红书、Instagram -->
+        <div class="social-icons">
+            <a href="#" class="social-icon" target="_blank" rel="noopener" title="Facebook">📘</a>
+            <a href="#" class="social-icon" target="_blank" rel="noopener" title="Xiaohongshu">📕</a>
+            <a href="#" class="social-icon" target="_blank" rel="noopener" title="Instagram">📸</a>
+        </div>
+        <!-- 提示：请将上面 href="#" 替换为您的实际主页链接 -->
     </div>
 </section>
 
