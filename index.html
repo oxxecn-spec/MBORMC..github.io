@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>MBORMC | DIY Fly Screens & Mosquito Nets – UK & Australia</title>
-    <meta name="description" content="MBORMC – global custom insect screen brand. H Series window screens, F Series door systems. 6063-T5 aluminium, factory direct, shipping worldwide.">
+    <meta name="description" content="MBORMC – global custom insect screen brand. H Series window screens, F Series door systems. 6063-T5 aluminium, factory direct, worldwide shipping with wooden crate packaging.">
     <!-- 规范域名 -->
     <link rel="canonical" href="https://www.insectscreen.cc/">
     <!-- Font Awesome 6 -->
@@ -158,16 +158,21 @@
         }
         .hero-stats {
             display: flex;
+            flex-wrap: wrap;
             gap: 2rem;
             margin: 2rem 0 1rem;
         }
         .stat {
             text-align: left;
+            min-width: 110px;
         }
         .stat-num {
             font-size: 1.8rem;
             font-weight: 800;
             color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
         }
         .hero-img img {
             width: 100%;
@@ -592,7 +597,12 @@
                 font-size: 2rem;
             }
             .hero-stats {
-                flex-wrap: wrap;
+                gap: 1rem;
+                justify-content: space-between;
+            }
+            .stat {
+                min-width: auto;
+                flex: 1 1 40%;
             }
             .contact-links {
                 flex-direction: column;
@@ -605,6 +615,13 @@
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: 0.8rem;
             }
         }
     </style>
@@ -646,6 +663,7 @@
                 <div class="stat"><div class="stat-num">10k+</div><div>UK/AU customers</div></div>
                 <div class="stat"><div class="stat-num">DIY</div><div>Easy fit in 10min</div></div>
                 <div class="stat"><div class="stat-num">7-15 days</div><div>Fast delivery</div></div>
+                <div class="stat"><div class="stat-num">🌍🚢</div><div>Global sea shipping + wooden crate</div></div>
             </div>
             <div style="margin-top: 2rem;">
                 <a href="#inquiry" class="btn">Get DIY Quote →</a>
