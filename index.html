@@ -164,21 +164,33 @@
         }
         .stat {
             text-align: left;
-            min-width: 110px;
+            flex: 1 1 auto;
         }
         .stat-num {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: var(--primary-dark);
             display: flex;
             align-items: center;
             gap: 0.3rem;
+            white-space: nowrap;
         }
         .hero-img img {
             width: 100%;
             border-radius: var(--radius);
             box-shadow: var(--shadow-md);
             background: var(--gray-border);
+        }
+
+        /* 桌面端强制一行排列 */
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
         }
 
         .section-head {
@@ -597,12 +609,12 @@
                 font-size: 2rem;
             }
             .hero-stats {
+                flex-wrap: wrap;
                 gap: 1rem;
-                justify-content: space-between;
             }
             .stat {
-                min-width: auto;
-                flex: 1 1 40%;
+                min-width: 120px;
+                flex: 1 0 auto;
             }
             .contact-links {
                 flex-direction: column;
@@ -615,13 +627,6 @@
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-stats {
-                flex-direction: column;
-                gap: 0.8rem;
             }
         }
     </style>
