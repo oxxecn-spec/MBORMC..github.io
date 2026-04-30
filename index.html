@@ -204,6 +204,9 @@
             transition: all 0.25s;
             text-decoration: none;
             color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .product-card:hover {
             transform: translateY(-6px);
@@ -219,6 +222,9 @@
         }
         .product-body {
             padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
         .product-title {
             font-size: 1.25rem;
@@ -234,6 +240,19 @@
             padding: 0.2rem 0.5rem;
             border-radius: 2rem;
             margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
         }
         .product-price {
             color: var(--primary-dark);
@@ -470,40 +489,48 @@
             <p>Perfect for sash windows, sliding doors, French doors, and patio openings</p>
         </div>
         <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
             <div class="product-card">
-                <div class="product-img">🦟</div>
+                <div class="product-img">🔄</div>
                 <div class="product-body">
                     <div class="diy-badge">🔧 DIY in 10 mins</div>
-                    <div class="product-title">Retractable Fly Screen</div>
-                    <p>Rolls away when not needed. Fits UK casement & Australian sliding windows. No drilling, included adhesive tape.</p>
+                    <div class="product-title">Retractable Roll-Up Screen</div>
+                    <div class="product-desc">PET fiber mesh – excellent mosquito protection. Aluminum frame. Simple installation with included adhesive tape or screws. Rolls up when not needed.</div>
+                    <div class="product-materials">Materials: PET mesh + Aluminium frame</div>
                     <div class="product-price">Quote by size</div>
                 </div>
             </div>
+            <!-- 产品2: 防蚊折叠纱门 (铝合金+304不锈钢折叠网+水晶折叠板) -->
             <div class="product-card">
                 <div class="product-img">🚪</div>
                 <div class="product-body">
-                    <div class="diy-badge">📐 Self‑measure</div>
-                    <div class="product-title">Magnetic Mesh Door Screen</div>
-                    <p>Hands‑free magnetic closure. Ideal for back doors and balconies. Cut‑to‑size frame included.</p>
-                    <div class="product-price">From £25 / AU$45</div>
+                    <div class="diy-badge">🐾 Pet resistant</div>
+                    <div class="product-title">Folding Screen Door (Combo)</div>
+                    <div class="product-desc">Aluminium frame + 304 stainless steel folding mesh – prevents mosquitoes, pet scratching/biting. Also available with clear crystal folding panels – ideal for kitchens, villa entry doors, garden doors.</div>
+                    <div class="product-materials">304 SS mesh / Crystal panel + Aluminium frame</div>
+                    <div class="product-price">From £45 / AU$85</div>
                 </div>
             </div>
+            <!-- 产品3: 回卷式纱门+折叠纱门组合 -->
+            <div class="product-card">
+                <div class="product-img">🚪🔄</div>
+                <div class="product-body">
+                    <div class="diy-badge">2-in-1 design</div>
+                    <div class="product-title">Roll-up + Folding Screen Door</div>
+                    <div class="product-desc">Combination of retractable roll-up and folding screen door. Perfect for main entrances, patio doors, and balconies. PET fiber mesh + 304 folding mesh options available.</div>
+                    <div class="product-materials">PET mesh / 304 mesh + Aluminium frame</div>
+                    <div class="product-price">Custom quote</div>
+                </div>
+            </div>
+            <!-- 产品4: 自粘贴式 304#不锈钢网纱 + 魔术贴 -->
             <div class="product-card">
                 <div class="product-img">🪟</div>
                 <div class="product-body">
-                    <div class="diy-badge">✂️ Trim to fit</div>
-                    <div class="product-title">Roller Blind Screen</div>
-                    <p>Spring‑loaded roller, attaches to window frame with clips. Great for UK uPVC windows.</p>
-                    <div class="product-price">Wholesale price</div>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🛡️</div>
-                <div class="product-body">
-                    <div class="diy-badge">Pet proof</div>
-                    <div class="product-title">Heavy‑Duty Fibreglass Mesh</div>
-                    <p>304 stainless steel frame option, resistant to dogs and kids. DIY assembly kit included.</p>
-                    <div class="product-price">Factory direct</div>
+                    <div class="diy-badge">No tools required</div>
+                    <div class="product-title">Self-Adhesive Velcro Screen</div>
+                    <div class="product-desc">304 stainless steel mesh with hook-and-loop (Velcro) tape. Peel-and-stick installation – no frame needed. Perfect for renters or temporary protection.</div>
+                    <div class="product-materials">304 SS mesh + Self-adhesive Velcro</div>
+                    <div class="product-price">From £15 / AU$28 per window</div>
                 </div>
             </div>
         </div>
