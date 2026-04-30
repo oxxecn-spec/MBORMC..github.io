@@ -282,14 +282,14 @@
             margin-bottom: 1rem;
         }
 
-        /* 新增的关键词模块 */
+        /* 关键词模块 - 6个精选择 */
         .keywords-section {
             padding: 4rem 0;
             background: white;
         }
         .keywords-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
         }
         .keyword-item {
@@ -370,7 +370,7 @@
             transform: translateY(-2px);
         }
 
-        /* 表单下方社交图标 */
+        /* 社交图标 */
         .social-icons {
             display: flex;
             justify-content: center;
@@ -515,6 +515,7 @@
         .contact-icon.whatsapp:hover { background: #25D366; color: white; }
         .contact-icon.wechat:hover { background: #07C160; color: white; }
 
+        /* 响应式 */
         @media (max-width: 768px) {
             .floating-contact {
                 right: 10px;
@@ -553,6 +554,7 @@
             }
             .keywords-grid {
                 grid-template-columns: 1fr;
+                gap: 1rem;
             }
         }
     </style>
@@ -612,7 +614,6 @@
             <p>Perfect for sash windows, sliding doors, French doors, and patio openings</p>
         </div>
         <div class="product-grid">
-            <!-- 产品1: 回卷式防蚊纱窗 -->
             <div class="product-card">
                 <div class="product-img">🔄</div>
                 <div class="product-body">
@@ -623,57 +624,52 @@
                     <div class="product-price">Quote by size</div>
                 </div>
             </div>
-            <!-- 产品2: 防蚊折叠纱门 -->
             <div class="product-card">
                 <div class="product-img">🚪</div>
                 <div class="product-body">
                     <div class="diy-badge">🐾 Pet resistant</div>
                     <div class="product-title">Folding Screen Door (Combo)</div>
-                    <div class="product-desc">Aluminium frame + 304 stainless steel folding mesh – prevents mosquitoes, pet scratching/biting. Also available with clear crystal folding panels – ideal for kitchens, villa entry doors, garden doors.</div>
+                    <div class="product-desc">Aluminium frame + 304 stainless steel folding mesh – prevents mosquitoes, pet scratching/biting. Also available with clear crystal folding panels.</div>
                     <div class="product-materials">304 SS mesh / Crystal panel + Aluminium frame</div>
                     <div class="product-price">From £45 / AU$85</div>
                 </div>
             </div>
-            <!-- 产品3: 回卷+折叠组合 -->
             <div class="product-card">
                 <div class="product-img">🚪🔄</div>
                 <div class="product-body">
                     <div class="diy-badge">2-in-1 design</div>
                     <div class="product-title">Roll-up + Folding Screen Door</div>
-                    <div class="product-desc">Combination of retractable roll-up and folding screen door. Perfect for main entrances, patio doors, and balconies. PET fiber mesh + 304 folding mesh options available.</div>
+                    <div class="product-desc">Combination of retractable roll-up and folding screen door. PET fiber mesh + 304 folding mesh options available.</div>
                     <div class="product-materials">PET mesh / 304 mesh + Aluminium frame</div>
                     <div class="product-price">Custom quote</div>
                 </div>
             </div>
-            <!-- 产品4: 自粘贴式 -->
             <div class="product-card">
                 <div class="product-img">🪟</div>
                 <div class="product-body">
                     <div class="diy-badge">No tools required</div>
                     <div class="product-title">Self-Adhesive Velcro Screen</div>
-                    <div class="product-desc">304 stainless steel mesh with hook-and-loop (Velcro) tape. Peel-and-stick installation – no frame needed. Perfect for renters or temporary protection.</div>
+                    <div class="product-desc">304 stainless steel mesh with hook-and-loop (Velcro) tape. Peel-and-stick installation – no frame needed.</div>
                     <div class="product-materials">304 SS mesh + Self-adhesive Velcro</div>
                     <div class="product-price">From £15 / AU$28 per window</div>
                 </div>
             </div>
-            <!-- 产品5: 遮阳产品 -->
             <div class="product-card">
                 <div class="product-img">☀️</div>
                 <div class="product-body">
                     <div class="diy-badge">Heat blocking</div>
                     <div class="product-title">Solar Shading / Roller Blinds</div>
-                    <div class="product-desc">Aluminium or fabric external roller blinds – reduce heat and glare, protect furniture. DIY mounting brackets included. Ideal for patios, conservatories, and large windows.</div>
+                    <div class="product-desc">Aluminium or fabric external roller blinds – reduce heat and glare, protect furniture. DIY mounting brackets included.</div>
                     <div class="product-materials">Aluminium cassette / UV-block fabric</div>
                     <div class="product-price">From £50 / AU$95 per unit</div>
                 </div>
             </div>
-            <!-- 产品6: 防蚊窗帘 -->
             <div class="product-card">
                 <div class="product-img">🦟</div>
                 <div class="product-body">
                     <div class="diy-badge">Hangs like a curtain</div>
                     <div class="product-title">Mosquito Net Curtain / Magnetic Curtain</div>
-                    <div class="product-desc">Fine fiberglass mesh curtain with magnetic middle split or weighted hem. Walk through easily – snaps shut automatically. Perfect for doorways, back doors, and high-traffic entrances.</div>
+                    <div class="product-desc">Fine fiberglass mesh curtain with magnetic middle split or weighted hem. Walk through easily – snaps shut automatically.</div>
                     <div class="product-materials">Fiberglass mesh + magnetic strip / weights</div>
                     <div class="product-price">From £18 / AU$32 per door</div>
                 </div>
@@ -707,7 +703,7 @@
     </div>
 </section>
 
-<!-- 新增产品关键词模块（10个关键词+文案） -->
+<!-- 产品关键词模块（6个精选） -->
 <section class="keywords-section">
     <div class="container">
         <div class="section-head">
@@ -718,13 +714,9 @@
             <div class="keyword-item"><strong>Mosquito Screen</strong><p>High-density fine mesh that blocks even the smallest mosquitoes while maintaining airflow. Perfect for bedrooms and living areas.</p></div>
             <div class="keyword-item"><strong>Fly Screen</strong><p>Keep flies, wasps and other flying insects outside without blocking your view. Available in fibreglass, PET or stainless steel.</p></div>
             <div class="keyword-item"><strong>Insect Screen</strong><p>All‑in‑one protection against mosquitoes, flies, midges and sand flies. Our custom screens fit any window or door type.</p></div>
-            <div class="keyword-item"><strong>Mosquito Net Screen</strong><p>Lightweight and durable mosquito netting that attaches to frames with spline or Velcro. Easy to remove for cleaning.</p></div>
             <div class="keyword-item"><strong>Window Mosquito Screen</strong><p>Tailored for UK sash windows and Australian sliding windows. DIY installation kit included with every order.</p></div>
             <div class="keyword-item"><strong>Door Mosquito Screen</strong><p>Heavy‑duty screens for French doors, patio doors and main entrances. Magnetic or roller options available.</p></div>
-            <div class="keyword-item"><strong>Insect Protection Screen</strong><p>Maximum protection for families with children or pets. Stainless steel mesh resists scratching and tearing.</p></div>
             <div class="keyword-item"><strong>Anti Mosquito Screen</strong><p>Specifically designed to repel and block disease‑carrying mosquitoes. Chemical‑free, physical barrier.</p></div>
-            <div class="keyword-item"><strong>Mosquito Mesh Screen</strong><p>Fine fibreglass or polyester mesh that keeps bugs out but lets fresh air in. UV‑stabilised for long life.</p></div>
-            <div class="keyword-item"><strong>Fly Mesh Screen</strong><p>Professional fly mesh for kitchens and dining areas. Prevents contamination while cooking or eating outdoors.</p></div>
         </div>
         <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">All screens are custom made to your exact window/door measurements. <a href="#inquiry" style="color: var(--primary);">Request a free quote →</a></p>
     </div>
@@ -757,12 +749,11 @@
             <button type="submit" class="submit-btn">Send DIY Inquiry →</button>
         </form>
 
-        <!-- 社交图标 -->
         <div class="social-icons">
             <a href="#" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu (Little Red Book)">
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
                 📕
             </a>
             <a href="#" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
@@ -792,13 +783,11 @@
 </footer>
 
 <script>
-    // 移动端菜单
     const menuToggle = document.getElementById('mobileMenuBtn');
     const navList = document.getElementById('navLinks');
     if(menuToggle) {
         menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
     }
-    // FAQ 折叠
     document.querySelectorAll('.faq-question').forEach(btn => {
         btn.addEventListener('click', () => {
             const ans = btn.nextElementSibling;
@@ -807,7 +796,6 @@
             if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
         });
     });
-    // 复制微信
     function copyWechat() {
         navigator.clipboard.writeText('FSMBOR').then(() => {
             alert('WeChat ID "FSMBOR" copied to clipboard');
