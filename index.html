@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>MBORMC | DIY Insect Screens for UK & Australia –Custom Fit, Fast Ship from China</title>
     <meta name="description" content="DIY insect screens and mosquito nets for UK and Australia. Easy install, custom sizes, direct from Foshan China. Protect your home from flies and mosquitoes.">
+    <!-- Font Awesome 6 (free brand icons for Facebook, Instagram) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -337,29 +339,39 @@
             transform: translateY(-2px);
         }
 
-        /* 表单下方社交图标 */
+        /* 表单下方社交图标 - 使用真实品牌LOGO */
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1.8rem;
+            gap: 1.8rem;
+            margin-top: 2rem;
         }
         .social-icon {
-            width: 44px;
-            height: 44px;
+            width: 48px;
+            height: 48px;
             background: #f1f5f9;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: var(--dark);
             transition: all 0.2s;
         }
-        .social-icon:hover {
-            transform: translateY(-3px);
-            background: var(--primary);
+        /* 品牌颜色悬停效果 */
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        /* 小红书特殊样式：白色背景，红色圆内文字 */
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
             color: white;
         }
 
@@ -686,13 +698,19 @@
             <button type="submit" class="submit-btn">Send DIY Inquiry →</button>
         </form>
 
-        <!-- 新增社交图标：Facebook、小红书、Instagram -->
+        <!-- 社交图标：真实品牌LOGO -->
         <div class="social-icons">
-            <a href="#" class="social-icon" target="_blank" rel="noopener" title="Facebook">📘</a>
-            <a href="#" class="social-icon" target="_blank" rel="noopener" title="Xiaohongshu">📕</a>
-            <a href="#" class="social-icon" target="_blank" rel="noopener" title="Instagram">📸</a>
+            <a href="#" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu (Little Red Book)">
+                📕
+            </a>
+            <a href="#" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
         </div>
-        <!-- 提示：请将上面 href="#" 替换为您的实际主页链接 -->
+        <!-- 提示：请将上面 href="#" 替换为您的实际社交媒体主页链接 -->
     </div>
 </section>
 
