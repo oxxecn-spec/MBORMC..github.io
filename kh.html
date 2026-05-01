@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | សំណាញ់ការពារមូស DIY – កម្ពុជា | សំណាញ់តាមរយៈការកំណត់តាមបំណង</title>
+    <meta name="description" content="MBORMC – សំណាញ់ការពារសត្វល្អិតតាមបំណងសម្រាប់គេហដ្ឋានកម្ពុជា។ សំណាញ់មូស DIY ប្រព័ន្ធរុំក្រឡុក ទ្វារបត់។ ស័ក្តិសមសម្រាប់បង្អួចរុញ បង្អួចបើក ទ្វារយ៉រ។ ការដឹកជញ្ជូនរហ័សទៅភ្នំពេញ, សៀមរាប, ព្រះសីហនុ, បាត់ដំបង, កំពង់ចាម។ រោងចក្រផ្ទាល់ពីចិន។">
+    <link rel="canonical" href="https://www.insectscreen.cc/kh.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 样式与全球首页完全一致，未做任何改动 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (ចុចដើម្បីចម្លង)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/kh.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="ម៉ឺនុយ">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">ទំព័រដើម</a></li>
+            <li><a href="#products">សំណាញ់ DIY</a></li>
+            <li><a href="#about">អំពីយើង</a></li>
+            <li><a href="#why">ហេតុអ្វី MBORMC</a></li>
+            <li><a href="#inquiry">ស្នើសុំតម្លៃ</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">ការដំឡើង DIY ងាយស្រួល · ដឹកជញ្ជូនពីហ្វូសាន ចិន</span>
+            <h1>ការពារមូស និងរុយ — <em>ភ្នំពេញ • សៀមរាប • ព្រះសីហនុ • បាត់ដំបង • កំពង់ចាម</em></h1>
+            <p class="hero-desc">សំណាញ់ការពារសត្វល្អិតតាមបំណងសម្រាប់បង្អួច ឬទ្វារណាមួយ។ មិនត្រូវការឧបករណ៍ ដំឡើងដោយខ្លួនឯងក្នុងរយៈពេលប៉ុន្មាននាទី។ ផ្ទាល់ពីរោងចក្រទៅកាន់មាត់ទ្វាររបស់អ្នក — ថោកជាងហាងលក់ក្នុងស្រុក 40-60%។</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">2k+</div><div>អតិថិជននៅកម្ពុជា</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>ដំឡើងងាយស្រួលក្នុង ១០នាទី</div></div>
+                <div class="stat"><div class="stat-num">៧-១៥ថ្ងៃ</div><div>ការដឹកជញ្ជូនរហ័ស</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>ដឹកជញ្ជូនតាមសមុទ្រ + វេចខ្ចប់ឈើ</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">ស្នើសុំតម្លៃ →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">មើលប្រភេទសំណាញ់</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="ឧទាហរណ៍ការដំឡើងសំណាញ់ការពារមូស DIY">
+        </div>
+    </div>
+</section>
+
+<!-- 产品区域：6个产品（链接与全球版一致） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>សំណាញ់ការពារសត្វល្អិត DIY សម្រាប់គេហដ្ឋានកម្ពុជា</h2>
+            <p>ស័ក្តិសមសម្រាប់បង្អួចរុញ បង្អួចបើក ទ្វារយ៉រ</p>
+        </div>
+        <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="សំណាញ់ក្រឡុក – ការពារមូស រុយ និងសត្វល្អិត">
+                    <span class="img-keyword-tag">ការពារមូស · សំណាញ់ច្រានរុយ</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY ១០ នាទី</div>
+                    <div class="product-title">MBORMC® H01: សំណាញ់ក្រឡុក</div>
+                    <div class="product-desc">សំណាញ់សរសៃ PET – ការពារមូសបានល្អ។ ស៊ុមអាលុយមីញ៉ូម។ ការដំឡើងសាមញ្ញជាមួយកាសែតស្អិត ឬវីសដែលភ្ជាប់មកជាមួយ។ អាចក្រឡុកបាននៅពេលមិនប្រើ។</div>
+                    <div class="product-materials">សម្ភារៈ: សំណាញ់ PET + ស៊ុមអាលុយមីញ៉ូម</div>
+                    <div class="product-price">តម្លៃតាមទំហំ</div>
+                </div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="ទ្វារបត់សំណាញ់ – ធន់នឹងសត្វចិញ្ចឹម">
+                    <span class="img-keyword-tag">ទ្វារ · ធន់នឹងសត្វចិញ្ចឹម</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 ធន់នឹងសត្វចិញ្ចឹម</div>
+                    <div class="product-title">ទ្វារបត់សំណាញ់ (កូមបូ)</div>
+                    <div class="product-desc">ស៊ុមអាលុយមីញ៉ូម + សំណាញ់បត់ដែកអ៊ីណុក 304 – ការពារមូស និងធន់នឹងការកោស/ខាំ។ ក៏មានជម្រើសជាមួយបន្ទះ PVC ថ្លា។</div>
+                    <div class="product-materials">សំណាញ់ដែកអ៊ីណុក 304 / បន្ទះគ្រីស្តាល់ + ស៊ុមអាលុយមីញ៉ូម</div>
+                    <div class="product-price">តម្លៃតាមទំហំ</div>
+                </div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="ទ្វារក្រឡុក + បត់ – ២ ក្នុង ១">
+                    <span class="img-keyword-tag">២ ក្នុង ១ · ការពារមូស</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">ការរចនា ២ ក្នុង ១</div>
+                    <div class="product-title">ទ្វារក្រឡុក + បត់</div>
+                    <div class="product-desc">ការរួមបញ្ចូលគ្នានៃសំណាញ់ក្រឡុក និងសំណាញ់បត់។ ជម្រើស៖ សំណាញ់ PET ឬសំណាញ់បត់ដែកអ៊ីណុក 304។</div>
+                    <div class="product-materials">សំណាញ់ PET / ដែកអ៊ីណុក 304 + ស៊ុមអាលុយមីញ៉ូម</div>
+                    <div class="product-price">តម្លៃតាមបំណង</div>
+                </div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="សំណាញ់ស្អិតដោយខ្លួនឯង Velcro – គ្មានឧបករណ៍">
+                    <span class="img-keyword-tag">ស្អិតដោយខ្លួនឯង · Velcro</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">គ្មានឧបករណ៍</div>
+                    <div class="product-title">សំណាញ់ស្អិតដោយខ្លួនឯង Velcro</div>
+                    <div class="product-desc">សំណាញ់ដែកអ៊ីណុក 304 ជាមួយកាសែត Velcro (ទំពក់ និងរង្វិលជុំ)។ លក់ហើយស្អិត – មិនត្រូវការស៊ុម។ ល្អសម្រាប់ផ្ទះជួល។</div>
+                    <div class="product-materials">សំណាញ់ដែកអ៊ីណុក 304 + Velcro ស្អិតដោយខ្លួនឯង</div>
+                    <div class="product-price">តម្លៃតាមទំហំ</div>
+                </div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="ការការពារពន្លឺព្រះអាទិត្យ – សំណាញ់ + អ៊ីសូឡង់កម្ដៅ">
+                    <span class="img-keyword-tag">ការពារពន្លឺព្រះអាទិត្យ · ការពារសត្វល្អិត</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">ទប់ស្កាត់កម្ដៅ</div>
+                    <div class="product-title">ការការពារពន្លឺព្រះអាទិត្យ / ពិការភ្នែករមៀល</div>
+                    <div class="product-desc">ពិការភ្នែកខាងក្រៅពីអាលុយមីញ៉ូម ឬក្រណាត់ – កាត់បន្ថយកម្ដៅ និងពន្លឺចាំង ការពារគ្រឿងសង្ហារឹម។ រួមបញ្ចូលដង្កៀបសម្រាប់ដំឡើង DIY។</div>
+                    <div class="product-materials">ប្រអប់អាលុយមីញ៉ូម / ក្រណាត់ការពារ UV</div>
+                    <div class="product-price">តម្លៃតាមទំហំ</div>
+                </div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="វាំងននម៉ាញេទិកប្រឆាំងមូស">
+                    <span class="img-keyword-tag">ម៉ាញេទិក · សំណាញ់ច្រានរុយ</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">ព្យួរដូចវាំងនន</div>
+                    <div class="product-title">វាំងននម៉ាញេទិកច្រានមូស</div>
+                    <div class="product-desc">វាំងននសំណាញ់សរសៃកញ្ចក់ល្អិតដែលមានស្នាមបំបែកម៉ាញេទិកកណ្តាល ឬគែមមានទម្ងន់។ ដើរកាត់បានយ៉ាងងាយស្រួល – បិទដោយស្វ័យប្រវត្តិ។</div>
+                    <div class="product-materials">សរសៃកញ្ចក់ + បន្ទះម៉ាញេទិក / ទម្ងន់</div>
+                    <div class="product-price">តម្លៃតាមទំហំ</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">ចុចលើផលិតផលណាមួយសម្រាប់ព័ត៌មានលម្អិតបន្ថែម។ សំណាញ់ទាំងអស់ត្រូវបានផលិតតាមបំណងទៅតាមទំហំបង្អួច/ទ្វាររបស់អ្នក។ <a href="#inquiry" style="color: var(--primary);">ស្នើសុំតម្លៃឥតគិតថ្លៃ →</a></p>
+    </div>
+</section>
+
+<!-- 公司介绍模块 -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>អំពី MBORMC</h2>
+            <p>ម៉ាកយីហោសកលនៃសំណាញ់ការពារសត្វល្អិតតាមបំណង – រចនានៅហ្វូសាន ដឹកជញ្ជូនទូទាំងពិភពលោក</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> គឺជាម៉ាកយីហោអន្តរជាតិដែលឯកទេសខាងសំណាញ់ក្រឡុកការពារសត្វល្អិតតាមបំណង និងប្រព័ន្ធទ្វារបត់។ ជាមួយនឹងបទពិសោធន៍ជាង <strong>១៥ឆ្នាំ</strong> ក្នុងការកែច្នៃអាលុយមីញ៉ូម និងវិស្វកម្មច្បាស់លាស់ យើងបម្រើគម្រោងលំនៅដ្ឋាន សណ្ឋាគារ និងពាណិជ្ជកម្មនៅក្នុងប្រទេសជាង <strong>៥០</strong> រួមទាំងអតិថិជនជាច្រើននៅកម្ពុជា។</p>
+                <p>ផលិតផលទាំងអស់របស់យើងត្រូវបានផលិតនៅរោងចក្ររបស់យើងនៅហ្វូសាន ប្រទេសចិន ដោយប្រើយ៉ាន់ស្ព័រអាលុយមីញ៉ូមកម្រិតខ្ពស់ <strong>6063‑T5</strong> – ផ្តល់នូវកម្លាំងខ្ពស់ ធន់នឹងច្រេះ និងការបញ្ចប់ដ៏ស្រស់ស្អាត។ យើងរួមបញ្ចូលតម្លៃរោងចក្រដោយផ្ទាល់ជាមួយការដឹកជញ្ជូនសកល និងការណែនាំដំឡើងក្នុងតំបន់ ដើម្បីធ្វើឱ្យការការពារ DIY អាចចូលដំណើរការបានគ្រប់ទីកន្លែង។</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">បទពិសោធន៍ ១៥+ ឆ្នាំ</span>
+                    <span class="highlight-badge">អាលុយមីញ៉ូម 6063‑T5</span>
+                    <span class="highlight-badge">បម្រើ ៥០+ ប្រទេស</span>
+                    <span class="highlight-badge">ផ្ទាល់ពីរោងចក្រ</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">ស៊េរីផលិតផល</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>ស៊េរី H – សំណាញ់សម្រាប់បង្អួច</strong><br>ម៉ូដែលក្រឡុកស្វ័យប្រវត្តិ សុវត្ថិភាពកុមារ ការដំឡើងគ្មានឧបករណ៍។</li>
+                    <li><span class="series-icon">🚪</span> <strong>ស៊េរី F – ប្រព័ន្ធសម្រាប់ទ្វារ</strong><br>ការរចនាបត់ រុញ គ្មានផ្លូវដែក សម្រាប់យ៉រ ផ្ទះបាយ និងភាគថាសខាងក្នុង។</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">ការគាំទ្រពហុភាសា (KM, EN, CN, FR, TH, etc.) និងការដឹកជញ្ជូនសកល – យើងធ្វើឱ្យការការពារតាមបំណងសាមញ្ញ។</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>ហេតុអ្វីម្ចាស់ផ្ទះនៅកម្ពុជាជ្រើសរើស MBORMC</h2><p>ផ្ទាល់ពីរោងចក្រ — គ្មានអន្តរការី គុណភាព DIY ពិសេស</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>វាស់ដោយខ្លួនឯង កាត់តាមបំណង</h3><p>យើងផលិតសំណាញ់តាមទំហំបង្អួចពិតប្រាកដរបស់អ្នក — មិនត្រូវការការដំឡើងដោយអ្នកជំនាញទេ។</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>ការដឹកជញ្ជូនរហ័សទៅកាន់កម្ពុជា</h3><p>ការបញ្ជាទិញត្រូវបានបញ្ជូនក្នុងរយៈពេល ៣ ថ្ងៃ ការដឹកជញ្ជូនតាមផ្លូវអាកាស ឬសមុទ្រជាមួយការតាមដាន។</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>សន្សំបាន 40-60% បើប្រៀបធៀបនឹងហាងក្នុងស្រុក</h3><p>តម្លៃរោងចក្រដោយផ្ទាល់ — បង់ប្រាក់ជា USD ឬ KHR។ សម្រាប់ការបញ្ជាទិញផ្ទាល់ខ្លួនក្រោម 50 ដុល្លារ ជាធម្មតាគ្មានពន្ធគយទេ (កញ្ចប់តូច)។</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>ការការពារមូសដែលបង្ហាញឱ្យឃើញ</h3><p>សំណាញ់ល្អិតរារាំងមូស រុយ និងសត្វល្អិតតូចៗ – បានសាកល្បងនៅក្នុងអាកាសធាតុត្រូពិចរបស់កម្ពុជា ជួយកាត់បន្ថយហានិភ័យនៃជំងឺគ្រុនឈាម។</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>សំណួរដែលគេសួរញឹកញាប់សម្រាប់អ្នកទិញ DIY</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">តើខ្ញុំវាស់បង្អួចរបស់ខ្ញុំសម្រាប់សំណាញ់ DIY យ៉ាងដូចម្តេច?<span>+</span></button><div class="faq-answer">មគ្គុទ្ទេសក៍សាមញ្ញមួយត្រូវបានផ្តល់ជូនជាមួយការបញ្ជាទិញនីមួយៗ — គ្រាន់តែប្រើរង្វាស់កាសែត ទទឹង និងកម្ពស់។ យើងកាត់សំណាញ់តាមលេខរបស់អ្នក។</div></div>
+            <div class="faq-item"><button class="faq-question">តើខ្ញុំត្រូវការឧបករណ៍ពិសេសទេ?<span>+</span></button><div class="faq-answer">ទេ។ សំណាញ់ទាំងអស់ភ្ជាប់មកជាមួយស៊ុមដែលងាយស្រួលភ្ជាប់ កាសែត adhesive ឬនិទាឃរដូវ — ទួណឺវីសគឺគ្រប់គ្រាន់។</div></div>
+            <div class="faq-item"><button class="faq-question">តើពន្ធគយ និងពន្ធនាំចូលសម្រាប់កម្ពុជាមានលក្ខណៈដូចម្តេច?<span>+</span></button><div class="faq-answer">សម្រាប់ការបញ្ជូនផ្ទាល់ខ្លួនដែលមានតម្លៃទាប (ឧទាហរណ៍ក្រោម 50 ដុល្លារ) ជាធម្មតាមិនមានពន្ធគយទេ។ សម្រាប់ការបញ្ជាទិញធំជាងនេះ យើងអាចរៀបចំការដឹកជញ្ជូន DDP (បង់ពន្ធរួច)។</div></div>
+            <div class="faq-item"><button class="faq-question">តើខ្ញុំអាចទទួលបានគំរូមុនពេលបញ្ជាទិញច្រើនបានទេ?<span>+</span></button><div class="faq-answer">បាទ/ចាស។ ឈុតគំរូត្រូវបានផ្ញើទៅកម្ពុជាក្នុងរយៈពេល 7 ថ្ងៃ។ ទំនាក់ទំនងមកយើងខ្ញុំតាមរយៈ WhatsApp។</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品关键词模块（6个精选） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>ពាក្យគន្លឹះសំខាន់ៗរបស់ផលិតផលយើង</h2>
+            <p>ស្វែងយល់ពីជួរពេញលេញនៃសំណាញ់ដែលយើងផ្តល់ជូន – ផលិតតាមបំណងសម្រាប់ផ្ទះរបស់អ្នក</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>សំណាញ់មូស</strong><p>សំណាញ់ល្អិតដង់ស៊ីតេខ្ពស់ដែលរារាំងសូម្បីតែមូសតូចបំផុត ខណៈពេលដែលរក្សាលំហូរខ្យល់។ ល្អឥតខ្ចោះសម្រាប់បន្ទប់គេង និងបន្ទប់ទទួលភ្ញៀវ។</p></div>
+            <div class="keyword-item"><strong>សំណាញ់ច្រានរុយ</strong><p>រក្សារុយ កន្លាត និងសត្វល្អិតហើរផ្សេងទៀតនៅខាងក្រៅ ដោយមិនរាំងស្ទះទិដ្ឋភាពរបស់អ្នក។ មាននៅក្នុងសរសៃកញ្ចក់ PET ឬដែកអ៊ីណុក។</p></div>
+            <div class="keyword-item"><strong>សំណាញ់ការពារសត្វល្អិត</strong><p>ការការពារទាំងអស់ក្នុងមួយប្រឆាំងនឹងមូស រុយ សត្វល្អិតតូចៗ និងរុយខ្សាច់។ សំណាញ់តាមបំណងរបស់យើងសមនឹងបង្អួច ឬទ្វារគ្រប់ប្រភេទ។</p></div>
+            <div class="keyword-item"><strong>សំណាញ់បង្អួច</strong><p>សម្រួលសម្រាប់បង្អួចរុញ បង្អួចបើក និងបង្អួចលំអៀង។ រួមបញ្ចូលឧបករណ៍ដំឡើង DIY ។</p></div>
+            <div class="keyword-item"><strong>សំណាញ់ទ្វារ</strong><p>សំណាញ់រឹងមាំសម្រាប់ទ្វារយ៉រ ទ្វារខាងមុខ និងរាបស្មើ។ ជម្រើសម៉ាញេទិក ឬក្រឡុក។</p></div>
+            <div class="keyword-item"><strong>សំណាញ់ធន់នឹងសត្វចិញ្ចឹម</strong><p>សំណាញ់ដែកអ៊ីណុក 304 ធន់នឹងការកោស និងខាំពីឆ្កែ និងឆ្មា។ ល្អសម្រាប់គ្រួសារដែលមានសត្វចិញ្ចឹម។</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">សំណាញ់ទាំងអស់ត្រូវបានផលិតតាមបំណងទៅតាមទំហំពិតប្រាកដនៃបង្អួច/ទ្វាររបស់អ្នក។ <a href="#inquiry" style="color: var(--primary);">ស្នើសុំតម្លៃឥតគិតថ្លៃ →</a></p>
+    </div>
+</section>
+
+<!-- 询价表单（柬埔寨站） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>ស្នើសុំតម្លៃ DIY — ដឹកជញ្ជូនទៅកម្ពុជា</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>ឈ្មោះពេញ</label>
+                <input type="text" name="name" placeholder="សុខ សុខា" required>
+            </div>
+            <div class="form-group">
+                <label>អាសយដ្ឋានអ៊ីមែល</label>
+                <input type="email" name="email" placeholder="sokha@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>ខេត្ត / ក្រុង (កម្ពុជា)</label>
+                <input type="text" name="country" placeholder="ឧ. ភ្នំពេញ, សៀមរាប, ព្រះសីហនុ" required>
+            </div>
+            <div class="form-group">
+                <label>ទំហំបង្អួច/ទ្វារ (ទទឹង x កម្ពស់ គិតជាសង់ទីម៉ែត្រ ឬអ៊ីញ)</label>
+                <textarea name="message" rows="4" placeholder="ប្រាប់យើងអំពីបរិមាណ និងទំហំ។ ឧទាហរណ៍៖ បង្អួចរុញ 3: 120x90cm នីមួយៗ។ ទ្វារយ៉រ 1: 200x210cm..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">ផ្ញើការស្នើសុំ →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (ចុចដើម្បីចម្លង)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 មូលដ្ឋានផលិតកម្ម MBORMC: Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← ត្រឡប់ទៅកាន់ទំព័រដើមសកល</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — ក្រុមហ៊ុនផលិតសំណាញ់ការពារសត្វល្អិត DIY សម្រាប់កម្ពុជា និងពិភពលោក</p>
+        <p class="footer-address">តម្លៃរោងចក្រដោយផ្ទាល់ · ការដឹកជញ្ជូនទូទាំងពិភពលោក · ការធានា DIY ២ឆ្នាំ</p>
+        <p><a href="#home">ទំព័រដើម</a> | <a href="#products">ផលិតផល</a> | <a href="#inquiry">ទំនាក់ទំនង</a> | <a href="https://www.insectscreen.cc/sitemap.xml">ផែនទីគេហទំព័រ</a> | <a href="https://www.insectscreen.cc/Global.html">គេហទំព័រសកល</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('លេខសម្គាល់ WeChat "FSMBOR" ត្រូវបានចម្លង');
+        }).catch(() => {
+            prompt('ចុច Ctrl+C ដើម្បីចម្លងលេខសម្គាល់ WeChat:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
