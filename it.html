@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | Zanzariere DIY – Italia | Protezione Antizanzare su Misura</title>
+    <meta name="description" content="MBORMC – zanzariere su misura per case italiane. DIY zanzariere a rullo, sistemi a fisarmonica. Perfette per finestre scorrevoli, a battente, porte finestre. Spedizione rapida a Roma, Milano, Napoli, Torino, Firenze. Fabbrica diretta dalla Cina.">
+    <link rel="canonical" href="https://www.insectscreen.cc/it.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 样式与全球首页完全一致，未做任何改动 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (clicca per copiare)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/it.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Zanzariere DIY</a></li>
+            <li><a href="#about">Chi siamo</a></li>
+            <li><a href="#why">Perché MBORMC</a></li>
+            <li><a href="#inquiry">Richiedi preventivo</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">Facile installazione DIY · Spedizione da Foshan, Cina</span>
+            <h1>Tieni lontane zanzare e mosche — <em>Roma • Milano • Napoli • Torino • Firenze</em></h1>
+            <p class="hero-desc">Zanzariere su misura per qualsiasi finestra o porta. Nessun attrezzo necessario, installazione fai-da-te in pochi minuti. Direttamente dalla nostra fabbrica alla tua porta — fino al 60% meno caro dei negozi locali.</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">5k+</div><div>Clienti in Italia</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>Montaggio facile in 10min</div></div>
+                <div class="stat"><div class="stat-num">7-15 giorni</div><div>Consegna veloce</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>Trasporto marittimo + cassa in legno</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">Richiedi preventivo →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">Vedi i modelli</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="Esempio di installazione zanzariera DIY">
+        </div>
+    </div>
+</section>
+
+<!-- 产品区域：6个产品（链接与全球版一致） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Zanzariere DIY per case italiane</h2>
+            <p>Perfette per finestre scorrevoli, a battente, porte finestre e portefinestre</p>
+        </div>
+        <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Zanzariera avvolgibile – Protezione antizanzare e insetti">
+                    <span class="img-keyword-tag">Antizanzare · Rete antimosche</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY in 10 min</div>
+                    <div class="product-title">MBORMC® H01: Zanzariera avvolgibile</div>
+                    <div class="product-desc">Rete in fibre PET – eccellente protezione. Telaio in alluminio. Installazione semplice con nastro adesivo o viti incluse. Si arrotola quando non serve.</div>
+                    <div class="product-materials">Materiali: Rete PET + telaio alluminio</div>
+                    <div class="product-price">Preventivo su misura</div>
+                </div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="Porta zanzariera pieghevole – Resistente ad animali">
+                    <span class="img-keyword-tag">Porta · Resistente ad animali</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 Resistente ad animali</div>
+                    <div class="product-title">Porta zanzariera pieghevole (Combo)</div>
+                    <div class="product-desc">Telaio in alluminio + rete pieghevole in acciaio inox 304 – blocca le zanzare e resiste a graffi/morsi. Disponibile anche con pannelli trasparenti in PVC cristallo.</div>
+                    <div class="product-materials">Rete in acciaio inox 304 / pannello cristallo + telaio alluminio</div>
+                    <div class="product-price">Preventivo su misura</div>
+                </div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="Porta avvolgibile + pieghevole – 2 in 1">
+                    <span class="img-keyword-tag">2 in 1 · Antizanzare</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Design 2 in 1</div>
+                    <div class="product-title">Porta avvolgibile + pieghevole</div>
+                    <div class="product-desc">Combinazione di zanzariera avvolgibile e pieghevole. Opzioni: rete PET o rete pieghevole in acciaio 304.</div>
+                    <div class="product-materials">Rete PET / acciaio 304 + telaio alluminio</div>
+                    <div class="product-price">Preventivo personalizzato</div>
+                </div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="Rete autoadesiva velcro – Senza attrezzi">
+                    <span class="img-keyword-tag">Autoadesiva · Velcro</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Nessun attrezzo richiesto</div>
+                    <div class="product-title">Rete autoadesiva velcro</div>
+                    <div class="product-desc">Rete in acciaio inox 304 con nastro velcro (aggancio). Basta staccare e attaccare – nessun telaio richiesto. Ideale per affitti.</div>
+                    <div class="product-materials">Rete acciaio inox 304 + velcro autoadesivo</div>
+                    <div class="product-price">Preventivo su misura</div>
+                </div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="Protezione solare – Zanzariera + isolamento termico">
+                    <span class="img-keyword-tag">Protezione solare · Antizanzare</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Blocco del calore</div>
+                    <div class="product-title">Protezione solare / Tenda a rullo</div>
+                    <div class="product-desc">Tenda a rullo esterna in alluminio o tessuto – riduce calore e abbagliamento, protegge i mobili. Staffe di montaggio incluse.</div>
+                    <div class="product-materials">Cassa in alluminio / tessuto anti-UV</div>
+                    <div class="product-price">Preventivo su misura</div>
+                </div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="Tenda magnetica antizanzare">
+                    <span class="img-keyword-tag">Magnetica · Antimosche</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Si appende come una tenda</div>
+                    <div class="product-title">Tenda magnetica per zanzare</div>
+                    <div class="product-desc">Tenda in rete di fibra di vetro fine con apertura magnetica centrale o orlo pesato. Si attraversa facilmente – si richiude automaticamente.</div>
+                    <div class="product-materials">Fibra di vetro + striscia magnetica / pesi</div>
+                    <div class="product-price">Preventivo su misura</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Clicca su un prodotto per maggiori dettagli. Tutte le zanzariere sono realizzate su misura delle vostre dimensioni esatte. <a href="#inquiry" style="color: var(--primary);">Richiedi un preventivo gratuito →</a></p>
+    </div>
+</section>
+
+<!-- 公司介绍模块 -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Chi è MBORMC</h2>
+            <p>Marchio globale di zanzariere su misura – progettate a Foshan, consegnate in tutto il mondo</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> è un marchio globale specializzato in zanzariere avvolgibili su misura e sistemi di porte pieghevoli. Con oltre <strong>15 anni di esperienza nell’estrusione dell’alluminio e nell’ingegneria di precisione</strong>, serviamo progetti residenziali, alberghieri e commerciali in più di <strong>50 paesi</strong>, inclusi molti clienti soddisfatti in Italia.</p>
+                <p>Tutti i nostri prodotti sono fabbricati nel nostro stabilimento di Foshan, in Cina, utilizzando lega di alluminio premium <strong>6063-T5</strong> – che offre elevata resistenza, resistenza alla corrosione e una finitura estetica. Combiniamo prezzi diretti di fabbrica con spedizioni globali e guide di installazione locali per rendere la protezione DIY accessibile a tutti.</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">15+ anni di esperienza</span>
+                    <span class="highlight-badge">Alluminio 6063-T5</span>
+                    <span class="highlight-badge">50+ paesi serviti</span>
+                    <span class="highlight-badge">Diretto dalla fabbrica</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Serie di prodotti</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>Serie H – Zanzariere per finestre</strong><br>Modelli avvolgibili automatici, sicuri per bambini, installazione senza attrezzi.</li>
+                    <li><span class="series-icon">🚪</span> <strong>Serie F – Sistemi per porte</strong><br>Design pieghevoli, scorrevoli, senza binari per balconi, cucine e divisori interni.</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">Supporto multilingue (IT, EN, CN, FR, DE, ecc.) e spedizioni globali – rendiamo semplice la protezione su misura.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>Perché i proprietari italiani scelgono MBORMC</h2><p>Direttamente dalla fabbrica — nessun intermediario, qualità DIY premium</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>Auto-misura, taglio su misura</h3><p>Produciamo la zanzariera secondo le dimensioni esatte della tua finestra — nessuna installazione professionale richiesta.</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Spedizione veloce in Italia</h3><p>Ordini spediti entro 3 giorni lavorativi, consegna tramite trasporto aereo espresso o marittimo con tracciabilità.</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>Risparmia 40-60% rispetto ai negozi locali</h3><p>Prezzi diretti di fabbrica — pagamenti in EUR. Per ordini personali sotto i 150 €, nessuna IVA all’importazione (de minimis).</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>Protezione antizanzare comprovata</h3><p>La rete fine blocca zanzare, mosche, moscerini – testata nelle estati italiane e in diverse zone climatiche.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>Domande frequenti per gli acquirenti DIY</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">Come misuro la mia finestra per una zanzariera DIY?<span>+</span></button><div class="faq-answer">Con ogni ordine forniamo una guida semplice – basta usare un metro, larghezza e altezza. Noi tagliamo la zanzariera sulle tue misure.</div></div>
+            <div class="faq-item"><button class="faq-question">Ho bisogno di attrezzi speciali?<span>+</span></button><div class="faq-answer">No. Tutte le zanzariere sono fornite con telai a clip, nastro adesivo o tensione a molla – basta un cacciavite.</div></div>
+            <div class="faq-item"><button class="faq-question">Come funzionano dogane e IVA per l’Italia?<span>+</span></button><div class="faq-answer">Per ordini personali inferiori a 150 €, non si pagano dazi né IVA (soglia de minimis). Per ordini più grandi possiamo organizzare la spedizione DDP (dazi pagati).</div></div>
+            <div class="faq-item"><button class="faq-question">Posso ricevere un campione prima di un ordine all’ingrosso?<span>+</span></button><div class="faq-answer">Sì, kit campione inviati in Italia entro 7 giorni. Contattaci via WhatsApp.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品关键词模块（6个精选） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Le nostre principali parole chiave</h2>
+            <p>Esplora l'intera gamma di zanzariere che offriamo – realizzate su misura per la tua casa</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>Zanzariera</strong><p>Rete ad alta densità che blocca anche le zanzare più piccole mantenendo il flusso d'aria. Perfetta per camere da letto e soggiorni.</p></div>
+            <div class="keyword-item"><strong>Rete antimosche</strong><p>Tiene lontane mosche, vespe e altri insetti volanti senza ostruire la vista. Disponibile in fibra di vetro, PET o acciaio inox.</p></div>
+            <div class="keyword-item"><strong>Protezione anti-insetto</strong><p>Protezione completa contro zanzare, mosche, moscerini. Le nostre reti si adattano a qualsiasi tipo di finestra o porta.</p></div>
+            <div class="keyword-item"><strong>Zanzariera per finestre</strong><p>Adatta per finestre scorrevoli, a battente e a bilico. Kit di installazione DIY incluso.</p></div>
+            <div class="keyword-item"><strong>Zanzariera per porte</strong><p>Reti robuste per portefinestre, porte d'ingresso e verande. Opzioni magnetiche o avvolgibili.</p></div>
+            <div class="keyword-item"><strong>Rete antizanzare per animali</strong><p>Rete in acciaio inox 304 resiste a graffi e morsi di cani e gatti. Ideale per famiglie con animali.</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Tutte le zanzariere sono realizzate su misura delle dimensioni esatte delle vostre finestre/porte. <a href="#inquiry" style="color: var(--primary);">Richiedi un preventivo gratuito →</a></p>
+    </div>
+</section>
+
+<!-- 询价表单（意大利站） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>Richiedi un preventivo DIY — Spedizioni in Italia</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>Nome e cognome</label>
+                <input type="text" name="name" placeholder="Mario Rossi" required>
+            </div>
+            <div class="form-group">
+                <label>Indirizzo email</label>
+                <input type="email" name="email" placeholder="mario@example.it" required>
+            </div>
+            <div class="form-group">
+                <label>Città / Provincia (Italia)</label>
+                <input type="text" name="country" placeholder="es. Roma, Milano, Napoli" required>
+            </div>
+            <div class="form-group">
+                <label>Misure finestre/porte (L x A in cm o pollici)</label>
+                <textarea name="message" rows="4" placeholder="Indica quantità e dimensioni. Esempio: 3 finestre scorrevoli: 120x90cm ciascuna. 1 portafinestra: 200x210cm..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Invia richiesta →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (clicca per copiare)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 Sede produttiva MBORMC: Dali Town, Distretto di Nanhai, Foshan, Guangdong, Cina</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← Torna alla home globale</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — Produttore di zanzariere DIY per l'Italia e il mondo</p>
+        <p class="footer-address">Prezzo diretto di fabbrica · Spedizione mondiale · Garanzia 2 anni</p>
+        <p><a href="#home">Home</a> | <a href="#products">Prodotti</a> | <a href="#inquiry">Contatti</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Mappa del sito</a> | <a href="https://www.insectscreen.cc/Global.html">Sito globale</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('ID WeChat "FSMBOR" copiato');
+        }).catch(() => {
+            prompt('Premi Ctrl+C per copiare l\'ID WeChat:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
