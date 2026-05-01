@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | DIY Мрежи против комари и мухи – България | Персонализирана защита от насекоми</title>
+    <meta name="description" content="MBORMC – персонализирани мрежи против насекоми за български домове. DIY мрежи против комари, прибиращи се екрани, сгъваеми врати. Идеални за плъзгащи се прозорци, отваряеми прозорци, терасовидни врати. Бърза доставка до София, Пловдив, Варна, Бургас, Русе. Фабрика директно от Китай.">
+    <link rel="canonical" href="https://www.insectscreen.cc/bg.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 样式与全球首页完全一致，未做任何改动 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (кликнете за копиране)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/bg.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Меню">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Начало</a></li>
+            <li><a href="#products">DIY Мрежи</a></li>
+            <li><a href="#about">За нас</a></li>
+            <li><a href="#why">Защо MBORMC</a></li>
+            <li><a href="#inquiry">Заявка</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">DIY Лесен монтаж · Изпраща се от Фошан, Китай</span>
+            <h1>Пазете комари и мухи далеч — <em>София • Пловдив • Варна • Бургас • Русе</em></h1>
+            <p class="hero-desc">Персонализирани мрежи против насекоми за всеки прозорец или врата. Без инструменти, инсталирайте сами за минути. Директно от нашата фабрика до вашата врата — 40-60% по-евтино от местните магазини.</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">3k+</div><div>Клиенти в България</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>Лесен монтаж за 10 мин</div></div>
+                <div class="stat"><div class="stat-num">7-15 дни</div><div>Бърза доставка</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>Морски транспорт + дървена каса</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">Заявете оферта →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">Вижте моделите</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="Пример за монтаж на DIY мрежа против насекоми">
+        </div>
+    </div>
+</section>
+
+<!-- 产品区域：6个产品（链接与全球版一致） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>DIY Мрежи против насекоми за български домове</h2>
+            <p>Идеални за плъзгащи се прозорци, отваряеми прозорци, терасовидни врати</p>
+        </div>
+        <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Прибираща се мрежа – Защита от комари, мухи и насекоми">
+                    <span class="img-keyword-tag">Защита от комари · Мрежа против мухи</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY за 10 мин</div>
+                    <div class="product-title">MBORMC® H01: Прибираща се ролка мрежа</div>
+                    <div class="product-desc">Мрежа от PET влакна – отлична защита от комари. Алуминиева рамка. Лесен монтаж с включено лепящо ленти или винтове. Прибира се, когато не се използва.</div>
+                    <div class="product-materials">Материали: PET мрежа + алуминиева рамка</div>
+                    <div class="product-price">Оферта според размер</div>
+                </div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="Сгъваема врата с мрежа – Устойчива на домашни любимци">
+                    <span class="img-keyword-tag">Врата · Устойчива на домашни любимци</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 Устойчива на домашни любимци</div>
+                    <div class="product-title">Сгъваема врата против комари (Комбо)</div>
+                    <div class="product-desc">Алуминиева рамка + сгъваема мрежа от неръждаема стомана 304 – спира комари и устоява на драскане/хапане. Предлага се и с прозрачни кристални PVC панели.</div>
+                    <div class="product-materials">Мрежа от неръждаема стомана 304 / кристален панел + алуминиева рамка</div>
+                    <div class="product-price">Оферта според размер</div>
+                </div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="Ролка + сгъваема врата – 2 в 1">
+                    <span class="img-keyword-tag">2 в 1 · Защита от комари</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Дизайн 2 в 1</div>
+                    <div class="product-title">Ролка + сгъваема врата против насекоми</div>
+                    <div class="product-desc">Комбинация от прибираща се ролка и сгъваема мрежа. Опции: PET мрежа или сгъваема мрежа от неръждаема стомана 304.</div>
+                    <div class="product-materials">PET мрежа / неръждаема стомана 304 + алуминиева рамка</div>
+                    <div class="product-price">Персонализирана оферта</div>
+                </div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="Самостоятелно залепваща се велкро мрежа – Без инструменти">
+                    <span class="img-keyword-tag">Самостоятелно залепваща · Велкро</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Без инструменти</div>
+                    <div class="product-title">Самостоятелно залепваща се велкро мрежа</div>
+                    <div class="product-desc">Мрежа от неръждаема стомана 304 с велкро лента. Отлепване и залепване – не е необходима рамка. Идеална за под наем.</div>
+                    <div class="product-materials">Мрежа от неръждаема стомана 304 + велкро на самозалепваща основа</div>
+                    <div class="product-price">Оферта според размер</div>
+                </div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="Слънцезащита – Мрежа + топлоизолация">
+                    <span class="img-keyword-tag">Слънцезащита · Защита от насекоми</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Блокиране на топлина</div>
+                    <div class="product-title">Слънцезащита / Ролетни щори</div>
+                    <div class="product-desc">Външна ролетна щора от алуминий или плат – намалява топлината и отблясъците, предпазва мебелите. Включени DIY монтажни скоби.</div>
+                    <div class="product-materials">Алуминиева касета / тъкан с UV защита</div>
+                    <div class="product-price">Оферта според размер</div>
+                </div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="Магнитна завеса против комари">
+                    <span class="img-keyword-tag">Магнитна · Защита от мухи</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Окачва се като перде</div>
+                    <div class="product-title">Магнитна завеса против комари</div>
+                    <div class="product-desc">Завеса от фина стъклофибърна мрежа с магнитна средна цепка или тежък подгъв. Лесен преход – затваря се автоматично.</div>
+                    <div class="product-materials">Стъклофибър + магнитна лента / тежести</div>
+                    <div class="product-price">Оферта според размер</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Кликнете върху продукт за повече детайли. Всички мрежи се изработват по поръчка според вашите точни размери. <a href="#inquiry" style="color: var(--primary);">Заявете безплатна оферта →</a></p>
+    </div>
+</section>
+
+<!-- 公司介绍模块 -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>За MBORMC</h2>
+            <p>Глобална марка за персонализирани мрежи против насекоми – проектирана във Фошан, доставена по целия свят</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> е глобална марка, специализирана в персонализирани прибиращи се мрежи против насекоми и системи за сгъваеми врати. С над <strong>15 години опит в екструзията на алуминий и прецизно инженерство</strong>, обслужваме жилищни, хотелски и търговски проекти в повече от <strong>50 държави</strong>, включително много доволни клиенти в България.</p>
+                <p>Всички наши продукти се произвеждат в нашия завод във Фошан, Китай, от висококачествена алуминиева сплав <strong>6063-T5</strong> – предлагаща висока якост, устойчивост на корозия и красив завършек. Комбинираме директни фабрични цени с глобална доставка и местни инструкции за монтаж, за да направим DIY защитата достъпна за всички.</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">15+ години опит</span>
+                    <span class="highlight-badge">Алуминий 6063-T5</span>
+                    <span class="highlight-badge">50+ държави</span>
+                    <span class="highlight-badge">Директно от фабриката</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Продуктови серии</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>H серия – Мрежи за прозорци</strong><br>Автоматично прибиращи се, безопасни за деца, монтаж без инструменти.</li>
+                    <li><span class="series-icon">🚪</span> <strong>F серия – Врати системи</strong><br>Сгъваеми, плъзгащи се, безрелси дизайн за балкони, кухни и вътрешни прегради.</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">Многоезична поддръжка (BG, EN, CN, FR, DE, и др.) и глобална доставка – правим персонализираната защита проста.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>Защо българските собственици избират MBORMC</h2><p>Директно от Китай — без посредници, високо качество DIY</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>Самостоятелно измерване, рязане по поръчка</h3><p>Ние произвеждаме мрежите според точните ви размери — без нужда от професионален монтаж.</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Бърза доставка до България</h3><p>Поръчките се изпращат в рамките на 3 дни, доставка с експресен въздушен или морски транспорт с проследяване.</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>Спестете 40-60% спрямо местните магазини</h3><p>Директни фабрични цени — плащане в EUR или BGN. За лични поръчки под 150 €, няма мита (правило за малки пратки на ЕС).</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>Доказана защита срещу комари</h3><p>Финият мрежов материал блокира комари, мухи и шмугли – тествано в българските летни условия.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>Често задавани въпроси за DIY купувачи</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">Как да измеря прозореца си за DIY мрежа?<span>+</span></button><div class="faq-answer">Към всяка поръчка предоставяме просто ръководство — просто използвайте ролетка, ширина и височина. Ние изрязваме мрежата според вашите размери.</div></div>
+            <div class="faq-item"><button class="faq-question">Трябват ли ми специални инструменти?<span>+</span></button><div class="faq-answer">Не. Всички мрежи идват с лесни за захващане рамки, лепяща лента или пружинно напрежение — достатъчна е една отвертка.</div></div>
+            <div class="faq-item"><button class="faq-question">Как стоят нещата с митата и данъците за България?<span>+</span></button><div class="faq-answer">За лични пратки под 150 €, няма допълнителни мита и ДДС (праг на ЕС). За по-големи поръчки можем да организираме DDP доставка (включени мита).</div></div>
+            <div class="faq-item"><button class="faq-question">Мога ли да получа проба преди голяма поръчка?<span>+</span></button><div class="faq-answer">Да, пробни комплекти се изпращат в България до 7 дни. Свържете се с нас чрез WhatsApp.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品关键词模块（6个精选） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Основни ключови думи за продуктите</h2>
+            <p>Разгледайте пълната гама мрежи, които предлагаме – изработени по поръчка за вашия дом</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>Мрежа против комари</strong><p>Високоплътна фина мрежа, която блокира дори най-малките комари, като същевременно поддържа въздушния поток. Перфектна за спални и всекидневни.</p></div>
+            <div class="keyword-item"><strong>Мрежа против мухи</strong><p>Пазе мухите, осите и други летящи насекоми навън, без да пречи на гледката. Предлага се в стъклофибър, PET или неръждаема стомана.</p></div>
+            <div class="keyword-item"><strong>Мрежа против насекоми</strong><p>Пълна защита срещу комари, мухи, шмугли и пясъчни мушици. Нашите мрежи се адаптират към всеки тип прозорец или врата.</p></div>
+            <div class="keyword-item"><strong>Мрежа за прозорци</strong><p>Подходяща за плъзгащи се прозорци, отваряеми и осцилиращи. Включен DIY монтажен комплект.</p></div>
+            <div class="keyword-item"><strong>Мрежа за врати</strong><p>Здрави мрежи за терасовидни врати, входове и веранди. Магнитни или прибиращи се опции.</p></div>
+            <div class="keyword-item"><strong>Мрежа устойчива на домашни любимци</strong><p>Мрежа от неръждаема стомана 304, устойчива на драскане и хапане от кучета и котки. Идеална за домакинства с животни.</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Всички мрежи се произвеждат по поръчка според точните размери на вашите прозорци/врати. <a href="#inquiry" style="color: var(--primary);">Заявете безплатна оферта →</a></p>
+    </div>
+</section>
+
+<!-- 询价表单（保加利亚站） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>Заявете DIY оферта — Доставка до България</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>Пълно име</label>
+                <input type="text" name="name" placeholder="Иван Петров" required>
+            </div>
+            <div class="form-group">
+                <label>Имейл адрес</label>
+                <input type="email" name="email" placeholder="ivan@example.bg" required>
+            </div>
+            <div class="form-group">
+                <label>Град / Област (България)</label>
+                <input type="text" name="country" placeholder="напр. София, Пловдив, Варна" required>
+            </div>
+            <div class="form-group">
+                <label>Размери на прозорци/врати (Ш x В в см или инчове)</label>
+                <textarea name="message" rows="4" placeholder="Посочете количества и размери. Пример: 3 плъзгащи се прозореца: 120x90см всеки. 1 терасовидна врата: 200x210см..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Изпратете заявка →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (кликнете за копиране)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 База на производство MBORMC: Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← Обратно към глобалния уебсайт</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — Производител на DIY мрежи против насекоми за България и света</p>
+        <p class="footer-address">Директни фабрични цени · Световен транспорт · 2 години гаранция</p>
+        <p><a href="#home">Начало</a> | <a href="#products">Продукти</a> | <a href="#inquiry">Контакт</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Карта на сайта</a> | <a href="https://www.insectscreen.cc/Global.html">Глобален сайт</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID "FSMBOR" беше копиран');
+        }).catch(() => {
+            prompt('Натиснете Ctrl+C, за да копирате WeChat ID:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
