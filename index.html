@@ -207,7 +207,7 @@
             margin: 0 auto;
         }
 
-        /* products grid */
+        /* products grid - 修改产品卡片为可点击链接 + 真实图片 */
         .products-section {
             padding: 4rem 0;
             background: var(--gray-light);
@@ -236,10 +236,16 @@
         .product-img {
             aspect-ratio: 4/3;
             background: #f1f5f9;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
         .product-body {
             padding: 1.2rem;
@@ -668,7 +674,7 @@
                 <div class="stat"><div class="stat-num">10k+</div><div>UK/AU customers</div></div>
                 <div class="stat"><div class="stat-num">DIY</div><div>Easy fit in 10min</div></div>
                 <div class="stat"><div class="stat-num">7-15 days</div><div>Fast delivery</div></div>
-                <div class="stat"><div class="stat-num">shipping</div><div>Global sea shipping</div></div>
+                <div class="stat"><div class="stat-num">🌍🚢</div><div>Global sea shipping + wooden crate</div></div>
             </div>
             <div style="margin-top: 2rem;">
                 <a href="#inquiry" class="btn">Get DIY Quote →</a>
@@ -681,6 +687,7 @@
     </div>
 </section>
 
+<!-- 产品区域：6个产品，带图片+可点击跳转链接 -->
 <section id="products" class="products-section">
     <div class="container">
         <div class="section-head">
@@ -688,8 +695,11 @@
             <p>Perfect for sash windows, sliding doors, French doors, and patio openings</p>
         </div>
         <div class="product-grid">
-            <div class="product-card">
-                <div class="product-img">🔄</div>
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="#" class="product-card" target="_blank" rel="noopener"> <!-- 请替换 # 为您的产品详情链接 -->
+                <div class="product-img">
+                    <img src="https://placehold.co/400x300/e9ecef/495057?text=Roll-Up+Screen" alt="Retractable Roll-Up Screen">
+                </div>
                 <div class="product-body">
                     <div class="diy-badge">🔧 DIY in 10 mins</div>
                     <div class="product-title">Retractable Roll-Up Screen</div>
@@ -697,9 +707,12 @@
                     <div class="product-materials">Materials: PET mesh + Aluminium frame</div>
                     <div class="product-price">Quote by size</div>
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🚪</div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="#" class="product-card" target="_blank" rel="noopener"> <!-- 请替换 # 为您的产品详情链接 -->
+                <div class="product-img">
+                    <img src="https://placehold.co/400x300/e9ecef/495057?text=Folding+Screen+Door" alt="Folding Screen Door">
+                </div>
                 <div class="product-body">
                     <div class="diy-badge">🐾 Pet resistant</div>
                     <div class="product-title">Folding Screen Door (Combo)</div>
@@ -707,9 +720,12 @@
                     <div class="product-materials">304 SS mesh / Crystal panel + Aluminium frame</div>
                     <div class="product-price">From £45 / AU$85</div>
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🚪🔄</div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="#" class="product-card" target="_blank" rel="noopener"> <!-- 请替换 # 为您的产品详情链接 -->
+                <div class="product-img">
+                    <img src="https://placehold.co/400x300/e9ecef/495057?text=Roll-up+%2B+Folding" alt="Roll-up + Folding Screen Door">
+                </div>
                 <div class="product-body">
                     <div class="diy-badge">2-in-1 design</div>
                     <div class="product-title">Roll-up + Folding Screen Door</div>
@@ -717,9 +733,12 @@
                     <div class="product-materials">PET mesh / 304 mesh + Aluminium frame</div>
                     <div class="product-price">Custom quote</div>
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🪟</div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="#" class="product-card" target="_blank" rel="noopener"> <!-- 请替换 # 为您的产品详情链接 -->
+                <div class="product-img">
+                    <img src="https://placehold.co/400x300/e9ecef/495057?text=Self-Adhesive+Velcro+Screen" alt="Self-Adhesive Velcro Screen">
+                </div>
                 <div class="product-body">
                     <div class="diy-badge">No tools required</div>
                     <div class="product-title">Self-Adhesive Velcro Screen</div>
@@ -727,9 +746,12 @@
                     <div class="product-materials">304 SS mesh + Self-adhesive Velcro</div>
                     <div class="product-price">From £15 / AU$28 per window</div>
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">☀️</div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="#" class="product-card" target="_blank" rel="noopener"> <!-- 请替换 # 为您的产品详情链接 -->
+                <div class="product-img">
+                    <img src="https://placehold.co/400x300/e9ecef/495057?text=Solar+Shading" alt="Solar Shading / Roller Blinds">
+                </div>
                 <div class="product-body">
                     <div class="diy-badge">Heat blocking</div>
                     <div class="product-title">Solar Shading / Roller Blinds</div>
@@ -737,9 +759,12 @@
                     <div class="product-materials">Aluminium cassette / UV-block fabric</div>
                     <div class="product-price">From £50 / AU$95 per unit</div>
                 </div>
-            </div>
-            <div class="product-card">
-                <div class="product-img">🦟</div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="#" class="product-card" target="_blank" rel="noopener"> <!-- 请替换 # 为您的产品详情链接 -->
+                <div class="product-img">
+                    <img src="https://placehold.co/400x300/e9ecef/495057?text=Magnetic+Curtain" alt="Mosquito Net Magnetic Curtain">
+                </div>
                 <div class="product-body">
                     <div class="diy-badge">Hangs like a curtain</div>
                     <div class="product-title">Mosquito Net Curtain / Magnetic Curtain</div>
@@ -747,8 +772,9 @@
                     <div class="product-materials">Fiberglass mesh + magnetic strip / weights</div>
                     <div class="product-price">From £18 / AU$32 per door</div>
                 </div>
-            </div>
+            </a>
         </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Click any product for more details. All screens are custom made to your exact window/door measurements. <a href="#inquiry" style="color: var(--primary);">Request a free quote →</a></p>
     </div>
 </section>
 
