@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | DIY Sítě proti hmyzu – Česká republika | Moskytiéry na míru</title>
+    <meta name="description" content="MBORMC – sítě proti hmyzu na míru pro domácnosti v ČR. DIY moskytiéry, rolovací, skládací dveře. Ideální pro posuvná okna, výklopná okna, balkonové dveře. Rychlé doručení do Prahy, Brna, Ostravy, Plzně, Liberce. Přímý výrobce z Číny.">
+    <link rel="canonical" href="https://www.insectscreen.cc/cz.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 样式与全球首页完全一致，未做任何改动 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (kliknutím zkopírujete)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/cz.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Domů</a></li>
+            <li><a href="#products">DIY sítě</a></li>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#why">Proč MBORMC</a></li>
+            <li><a href="#inquiry">Poptávka ceny</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">Snadná DIY instalace · Dodání z Fo-šan, Čína</span>
+            <h1>Ochrana proti komárům a hmyzu — <em>Praha • Brno • Ostrava • Plzeň • Liberec</em></h1>
+            <p class="hero-desc">Sítě na míru pro jakékoliv okno nebo dveře. Bez nutnosti speciálního nářadí, namontujete sami během několika minut. Přímo z továrny až k vašim dveřím — až o 60 % levnější než v místních obchodech.</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">200+</div><div>Zákazníků v ČR</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>Montáž do 10 min</div></div>
+                <div class="stat"><div class="stat-num">7-15 dny</div><div>Rychlé doručení</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>Námořní doprava + dřevěné palety</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">Poptat cenu →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">Zobrazit typy sítí</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="Ukázka instalace DIY moskytiéry">
+        </div>
+    </div>
+</section>
+
+<!-- 产品区域：6个产品（链接与全球版一致） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>DIY sítě proti hmyzu pro české domácnosti</h2>
+            <p>Přizpůsobené pro posuvná okna, výklopná okna a balkonové dveře</p>
+        </div>
+        <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Rolovací síť – ochrana proti komárům a mouchám">
+                    <span class="img-keyword-tag">Proti komárům · Proti mouchám</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY 10 min</div>
+                    <div class="product-title">MBORMC® H01: Rolovací síť</div>
+                    <div class="product-desc">PET síťovina – vynikající ochrana proti komárům. Hliníkový rám. Snadná instalace pomocí přiložené lepicí pásky nebo šroubů. Lze srolovat, když se nepoužívá.</div>
+                    <div class="product-materials">Materiál: PET síťovina + hliníkový rám</div>
+                    <div class="product-price">Cena dle velikosti</div>
+                </div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="Skládací dveře se sítí – odolné vůči domácím mazlíčkům">
+                    <span class="img-keyword-tag">Dveře · Odolné mazlíčkům</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 Odolné proti poškrábání</div>
+                    <div class="product-title">Skládací dveře se sítí (kombi)</div>
+                    <div class="product-desc">Hliníkový rám + skládací síť z nerezové oceli 304 – odpuzuje komáry a odolá škrábancům a kousnutí. K dispozici také s průhledným PVC panelem.</div>
+                    <div class="product-materials">Nerezová ocel 304 / křišťálový panel + hliníkový rám</div>
+                    <div class="product-price">Cena dle velikosti</div>
+                </div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="Rolovací + skládací dveře – 2 v 1">
+                    <span class="img-keyword-tag">2 v 1 · Proti hmyzu</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Design 2 v 1</div>
+                    <div class="product-title">Rolovací + skládací dveře</div>
+                    <div class="product-desc">Kombinace rolovací sítě a skládací sítě. Možnosti: PET síťovina nebo skládací síť z nerezové oceli 304.</div>
+                    <div class="product-materials">PET / nerez 304 + hliníkový rám</div>
+                    <div class="product-price">Cena na míru</div>
+                </div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="Samolepicí suchý zip – bez nářadí">
+                    <span class="img-keyword-tag">Samolepicí · Suchý zip</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Bez nářadí</div>
+                    <div class="product-title">Samolepicí suchý zip (Velcro)</div>
+                    <div class="product-desc">Síť z nerezové oceli 304 se suchým zipem (háček a smyčka). Stačí nalepit – není potřeba rám. Ideální pro pronajaté byty.</div>
+                    <div class="product-materials">Nerez 304 + samolepicí suchý zip</div>
+                    <div class="product-price">Cena dle velikosti</div>
+                </div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="Stínění – síť + tepelná izolace">
+                    <span class="img-keyword-tag">Stínění · Proti hmyzu</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Tepelná izolace</div>
+                    <div class="product-title">Stínění / venkovní rolety</div>
+                    <div class="product-desc">Venkovní hliníková nebo látková žaluzie – snižuje teplo a oslnění, chrání nábytek. Obsahuje držáky pro DIY instalaci.</div>
+                    <div class="product-materials">Hliníková kazeta / UV ochranná tkanina</div>
+                    <div class="product-price">Cena dle velikosti</div>
+                </div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="Magnetická závěs proti komárům">
+                    <span class="img-keyword-tag">Magnetický · Proti mouchám</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Zavěšení jako závěs</div>
+                    <div class="product-title">Magnetická závěs proti komárům</div>
+                    <div class="product-desc">Závěs ze sklolaminátové sítě se středovým magnetickým uzávěrem nebo zatíženými okraji. Snadný průchod – automatické zavírání.</div>
+                    <div class="product-materials">Sklolaminát + magnety / závaží</div>
+                    <div class="product-price">Cena dle velikosti</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Kliknutím na libovolný produkt získáte více informací. Všechny sítě vyrábíme na míru přesně podle rozměrů vašeho okna/dveří. <a href="#inquiry" style="color: var(--primary);">Požádat o nezávaznou cenovou nabídku →</a></p>
+    </div>
+</section>
+
+<!-- 公司介绍模块 -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>O společnosti MBORMC</h2>
+            <p>Globální značka sítí proti hmyzu na míru – navrženo ve Fo-šanu, doručováno po celém světě</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> je mezinárodní značka specializující se na rolovací sítě proti hmyzu na míru a systémy skládacích dveří. S více než <strong>15 lety zkušeností</strong> ve zpracování hliníku a přesném inženýrství obsluhujeme rezidenční, hotelové a komerční projekty ve více než <strong>50 zemích</strong>, včetně mnoha zákazníků v České republice.</p>
+                <p>Všechny naše produkty vyrábíme ve vlastní továrně ve Fo-šanu v Číně, za použití vysoce kvalitní hliníkové slitiny <strong>6063-T5</strong> – která poskytuje vysokou pevnost, odolnost proti korozi a elegantní povrchovou úpravu. Nabízíme přímé tovární ceny s globálním doručením a místními montážními průvodci, aby byla DIY ochrana dostupná všude.</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">15+ let zkušeností</span>
+                    <span class="highlight-badge">Hliník 6063-T5</span>
+                    <span class="highlight-badge">Obsluhujeme 50+ zemí</span>
+                    <span class="highlight-badge">Přímo z továrny</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Produktové řady</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>Řada H – Sítě pro okna</strong><br>Automatické rolovací modely, dětská bezpečnost, instalace bez nářadí.</li>
+                    <li><span class="series-icon">🚪</span> <strong>Řada F – Systémy pro dveře</strong><br>Skládací, posuvné designy, bez kolejnic, pro balkony, kuchyně a vnitřní příčky.</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">Vícejazyčná podpora (CS, EN, CN, DE, FR, atd.) a globální doručování – děláme ochranu na míru jednoduchou.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>Proč si české domácnosti vybírají MBORMC</h2><p>Přímo z továrny — bez prostředníků, výjimečná DIY kvalita</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>Změřte si sami, střihneme na míru</h3><p>Síť vyrábíme přesně podle rozměrů vašeho okna — není potřeba profesionální instalace.</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Rychlé doručení do ČR</h3><p>Objednávky odesíláme do 3 dnů, letecká nebo námořní doprava s možností sledování.</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>Úspora 40-60 % oproti místním obchodům</h3><p>Tovární ceny — platba v USD nebo CZK. U malých zásilek (do 22 EUR) obvykle bez cla a DPH.</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>Ověřená ochrana proti komárům</h3><p>Jemná síťovina blokuje komáry, mouchy a drobný hmyz – testováno v klimatických podmínkách ČR, pomáhá snižovat riziko přenosu nemocí.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>Často kladené otázky pro DIY kupující</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">Jak změřím okno pro DIY síť?<span>+</span></button><div class="faq-answer">Ke každé objednávce přikládáme jednoduchý návod – stačí použít metr, šířka a výška. Síť nařežeme přesně podle vašich údajů.</div></div>
+            <div class="faq-item"><button class="faq-question">Potřebuji speciální nářadí?<span>+</span></button><div class="faq-answer">Ne. Všechny sítě jsou dodávány s rámy, které se snadno montují, lepicí páskou nebo pružinami – postačí šroubovák.</div></div>
+            <div class="faq-item"><button class="faq-question">Jak to funguje s clem a DPH pro Českou republiku?<span>+</span></button><div class="faq-answer">U osobních zásilek nízké hodnoty (do 22 EUR) se běžně neuplatňuje clo ani DPH. U větších objednávek můžeme zajistit DDP doručení (včetně daní). Pro jistotu doporučujeme konzultovat s místním celním úřadem.</div></div>
+            <div class="faq-item"><button class="faq-question">Mohu získat vzorek před objednáním většího množství?<span>+</span></button><div class="faq-answer">Ano. Vzorkové sady zasíláme do ČR do 7 dnů. Kontaktujte nás přes WhatsApp.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品关键词模块（6个精选） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Klíčová slova našich produktů</h2>
+            <p>Objevte celou škálu sítí, které nabízíme – vyráběné na míru vašemu domovu</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>Moskytiéra</strong><p>Hustá síťovina s vysokou hustotou, která blokuje i ty nejmenší komáry a přitom zachovává proudění vzduchu. Ideální do ložnic a obývacích pokojů.</p></div>
+            <div class="keyword-item"><strong>Síť proti mouchám</strong><p>Udržuje mouchy, šváby a další létající hmyz venku, aniž by bránila výhledu. K dispozici ve sklolaminátu, PET nebo nerezové oceli.</p></div>
+            <div class="keyword-item"><strong>Ochrana proti hmyzu</strong><p>Komplexní ochrana proti komárům, mouchám, drobnému hmyzu a pakomárům. Naše sítě na míru padnou na jakýkoliv typ oken nebo dveří.</p></div>
+            <div class="keyword-item"><strong>Síť na okna</strong><p>Přizpůsobená pro posuvná, výklopná a kyvná okna. Součástí balení je DIY instalační sada.</p></div>
+            <div class="keyword-item"><strong>Síť na dveře</strong><p>Odolná síť na balkonové dveře, vchodové dveře a terasy. Magnetické nebo rolovací varianty.</p></div>
+            <div class="keyword-item"><strong>Síť odolná domácím mazlíčkům</strong><p>Nerezová síť 304 odolná proti poškrábání a kousnutí psy a kočkami. Ideální pro rodiny s domácími mazlíčky.</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Všechny sítě vyrábíme na míru podle přesných rozměrů vašich oken/dveří. <a href="#inquiry" style="color: var(--primary);">Požádat o nezávaznou cenovou nabídku →</a></p>
+    </div>
+</section>
+
+<!-- 询价表单（捷克站） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>Poptávka ceny DIY — Doručení do ČR</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>Celé jméno</label>
+                <input type="text" name="name" placeholder="Jan Novák" required>
+            </div>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="jan@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Město / Kraj (Česká republika)</label>
+                <input type="text" name="country" placeholder="Např. Praha, Brno, Ostrava, Plzeň" required>
+            </div>
+            <div class="form-group">
+                <label>Rozměry oken/dveří (šířka x výška v cm nebo palcích)</label>
+                <textarea name="message" rows="4" placeholder="Popište prosím počet a rozměry. Např.: 3 posuvná okna: 120x90 cm každé. 1 balkonové dveře: 200x210 cm..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Odeslat poptávku →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (kliknutím zkopírujete)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 Výrobní základna MBORMC: Dali Town, Nanhai District, Foshan, Guangdong, Čína</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← Zpět na globální homepage</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — Výrobce DIY sítí proti hmyzu pro Českou republiku a celý svět</p>
+        <p class="footer-address">Přímé tovární ceny · Globální doručení · 2letá záruka DIY</p>
+        <p><a href="#home">Domů</a> | <a href="#products">Produkty</a> | <a href="#inquiry">Kontakt</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Mapa webu</a> | <a href="https://www.insectscreen.cc/Global.html">Globální web</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID "FSMBOR" zkopírováno');
+        }).catch(() => {
+            prompt('Stiskněte Ctrl+C pro zkopírování WeChat ID:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
