@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Fly Screen | Custom DIY Fly Screens for Windows & Doors | MBORMC</title>
+    <meta name="description" content="Custom fly screens for homes, restaurants, and offices. DIY installation, PET or stainless steel mesh. Keep flies, wasps, and other flying insects out. Factory direct, worldwide shipping. Get a free quote.">
+    <link rel="canonical" href="https://www.insectscreen.cc/news/fly-screen.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 完整样式请从首页复制，此处为简洁仅包含文章专用样式，实际部署需加上全局样式（导航、浮标、底部等） */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+        .navbar { background: white; box-shadow: 0 1px 2px rgba(0,0,0,0.04); position: sticky; top: 0; z-index: 100; }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; flex-wrap: wrap; max-width: 1280px; margin: 0 auto; padding: 1rem 1.5rem; }
+        .logo { font-size: 1.6rem; font-weight: 800; text-decoration: none; color: #1e2a3a; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { text-decoration: none; font-weight: 500; color: #1e2a3a; transition: color 0.2s; }
+        .nav-links a:hover { color: #e3a018; }
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; background: #e3a018; color: #1e2a3a; font-weight: 600; padding: 0.6rem 1.4rem; border-radius: 2.5rem; text-decoration: none; transition: all 0.2s; border: none; cursor: pointer; }
+        .btn-dark { background: #1e2a3a; color: white; }
+        .btn-dark:hover { background: #2d3e50; transform: translateY(-2px); }
+        .floating-contact { position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 12px; }
+        .contact-icon { width: 50px; height: 50px; background: #f1f5f9; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.2s ease; cursor: pointer; text-decoration: none; font-size: 1.6rem; color: #1e2a3a; }
+        .contact-icon:hover { transform: scale(1.05); }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+        .article-container { max-width: 880px; margin: 0 auto; padding: 2rem 1.5rem; }
+        .article-header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .article-meta { color: #6c757d; font-size: 0.85rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 1rem; margin-bottom: 1rem; }
+        .article-content { font-size: 1rem; line-height: 1.7; color: #2d3748; }
+        .article-content h2 { font-size: 1.5rem; margin: 1.5rem 0 1rem; }
+        .article-content p { margin-bottom: 1rem; }
+        .article-content ul { margin-bottom: 1rem; padding-left: 1.5rem; }
+        .keyword-tags { margin: 1.5rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .keyword-tag { background: #f1f5f9; padding: 0.2rem 0.8rem; border-radius: 2rem; font-size: 0.75rem; color: #1e2a3a; text-decoration: none; border: 1px solid #e2e8f0; transition: 0.2s; }
+        .keyword-tag:hover { background: #e3a018; color: white; border-color: #e3a018; }
+        .cta-box { background: #f8fafc; border-left: 4px solid #e3a018; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; text-align: center; }
+        .contact-bar { background: #f8fafc; padding: 1.5rem 0; text-align: center; border-top: 1px solid #e2e8f0; }
+        .contact-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+        .footer { background: #0f172a; color: #94a3b8; padding: 2rem 0 1.5rem; text-align: center; }
+        .footer a { color: #e3a018; text-decoration: none; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.6rem; cursor: pointer; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; width: 100%; flex-direction: column; gap: 1rem; padding: 1rem 0; }
+            .nav-links.show { display: flex; }
+            .menu-toggle { display: block; }
+            .article-header h1 { font-size: 1.6rem; }
+            .contact-links { flex-direction: column; gap: 0.8rem; }
+            .floating-contact { right: 10px; gap: 8px; }
+            .contact-icon { width: 42px; height: 42px; font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn"><i class="fab fa-weixin"></i></div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="https://www.insectscreen.cc/">Home</a></li>
+            <li><a href="https://www.insectscreen.cc/#products">DIY Screens</a></li>
+            <li><a href="https://www.insectscreen.cc/#about">About</a></li>
+            <li><a href="https://www.insectscreen.cc/#why">Why MBORMC</a></li>
+            <li><a href="https://www.insectscreen.cc/#inquiry">Get Quote</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<article class="article-container">
+    <div class="article-header">
+        <h1>Fly Screen – The Ultimate DIY Barrier Against Flies & Wasps</h1>
+        <div class="article-meta">Published on May 1, 2026 | By MBORMC Team</div>
+    </div>
+
+    <div class="keyword-tags">
+        <a href="https://www.insectscreen.cc/news/fly-screen.html" class="keyword-tag">Fly Screen</a>
+        <a href="https://www.insectscreen.cc/news/mosquito-screen.html" class="keyword-tag">Mosquito Screen</a>
+        <a href="https://www.insectscreen.cc/news/insect-screen.html" class="keyword-tag">Insect Screen</a>
+        <a href="https://www.insectscreen.cc/h01" class="keyword-tag">Retractable Roll-Up Screen</a>
+        <a href="https://www.insectscreen.cc/product-fd04" class="keyword-tag">Velcro Adhesive Screen</a>
+    </div>
+
+    <div class="article-content">
+        <p>Flies, wasps, and other flying insects are not just annoying – they can contaminate food, spread bacteria, and make outdoor living miserable. A high‑quality <strong>fly screen</strong> is the simplest and most effective way to keep them out while maintaining fresh airflow. MBORMC offers custom‑made fly screens for windows, doors, and patios. In this guide, we’ll explore everything you need to know about fly screens, from material choices to installation and global delivery.</p>
+
+        <h2>What Is a Fly Screen?</h2>
+        <p>A fly screen (also known as a fly mesh or insect screen) is a fine mesh barrier designed to prevent flies, wasps, bees, and other airborne pests from entering a building. Unlike chemical repellents or electronic zappers, a fly screen provides a passive, chemical‑free, and 24/7 physical defense. It allows you to keep windows and doors wide open for ventilation without worrying about pests. MBORMC screens are custom‑cut to your exact dimensions, ensuring no gaps where insects can sneak in.</p>
+
+        <h2>Why You Need a Fly Screen in Your Home</h2>
+        <p>Flies are not just a nuisance; they carry diseases such as salmonella, E. coli, and dysentery. Wasps can sting and cause allergic reactions. Even if you don’t suffer from allergies, the constant buzzing of flies can ruin a peaceful meal or a good night’s sleep. A fly screen eliminates these problems. It’s especially important in kitchens, dining areas, and anywhere food is prepared or consumed. For restaurants and cafes, fly screens are often required by health codes. For homes, they provide peace of mind and a more hygienic environment.</p>
+
+        <h2>Types of Fly Screens Available from MBORMC</h2>
+        <ul>
+            <li><strong>Retractable Roll‑Up Fly Screens:</strong> Perfect for windows and doors where you want the screen to disappear when not in use. The mesh rolls into a compact cassette at the top or side.</li>
+            <li><strong>Folding Concertina Fly Screens:</strong> Ideal for wide openings like French doors or large patios. The screen folds neatly to one or both sides.</li>
+            <li><strong>Self‑Adhesive Velcro Fly Screens:</strong> No drilling, no tools – simply stick the Velcro tape around your window frame and press the screen into place. Great for renters.</li>
+            <li><strong>Magnetic Mesh Curtains:</strong> A walk‑through screen for doorways that snaps shut automatically with magnets, perfect for high‑traffic areas.</li>
+            <li><strong>Fixed Frame Fly Screens:</strong> A permanent solution with an aluminum frame that attaches with screws or clips for maximum durability.</li>
+        </ul>
+
+        <h2>Material Options: PET vs. 304 Stainless Steel</h2>
+        <p>MBORMC uses two primary mesh materials. <strong>PET fiber mesh</strong> is lightweight, breathable, and affordable. It provides excellent fly protection while maintaining high transparency and airflow. PET is UV‑stabilized and won’t rust. It’s available in grey, dark grey, or black. <strong>304 stainless steel mesh</strong> is incredibly strong, pet‑proof, and fire‑resistant. It’s ideal for ground‑floor windows or areas where pets may scratch. Stainless steel also offers higher tear resistance and longevity. Both materials can be matched to any frame colour – white, black, bronze, wood grain, or custom RAL.</p>
+
+        <h2>DIY Installation – No Professional Required</h2>
+        <p>All MBORMC fly screens are designed for hassle‑free DIY installation. Each order includes a step‑by‑step guide with pictures. For adhesive‑mount screens, you simply clean the frame, peel the tape, and press. For retractable or folding screens, basic tools like a screwdriver or drill may be required, but we provide all necessary brackets and instructions. The entire process takes 10–30 minutes per screen. If you can measure and use a screwdriver, you can install it yourself.</p>
+
+        <h2>Custom Sizing – Perfect for Any Window or Door</h2>
+        <p>Unlike mass‑produced fly screens that come in standard sizes and leave gaps, MBORMC manufactures every screen according to your exact measurements. You provide the width and height (in cm or inches), and we cut the frame and mesh precisely. This ensures a tight, gap‑free fit that blocks even the smallest flies. We support any shape – rectangular, arched, or slanted. No window is too small or too large.</p>
+
+        <h2>Global Shipping with Wooden Crate Protection</h2>
+        <p>Our factory is located in Foshan, China, but we ship to customers worldwide – including the UK, USA, Australia, Canada, Japan, Germany, France, and many more. To protect your fly screen during long‑distance transit, we pack each order in a sturdy wooden crate. You can choose sea freight (cost‑effective for large orders) or air freight (faster). All shipments are tracked, and we handle customs documentation for a smooth delivery. For personal orders under duty‑free thresholds (e.g., $800 in the US, £135 in the UK), no extra taxes apply.</p>
+
+        <h2>Frequently Asked Questions About Fly Screens</h2>
+        <p><strong>Q: Can I leave my fly screen installed year‑round?</strong><br>A: Yes. PET mesh and stainless steel are UV‑resistant and weather‑proof. They will not degrade under sun or rain.</p>
+        <p><strong>Q: How do I clean the fly screen?</strong><br>A: Use a soft brush or vacuum with a brush attachment. For deeper cleaning, remove the screen (Velcro or clip systems) and rinse with mild soap and water.</p>
+        <p><strong>Q: Are your screens pet‑proof?</strong><br>A: Our 304 stainless steel mesh is highly resistant to scratching and biting. PET mesh is less durable against pets, so we recommend stainless steel for homes with dogs or cats.</p>
+        <p><strong>Q: Do you offer screens for commercial use (restaurants, cafes)?</strong><br>A: Absolutely. We provide bulk orders for restaurants, hotels, and other commercial establishments. Contact us for wholesale pricing.</p>
+
+        <div class="cta-box">
+            <p><strong>Ready to enjoy a fly‑free home or business?</strong></p>
+            <p>Get a custom quote for your exact window or door dimensions. Free measurement guidance provided.</p>
+            <a href="https://www.insectscreen.cc/#inquiry" class="btn">Request Free Quote →</a>
+        </div>
+
+        <h2>Conclusion</h2>
+        <p>A fly screen is a simple, effective, and long‑lasting solution to keep flies, wasps, and other flying insects out of your living or working space. With MBORMC, you get a custom‑made, DIY‑friendly screen that fits perfectly and lasts for years. Whether you need a retractable screen for a sliding door, a folding screen for a wide patio, or a simple adhesive screen for a rental apartment, we have a solution. Contact us today for a free no‑obligation quote – we ship to every corner of the globe.</p>
+    </div>
+
+    <div class="keyword-tags">
+        <a href="https://www.insectscreen.cc/news/mosquito-net-screen.html" class="keyword-tag">Mosquito Net Screen</a>
+        <a href="https://www.insectscreen.cc/news/window-mosquito-screen.html" class="keyword-tag">Window Mosquito Screen</a>
+        <a href="https://www.insectscreen.cc/news/door-mosquito-screen.html" class="keyword-tag">Door Mosquito Screen</a>
+        <a href="https://www.insectscreen.cc/news/anti-mosquito-screen.html" class="keyword-tag">Anti Mosquito Screen</a>
+        <a href="https://www.insectscreen.cc/news/fly-mesh-screen.html" class="keyword-tag">Fly Mesh Screen</a>
+    </div>
+</article>
+
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn">💬 WeChat: FSMBOR (click to copy)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 MBORMC Production Base, Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — DIY Insect Screen Manufacturer for Global Markets</p>
+        <p class="footer-address">Factory direct pricing · Worldwide shipping · 2-year DIY warranty</p>
+        <p><a href="https://www.insectscreen.cc/">Home</a> | <a href="https://www.insectscreen.cc/#products">Products</a> | <a href="https://www.insectscreen.cc/#inquiry">Contact</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => alert('WeChat ID "FSMBOR" copied')).catch(() => prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR'));
+    }
+    document.getElementById('wechatCopyBtn').addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    document.getElementById('wechatFloatingBtn').addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
