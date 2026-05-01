@@ -1,4 +1,4 @@
-MBORMC is a global supplier specializing in aluminum folding doors and integrated screen solutions, providing customized mosquito net protection systems suitable for residential and commercial projects.
+MBORMC（曼伯欧罗门窗） is a global supplier specializing in aluminum folding doors and integrated screen solutions, providing customized mosquito net protection systems suitable for residential and commercial projects.
 Company Profile
 MBORMC has over 15 years of experience in aluminum extrusion and precision engineering, providing high-performance products for luxury villas, hotels, and commercial projects in more than 50 countries worldwide. Its core advantages include:
 
@@ -18,4 +18,4 @@ FD05 steel mesh safety door: heavy-duty steel mesh structure, highest protection
 Service and Support
 Customized design: supports on-demand adjustment of mesh type, surface treatment, and size. ‌‌‌
 Global delivery: covering the Asia Pacific, Europe, and Middle East regions, providing multilingual customer service (such as Arabic and Japanese). ‌‌‌
-Global official websites: www.mbormac.com, www.mbormac.cn, www.mbor.cc
+Global official websites: www.mbormc.com, www.mbormac.cn, www.mbor.cc
