@@ -1,1 +1,514 @@
-全球站
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | Global Service Locations – Worldwide Insect Screen Delivery</title>
+    <meta name="description" content="MBORMC ships custom insect screens to over 150 countries worldwide. Find your country and get a free DIY quote today. Factory direct pricing, global delivery with wooden crate packaging.">
+    <link rel="canonical" href="https://www.insectscreen.cc/countries.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --radius: 0.75rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* country list grid */
+        .countries-section {
+            padding: 3rem 0 4rem;
+        }
+        .section-head {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .section-head h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+        .country-card {
+            background: var(--gray-light);
+            border-radius: var(--radius);
+            transition: all 0.2s;
+            border-left: 3px solid var(--primary);
+        }
+        .country-card a {
+            display: block;
+            padding: 0.7rem 1rem;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        .country-card a:hover {
+            color: var(--primary);
+            background: white;
+            border-radius: var(--radius);
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* responsive */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .country-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            .section-head h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (click to copy)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<!-- 导航栏（与首页一致） -->
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="https://www.insectscreen.cc/">Home</a></li>
+            <li><a href="https://www.insectscreen.cc/#products">DIY Screens</a></li>
+            <li><a href="https://www.insectscreen.cc/#about">About</a></li>
+            <li><a href="https://www.insectscreen.cc/#why">Why MBORMC</a></li>
+            <li><a href="https://www.insectscreen.cc/#inquiry">Get Quote</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<!-- 国家列表主区域 -->
+<section class="countries-section">
+    <div class="container">
+        <div class="section-head">
+            <h1>We Ship Worldwide</h1>
+            <p>MBORMC delivers custom insect screens to over 150 countries. Select your country to get a localized quote.</p>
+        </div>
+        <div class="country-grid">
+            <!-- 全球首页 -->
+            <div class="country-card"><a href="https://www.insectscreen.cc/">🌍 Global (English)</a></div>
+            <!-- 美洲 -->
+            <div class="country-card"><a href="https://www.insectscreen.cc/us.html">🇺🇸 United States</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ca.html">🇨🇦 Canada</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mx.html">🇲🇽 Mexico</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/br.html">🇧🇷 Brazil</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ar.html">🇦🇷 Argentina</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/cl.html">🇨🇱 Chile</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/pe.html">🇵🇪 Peru</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/co.html">🇨🇴 Colombia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ve.html">🇻🇪 Venezuela</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ec.html">🇪🇨 Ecuador</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bo.html">🇧🇴 Bolivia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/py.html">🇵🇾 Paraguay</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/uy.html">🇺🇾 Uruguay</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/gy.html">🇬🇾 Guyana</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sr.html">🇸🇷 Suriname</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/gf.html">🇬🇫 French Guiana</a></div>
+            <!-- 欧洲 -->
+            <div class="country-card"><a href="https://www.insectscreen.cc/uk.html">🇬🇧 United Kingdom</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/de.html">🇩🇪 Germany</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/fr.html">🇫🇷 France</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/it.html">🇮🇹 Italy</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/es.html">🇪🇸 Spain</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/nl.html">🇳🇱 Netherlands</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/be.html">🇧🇪 Belgium</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/at.html">🇦🇹 Austria</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ch.html">🇨🇭 Switzerland</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/se.html">🇸🇪 Sweden</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/no.html">🇳🇴 Norway</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/dk.html">🇩🇰 Denmark</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/fi.html">🇫🇮 Finland</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/pt.html">🇵🇹 Portugal</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ie.html">🇮🇪 Ireland</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/pl.html">🇵🇱 Poland</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/cz.html">🇨🇿 Czechia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/hu.html">🇭🇺 Hungary</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/gr.html">🇬🇷 Greece</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/tr.html">🇹🇷 Turkey</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ru.html">🇷🇺 Russia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ua.html">🇺🇦 Ukraine</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ro.html">🇷🇴 Romania</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bg.html">🇧🇬 Bulgaria</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/rs.html">🇷🇸 Serbia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/hr.html">🇭🇷 Croatia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/si.html">🇸🇮 Slovenia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sk.html">🇸🇰 Slovakia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ee.html">🇪🇪 Estonia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/lv.html">🇱🇻 Latvia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/lt.html">🇱🇹 Lithuania</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/is.html">🇮🇸 Iceland</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/lu.html">🇱🇺 Luxembourg</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mt.html">🇲🇹 Malta</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mc.html">🇲🇨 Monaco</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ad.html">🇦🇩 Andorra</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/li.html">🇱🇮 Liechtenstein</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sm.html">🇸🇲 San Marino</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/va.html">🇻🇦 Vatican</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/cy.html">🇨🇾 Cyprus</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ge.html">🇬🇪 Georgia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/am.html">🇦🇲 Armenia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/az.html">🇦🇿 Azerbaijan</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/kz.html">🇰🇿 Kazakhstan</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/uz.html">🇺🇿 Uzbekistan</a></div>
+            <!-- 中东 -->
+            <div class="country-card"><a href="https://www.insectscreen.cc/il.html">🇮🇱 Israel</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sa.html">🇸🇦 Saudi Arabia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ae.html">🇦🇪 UAE</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/qa.html">🇶🇦 Qatar</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/kw.html">🇰🇼 Kuwait</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/om.html">🇴🇲 Oman</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bh.html">🇧🇭 Bahrain</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/jo.html">🇯🇴 Jordan</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/lb.html">🇱🇧 Lebanon</a></div>
+            <!-- 亚洲 -->
+            <div class="country-card"><a href="https://www.insectscreen.cc/jp.html">🇯🇵 Japan</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/kr.html">🇰🇷 South Korea</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/kp.html">🇰🇵 North Korea</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mn.html">🇲🇳 Mongolia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/cn.html">🇨🇳 China</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/tw.html">🇹🇼 Taiwan</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/hk.html">🇭🇰 Hong Kong</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mo.html">🇲🇴 Macau</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/in.html">🇮🇳 India</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/pk.html">🇵🇰 Pakistan</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bd.html">🇧🇩 Bangladesh</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/lk.html">🇱🇰 Sri Lanka</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/np.html">🇳🇵 Nepal</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mm.html">🇲🇲 Myanmar</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/th.html">🇹🇭 Thailand</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/vn.html">🇻🇳 Vietnam</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/kh.html">🇰🇭 Cambodia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/la.html">🇱🇦 Laos</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/my.html">🇲🇾 Malaysia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sg.html">🇸🇬 Singapore</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/id.html">🇮🇩 Indonesia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ph.html">🇵🇭 Philippines</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bn.html">🇧🇳 Brunei</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/tl.html">🇹🇱 Timor-Leste</a></div>
+            <!-- 大洋洲 -->
+            <div class="country-card"><a href="https://www.insectscreen.cc/au.html">🇦🇺 Australia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/nz.html">🇳🇿 New Zealand</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/pg.html">🇵🇬 Papua New Guinea</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/fj.html">🇫🇯 Fiji</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sb.html">🇸🇧 Solomon Islands</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/vu.html">🇻🇺 Vanuatu</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ws.html">🇼🇸 Samoa</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/to.html">🇹🇴 Tonga</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ki.html">🇰🇮 Kiribati</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mh.html">🇲🇭 Marshall Islands</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/fm.html">🇫🇲 Micronesia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/pw.html">🇵🇼 Palau</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/nr.html">🇳🇷 Nauru</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/tv.html">🇹🇻 Tuvalu</a></div>
+            <!-- 非洲 -->
+            <div class="country-card"><a href="https://www.insectscreen.cc/za.html">🇿🇦 South Africa</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/eg.html">🇪🇬 Egypt</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ng.html">🇳🇬 Nigeria</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ke.html">🇰🇪 Kenya</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ma.html">🇲🇦 Morocco</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/dz.html">🇩🇿 Algeria</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/tn.html">🇹🇳 Tunisia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ly.html">🇱🇾 Libya</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sd.html">🇸🇩 Sudan</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/et.html">🇪🇹 Ethiopia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/so.html">🇸🇴 Somalia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/gh.html">🇬🇭 Ghana</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ci.html">🇨🇮 Côte d'Ivoire</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sn.html">🇸🇳 Senegal</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/cm.html">🇨🇲 Cameroon</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/tz.html">🇹🇿 Tanzania</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ug.html">🇺🇬 Uganda</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/rw.html">🇷🇼 Rwanda</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bi.html">🇧🇮 Burundi</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/cd.html">🇨🇩 DR Congo</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/cg.html">🇨🇬 Congo</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ga.html">🇬🇦 Gabon</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ao.html">🇦🇴 Angola</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/na.html">🇳🇦 Namibia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bw.html">🇧🇼 Botswana</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/zm.html">🇿🇲 Zambia</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/zw.html">🇿🇼 Zimbabwe</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mz.html">🇲🇿 Mozambique</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mg.html">🇲🇬 Madagascar</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/mu.html">🇲🇺 Mauritius</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/sc.html">🇸🇨 Seychelles</a></div>
+            <!-- 额外的小岛屿/地区（从之前列表补充） -->
+            <div class="country-card"><a href="https://www.insectscreen.cc/as.html">🇦🇸 American Samoa</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ai.html">🇦🇮 Anguilla</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/ax.html">🇦🇽 Åland Islands</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bm.html">🇧🇲 Bermuda</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bz.html">🇧🇿 Belize</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/bj.html">🇧🇯 Benin</a></div>
+            <div class="country-card"><a href="https://www.insectscreen.cc/al.html">🇦🇱 Albania</a></div>
+        </div>
+        <p style="text-align: center; margin-top: 2.5rem; font-size: 0.85rem; color: var(--text-muted);">Don't see your country? <a href="https://www.insectscreen.cc/#inquiry" style="color: var(--primary);">Contact us</a> – we ship worldwide.</p>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (click to copy)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 MBORMC Production Base, Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — DIY Insect Screen Manufacturer for Global Markets</p>
+        <p class="footer-address">Factory direct pricing · Worldwide shipping · 2-year DIY warranty</p>
+        <p><a href="https://www.insectscreen.cc/">Home</a> | <a href="https://www.insectscreen.cc/#products">Products</a> | <a href="https://www.insectscreen.cc/#inquiry">Contact</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Sitemap</a></p>
+    </div>
+</footer>
+
+<script>
+    // 移动端菜单
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    // 微信复制
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID "FSMBOR" copied to clipboard');
+        }).catch(() => {
+            prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
