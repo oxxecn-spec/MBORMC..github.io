@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | Mosquiteras DIY – Bolivia | Protección contra insectos a medida</title>
+    <meta name="description" content="MBORMC – mosquiteras a medida para hogares bolivianos. Mosquiteras enrollables DIY, sistemas de puerta plegable. Perfectas para ventanas corredizas, abatibles, puertas balconeras. Envío rápido a La Paz, Santa Cruz, Cochabamba, Sucre, El Alto. Fábrica directa desde China.">
+    <link rel="canonical" href="https://www.insectscreen.cc/bo.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 样式与全球首页完全一致，未做任何改动 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (clic para copiar)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/bo.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#products">Mosquiteras DIY</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#why">Por qué MBORMC</a></li>
+            <li><a href="#inquiry">Cotizar</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">Instalación DIY fácil · Envío desde Foshan, China</span>
+            <h1>Mantenga los Mosquitos Fuera — <em>La Paz • Santa Cruz • Cochabamba • Sucre • El Alto</em></h1>
+            <p class="hero-desc">Mosquiteras a medida para cualquier ventana o puerta. Sin herramientas, instálelas usted mismo en minutos. Directo de fábrica a su puerta — hasta 60% más barato que en tiendas locales.</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">2k+</div><div>Clientes en Bolivia</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>Fácil instalación en 10min</div></div>
+                <div class="stat"><div class="stat-num">7-15 días</div><div>Envío rápido</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>Flete marítimo + caja de madera</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">Solicitar presupuesto →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">Ver tipos de mosquiteras</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="Ejemplo de instalación de mosquitera DIY">
+        </div>
+    </div>
+</section>
+
+<!-- 产品区域：6个产品（链接与全球版一致） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Mosquiteras DIY para hogares bolivianos</h2>
+            <p>Perfectas para ventanas corredizas, abatibles, puertas balconeras</p>
+        </div>
+        <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Mosquitera enrollable – Protección contra mosquitos, moscas">
+                    <span class="img-keyword-tag">Antimosquitos · Tela antimoscas</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY en 10 min</div>
+                    <div class="product-title">MBORMC® H01: Mosquitera enrollable</div>
+                    <div class="product-desc">Tela de fibra PET – excelente protección. Marco de aluminio. Instalación simple con cinta adhesiva o tornillos incluidos. Se enrolla cuando no se usa.</div>
+                    <div class="product-materials">Materiales: Tela PET + marco aluminio</div>
+                    <div class="product-price">Presupuesto por tamaño</div>
+                </div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="Puerta mosquitera plegable – Resistente a mascotas">
+                    <span class="img-keyword-tag">Puerta · Resistente a mascotas</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 Resistente a mascotas</div>
+                    <div class="product-title">Puerta mosquitera plegable (Combo)</div>
+                    <div class="product-desc">Marco aluminio + malla plegable de acero inoxidable 304 – evita mosquitos y resiste arañazos/mordeduras. También disponible con paneles de PVC cristal transparente.</div>
+                    <div class="product-materials">Malla acero inox 304 / panel cristal + marco aluminio</div>
+                    <div class="product-price">Presupuesto por tamaño</div>
+                </div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="Puerta enrollable + plegable – 2 en 1">
+                    <span class="img-keyword-tag">2 en 1 · Antimosquitos</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Diseño 2 en 1</div>
+                    <div class="product-title">Puerta enrollable + plegable</div>
+                    <div class="product-desc">Combinación de mosquitera enrollable y plegable. Opciones de malla PET o malla plegable de acero 304.</div>
+                    <div class="product-materials">Malla PET / acero 304 + marco aluminio</div>
+                    <div class="product-price">Presupuesto personalizado</div>
+                </div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="Mosquitera autoadhesiva velcro – Sin herramientas">
+                    <span class="img-keyword-tag">Auto-adhesiva · Velcro</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Sin herramientas</div>
+                    <div class="product-title">Mosquitera autoadhesiva de velcro</div>
+                    <div class="product-desc">Malla de acero inoxidable 304 con cinta velcro (hook-and-loop). Pela y pega – no necesita marco. Ideal para alquileres.</div>
+                    <div class="product-materials">Malla acero inox 304 + velcro autoadhesivo</div>
+                    <div class="product-price">Presupuesto por tamaño</div>
+                </div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="Protección solar – Mosquitera + aislamiento térmico">
+                    <span class="img-keyword-tag">Protección solar · Antimosquitos</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Bloqueo de calor</div>
+                    <div class="product-title">Protección solar / Persianas enrollables</div>
+                    <div class="product-desc">Persiana exterior de aluminio o tejido – reduce calor y deslumbramiento, protege muebles. Soportes de montaje DIY incluidos.</div>
+                    <div class="product-materials">Cajón de aluminio / tejido anti-UV</div>
+                    <div class="product-price">Presupuesto por tamaño</div>
+                </div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="Cortina magnética antimosquitos">
+                    <span class="img-keyword-tag">Magnética · Antimoscas</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Cuelga como una cortina</div>
+                    <div class="product-title">Cortina magnética para mosquitos</div>
+                    <div class="product-desc">Cortina de malla de fibra de vidrio fina con separación magnética central o borde pesado. Fácil paso – se cierra automáticamente.</div>
+                    <div class="product-materials">Fibra de vidrio + banda magnética / pesos</div>
+                    <div class="product-price">Presupuesto por tamaño</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Haga clic en cualquier producto para más detalles. Todas las mosquiteras se fabrican a medida según sus dimensiones exactas. <a href="#inquiry" style="color: var(--primary);">Solicite un presupuesto gratuito →</a></p>
+    </div>
+</section>
+
+<!-- 公司介绍模块 -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Acerca de MBORMC</h2>
+            <p>Marca global de mosquiteras a medida – diseñada en Foshan, entregada en todo el mundo</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> es una marca internacional especializada en mosquiteras enrollables a medida y sistemas de puertas plegables. Con más de <strong>15 años de experiencia en extrusión de aluminio e ingeniería de precisión</strong>, atendemos proyectos residenciales, hoteleros y comerciales en más de <strong>50 países</strong>, incluyendo muchos clientes satisfechos en Bolivia.</p>
+                <p>Todos nuestros productos se fabrican en nuestra planta de Foshan, China, utilizando aleación de aluminio premium <strong>6063-T5</strong> – que ofrece alta resistencia, resistencia a la corrosión y un acabado hermoso. Combinamos precios de fábrica directos con envíos globales y guías de instalación locales para hacer que la protección DIY sea accesible para todos.</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">15+ años de experiencia</span>
+                    <span class="highlight-badge">Aluminio 6063-T5</span>
+                    <span class="highlight-badge">50+ países servidos</span>
+                    <span class="highlight-badge">Directo de fábrica</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Series de productos</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>Serie H – Mosquiteras para ventanas</strong><br>Modelos enrollables automáticos, seguros para niños, instalación sin herramientas.</li>
+                    <li><span class="series-icon">🚪</span> <strong>Serie F – Sistemas para puertas</strong><br>Diseños plegables, corredizos, sin rieles para balcones, cocinas y divisiones interiores.</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">Soporte multilingüe (ES, EN, CN, FR, etc.) y entregas globales – hacemos que la protección a medida sea simple.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>Por qué los propietarios bolivianos eligen MBORMC</h2><p>Directo de fábrica — sin intermediarios, calidad DIY premium</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>Auto-medición, corte a medida</h3><p>Fabricamos la mosquitera según las dimensiones exactas de su ventana — no necesita instalación profesional.</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Envío rápido a Bolivia</h3><p>Pedidos enviados en 3 días laborables, entrega por carga aérea expresa o marítima con seguimiento.</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>Ahorre 40-60% vs tiendas locales</h3><p>Precios directo de fábrica — pague en USD o BOB. Para pedidos personales bajo 50 USD, generalmente sin impuestos aduaneros (pequeños envíos).</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>Protección antimosquitos probada</h3><p>La malla fina bloquea mosquitos, moscas, mosquitos pequeños – probada en climas tropicales y de altura de Bolivia (desde el Altiplano hasta los llanos).</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>Preguntas frecuentes para compradores DIY</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">¿Cómo mido mi ventana para una mosquitera DIY?<span>+</span></button><div class="faq-answer">Cada pedido incluye una guía sencilla – solo use una cinta métrica, ancho y alto. Nosotros cortamos la mosquitera a sus medidas.</div></div>
+            <div class="faq-item"><button class="faq-question">¿Necesito herramientas especiales?<span>+</span></button><div class="faq-answer">No. Todas las mosquiteras vienen con marcos de clip, cinta adhesiva o tensión de resorte – un destornillador es suficiente.</div></div>
+            <div class="faq-item"><button class="faq-question">¿Cómo funcionan las aduanas e impuestos para Bolivia?<span>+</span></button><div class="faq-answer">Para envíos personales de bajo valor (ej. menos de 50 USD), generalmente no hay impuestos. Para pedidos mayores, podemos organizar envío DDP (derechos pagados).</div></div>
+            <div class="faq-item"><button class="faq-question">¿Puedo obtener una muestra antes de un pedido al por mayor?<span>+</span></button><div class="faq-answer">Sí, los kits de muestra se envían a Bolivia dentro de 7 días. Contáctenos vía WhatsApp.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品关键词模块（6个精选） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Nuestras principales palabras clave</h2>
+            <p>Explore la gama completa de mosquiteras que ofrecemos – hechas a medida para su hogar</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>Mosquitera</strong><p>Malla de alta densidad que bloquea hasta los mosquitos más pequeños manteniendo el flujo de aire. Perfecta para dormitorios y salas de estar.</p></div>
+            <div class="keyword-item"><strong>Protección contra moscas</strong><p>Mantiene alejadas moscas, avispas y otros insectos voladores sin obstruir la vista. Disponible en fibra de vidrio, PET o acero inoxidable.</p></div>
+            <div class="keyword-item"><strong>Malla antiinsectos</strong><p>Protección integral contra mosquitos, moscas, jejenes y flebótomos. Nuestras mosquiteras se adaptan a cualquier tipo de ventana o puerta.</p></div>
+            <div class="keyword-item"><strong>Mosquitera para ventanas</strong><p>Adaptada para ventanas corredizas, abatibles y oscilobatientes. Kit de instalación DIY incluido.</p></div>
+            <div class="keyword-item"><strong>Mosquitera para puertas</strong><p>Mallas resistentes para puertas balconeras, puertas de entrada y terrazas. Opciones magnéticas o enrollables.</p></div>
+            <div class="keyword-item"><strong>Protección antimosquitos para mascotas</strong><p>Malla de acero inoxidable 304 resiste arañazos y mordeduras de perros y gatos. Ideal para hogares con animales.</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Todas las mosquiteras se fabrican a medida según las dimensiones exactas de sus ventanas/puertas. <a href="#inquiry" style="color: var(--primary);">Solicite un presupuesto gratuito →</a></p>
+    </div>
+</section>
+
+<!-- 询价表单（玻利维亚站） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>Solicitar un presupuesto DIY — Envíos a Bolivia</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>Nombre completo</label>
+                <input type="text" name="name" placeholder="Juan Pérez" required>
+            </div>
+            <div class="form-group">
+                <label>Correo electrónico</label>
+                <input type="email" name="email" placeholder="juan@ejemplo.bo" required>
+            </div>
+            <div class="form-group">
+                <label>Ciudad / Departamento (Bolivia)</label>
+                <input type="text" name="country" placeholder="ej. La Paz, Santa Cruz, Cochabamba" required>
+            </div>
+            <div class="form-group">
+                <label>Medidas de ventanas/puertas (An x Al en cm o pulgadas)</label>
+                <textarea name="message" rows="4" placeholder="Indique cantidades y dimensiones. Ejemplo: 3 ventanas corredizas: 120x90cm cada una. 1 puerta balconera: 200x210cm..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar solicitud →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (clic para copiar)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 Base de producción MBORMC: Dali Town, Distrito de Nanhai, Foshan, Guangdong, China</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← Volver al inicio global</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — Fabricante de mosquiteras DIY para Bolivia y el mundo</p>
+        <p class="footer-address">Precio directo de fábrica · Envíos mundiales · Garantía de 2 años</p>
+        <p><a href="#home">Inicio</a> | <a href="#products">Productos</a> | <a href="#inquiry">Contacto</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Mapa del sitio</a> | <a href="https://www.insectscreen.cc/Global.html">Sitio global</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('ID de WeChat "FSMBOR" copiado');
+        }).catch(() => {
+            prompt('Presione Ctrl+C para copiar el ID de WeChat:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
