@@ -20,11 +20,11 @@
             color: #1e2a3a;
             line-height: 1.5;
             scroll-behavior: smooth;
-            overflow-y: auto;  /* 确保垂直滚动条可用 */
+            overflow-y: auto;
         }
 
         html {
-            overflow-y: auto;  /* 确保根元素滚动条可用 */
+            overflow-y: auto;
         }
 
         :root {
@@ -64,15 +64,9 @@
             font-size: 1.6rem;
             font-weight: 800;
             text-decoration: none;
-            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: -0.3px;
-        }
-        .logo span {
             color: var(--dark);
-            background: none;
+            letter-spacing: -0.3px;
+            /* 纯文字，无渐变 */
         }
         .nav-links {
             display: flex;
@@ -662,6 +656,9 @@
                 left: 8px;
                 padding: 2px 8px;
             }
+            .logo {
+                font-size: 1.3rem; /* 手机端稍微缩小 */
+            }
         }
     </style>
 </head>
@@ -679,7 +676,7 @@
 
 <nav class="navbar">
     <div class="container nav-inner">
-        <a href="https://www.insectscreen.cc/" class="logo">MBORMC<span> </span></a>
+        <a href="https://www.insectscreen.cc/" class="logo">MBORMC</a>
         <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
