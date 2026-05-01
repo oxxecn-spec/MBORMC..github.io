@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | DIY Mosquito Nets & Fly Screens – Anguilla | Custom Insect Screens</title>
+    <meta name="description" content="MBORMC – custom insect screens for Anguilla. DIY mosquito nets, retractable fly screens, folding door systems. Perfect for louver windows, sliding windows, patio doors. Fast shipping to The Valley, Blowing Point, Sandy Ground, Shoal Bay, Island Harbour. Factory direct from China.">
+    <link rel="canonical" href="https://www.insectscreen.cc/ai.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 样式与全球首页完全一致，未做任何改动 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (click to copy)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/ai.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">DIY Screens</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why">Why MBORMC</a></li>
+            <li><a href="#inquiry">Get Quote</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">DIY Easy Install · Ships from Foshan, China</span>
+            <h1>Keep Mosquitoes & Flies Out — <em>The Valley • Blowing Point • Sandy Ground • Shoal Bay • Island Harbour</em></h1>
+            <p class="hero-desc">Custom‑fit insect screens for any window or door. No tools required, install yourself in minutes. Direct from our factory to your doorstep — 40‑60% cheaper than local stores.</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">1k+</div><div>AI customers</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>Easy fit in 10min</div></div>
+                <div class="stat"><div class="stat-num">7-15 days</div><div>Fast delivery</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>Sea freight + wooden crate</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">Get DIY Quote →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">See Screen Types</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="DIY insect screen installation example">
+        </div>
+    </div>
+</section>
+
+<!-- 产品区域：6个产品（链接与全球版一致） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>DIY Insect Screens for Anguilla Homes</h2>
+            <p>Perfect for louver windows, sliding windows, French doors, and patio openings</p>
+        </div>
+        <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Retractable Roll-Up Screen – Mosquito Screen, Fly Mesh, Insect Protection">
+                    <span class="img-keyword-tag">Mosquito Screen · Fly Mesh</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY in 10 mins</div>
+                    <div class="product-title">MBORMC® H01: Retractable Roll-Up Screen</div>
+                    <div class="product-desc">PET fiber mesh – excellent mosquito protection. Aluminum frame. Simple installation with included adhesive tape or screws. Rolls up when not needed.</div>
+                    <div class="product-materials">Materials: PET mesh + Aluminum frame</div>
+                    <div class="product-price">Quote by size</div>
+                </div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="Folding Screen Door – Insect Screen, Door Mosquito Screen, Pet Resistant">
+                    <span class="img-keyword-tag">Door Screen · Pet Proof</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 Pet resistant</div>
+                    <div class="product-title">Folding Screen Door (Combo)</div>
+                    <div class="product-desc">Aluminum frame + 304 stainless steel folding mesh – prevents mosquitoes, pet scratching/biting. Also available with clear crystal folding panels.</div>
+                    <div class="product-materials">304 SS mesh / Crystal panel + Aluminum frame</div>
+                    <div class="product-price">Quote by size</div>
+                </div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="Roll-up + Folding Screen Door – 2-in-1 Insect Screen, Mosquito Net Screen">
+                    <span class="img-keyword-tag">2-in-1 · Mosquito Net</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">2-in-1 design</div>
+                    <div class="product-title">Roll-up + Folding Screen Door</div>
+                    <div class="product-desc">Combination of retractable roll-up and folding screen door. PET fiber mesh + 304 folding mesh options available.</div>
+                    <div class="product-materials">PET mesh / 304 mesh + Aluminum frame</div>
+                    <div class="product-price">Custom quote</div>
+                </div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="Self-Adhesive Velcro Screen – DIY Fly Screen, Window Mosquito Screen, Tool-Free">
+                    <span class="img-keyword-tag">Self-Adhesive · Velcro</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">No tools required</div>
+                    <div class="product-title">Self-Adhesive Velcro Screen</div>
+                    <div class="product-desc">304 stainless steel mesh with hook-and-loop (Velcro) tape. Peel-and-stick installation – no frame needed. Ideal for rental homes.</div>
+                    <div class="product-materials">304 SS mesh + Self-adhesive Velcro</div>
+                    <div class="product-price">Quote by size</div>
+                </div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="Solar Shading – Insect Protection Screen, Anti Mosquito, Heat Blocking">
+                    <span class="img-keyword-tag">Solar Shade · Anti Mosquito</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Heat blocking</div>
+                    <div class="product-title">Solar Shading / Roller Blinds</div>
+                    <div class="product-desc">Aluminum or fabric external roller blinds – reduce heat and glare, protect furniture. DIY mounting brackets included.</div>
+                    <div class="product-materials">Aluminum cassette / UV-block fabric</div>
+                    <div class="product-price">Quote by size</div>
+                </div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="Magnetic Mosquito Curtain – Fly Screen, Mesh Screen, Easy Walk-Through">
+                    <span class="img-keyword-tag">Magnetic · Fly Screen</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Hangs like a curtain</div>
+                    <div class="product-title">Mosquito Net Curtain / Magnetic Curtain</div>
+                    <div class="product-desc">Fine fiberglass mesh curtain with magnetic middle split or weighted hem. Walk through easily – snaps shut automatically.</div>
+                    <div class="product-materials">Fiberglass mesh + magnetic strip / weights</div>
+                    <div class="product-price">Quote by size</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Click any product for more details. All screens are custom made to your exact window/door measurements. <a href="#inquiry" style="color: var(--primary);">Request a free quote →</a></p>
+    </div>
+</section>
+
+<!-- 公司介绍模块 -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>About MBORMC</h2>
+            <p>Global custom insect screen brand – engineered in Foshan, delivered to your doorstep</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> is a global cross‑border brand specializing in custom‑made retractable insect screens and folding door systems. With over <strong>15 years of aluminum extrusion and precision engineering experience</strong>, we serve residential, hotel, and commercial projects in more than <strong>50 countries</strong>, including many happy customers across Anguilla.</p>
+                <p>All our products are manufactured in our Foshan, China facility using premium <strong>6063‑T5 aluminum alloy</strong> – offering high strength, corrosion resistance, and a beautiful finish. We combine factory‑direct pricing with global shipping and local installation guidance to make DIY insect protection accessible everywhere.</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">15+ years experience</span>
+                    <span class="highlight-badge">6063-T5 aluminum</span>
+                    <span class="highlight-badge">50+ countries served</span>
+                    <span class="highlight-badge">Factory direct</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Product Series</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>H Series – Window Screens</strong><br>Automatic retractable, child‑safe, tool‑free installation models.</li>
+                    <li><span class="series-icon">🚪</span> <strong>F Series – Door Systems</strong><br>Folding, sliding, trackless designs for balconies, kitchens, and interior partitions.</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">Multilingual support (EN, CN, FR, etc.) and global delivery – we make custom protection simple.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>Why Anguilla Homeowners Choose MBORMC</h2><p>Direct from China — no middleman, premium DIY quality</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>Self‑measure, custom cut</h3><p>We produce screens to your exact window dimensions — no need for professional installation.</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Fast shipping to Anguilla</h3><p>Orders dispatched within 3 days, delivery by express air or sea freight with tracking.</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>Save 40-60% vs local shops</h3><p>Direct factory pricing — pay in USD or XCD. For personal orders under US$50, minimal or no duties (small package exemption).</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>Proven mosquito protection</h3><p>Fine mesh blocks mosquitoes, flies, midges – tested in tropical climate year‑round, reducing risk of dengue and other mosquito‑borne illnesses.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>Quick Answers for DIY Buyers</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">How do I measure my window for a DIY screen?<span>+</span></button><div class="faq-answer">We provide a simple guide with every order — just use a tape measure, width and height. We cut the screen to your numbers.</div></div>
+            <div class="faq-item"><button class="faq-question">Do I need special tools?<span>+</span></button><div class="faq-answer">No. All screens come with easy‑clip frames, adhesive tape or spring tension — a screwdriver is enough.</div></div>
+            <div class="faq-item"><button class="faq-question">What about customs & import duties for Anguilla?<span>+</span></button><div class="faq-answer">Anguilla has a low‑value exemption (generally under US$50). For larger orders, we can arrange DDP shipping (duties paid).</div></div>
+            <div class="faq-item"><button class="faq-question">Can I get a sample before bulk order?<span>+</span></button><div class="faq-answer">Yes, sample kits sent to Anguilla within 7 days. Contact us via WhatsApp.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品关键词模块（6个精选） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Our Main Product Keywords</h2>
+            <p>Explore the full range of screens we offer – custom made for your home</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>Mosquito Screen</strong><p>High-density fine mesh that blocks even the smallest mosquitoes while maintaining airflow. Perfect for bedrooms and living areas.</p></div>
+            <div class="keyword-item"><strong>Fly Screen</strong><p>Keep flies, wasps and other flying insects outside without blocking your view. Available in fiberglass, PET or stainless steel.</p></div>
+            <div class="keyword-item"><strong>Insect Screen</strong><p>All‑in‑one protection against mosquitoes, flies, midges and sand flies. Our custom screens fit any window or door type.</p></div>
+            <div class="keyword-item"><strong>Window Mosquito Screen</strong><p>Tailored for louver windows, sliding windows, and casement windows. DIY installation kit included with every order.</p></div>
+            <div class="keyword-item"><strong>Door Mosquito Screen</strong><p>Heavy‑duty screens for French doors, patio doors and main entrances. Magnetic or roller options available.</p></div>
+            <div class="keyword-item"><strong>Pet Resistant Screen</strong><p>304 stainless steel mesh resists scratching and biting from dogs and cats. Ideal for pet‑friendly households.</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">All screens are custom made to your exact window/door measurements. <a href="#inquiry" style="color: var(--primary);">Request a free quote →</a></p>
+    </div>
+</section>
+
+<!-- 询价表单（安圭拉站） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>Get a DIY Quote — Ships to Anguilla</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="john@example.ai" required>
+            </div>
+            <div class="form-group">
+                <label>District / Village (Anguilla)</label>
+                <input type="text" name="country" placeholder="e.g. The Valley, Blowing Point, Sandy Ground" required>
+            </div>
+            <div class="form-group">
+                <label>Window/Door Sizes (W x H in cm or inches)</label>
+                <textarea name="message" rows="4" placeholder="Tell us quantities and sizes. Example: 3 louver windows: 120x90cm each. 1 patio door: 200x210cm..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send DIY Inquiry →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (click to copy)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 MBORMC Production Base, Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← Back to Global Home</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — DIY Insect Screen Manufacturer for Anguilla & Worldwide</p>
+        <p class="footer-address">Factory direct pricing · Worldwide shipping · 2-year DIY warranty</p>
+        <p><a href="#home">Home</a> | <a href="#products">Products</a> | <a href="#inquiry">Contact</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Sitemap</a> | <a href="https://www.insectscreen.cc/Global.html">Global Site</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID "FSMBOR" copied to clipboard');
+        }).catch(() => {
+            prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
