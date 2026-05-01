@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | Battery Collection – Insect Screen Articles & Guides</title>
+    <meta name="description" content="Explore our complete library of over 50 articles on DIY insect screens, mosquito nets, fly screens, and application guides for windows, doors, patios, and commercial spaces.">
+    <link rel="canonical" href="https://www.insectscreen.cc/news.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* article list page specific */
+        .blog-header {
+            background: linear-gradient(120deg, #fef9e8 0%, #ffffff 100%);
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+        .blog-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .blog-header p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .articles-section {
+            padding: 3rem 0 4rem;
+        }
+        .category {
+            margin-bottom: 3rem;
+        }
+        .category h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+        }
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .article-card {
+            background: white;
+            border: 1px solid var(--gray-border);
+            border-radius: var(--radius);
+            padding: 1.2rem;
+            transition: all 0.2s;
+            box-shadow: var(--shadow-sm);
+        }
+        .article-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary);
+        }
+        .article-card .post-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .article-card .post-title a {
+            text-decoration: none;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .article-card .post-title a:hover {
+            color: var(--primary);
+        }
+        .article-card .post-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+        }
+        .article-card .post-excerpt {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .article-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (click to copy)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<!-- 导航栏 -->
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="https://www.insectscreen.cc/">Home</a></li>
+            <li><a href="https://www.insectscreen.cc/#products">DIY Screens</a></li>
+            <li><a href="https://www.insectscreen.cc/#about">About</a></li>
+            <li><a href="https://www.insectscreen.cc/#why">Why MBORMC</a></li>
+            <li><a href="https://www.insectscreen.cc/#inquiry">Get Quote</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<!-- 文章列表头部 -->
+<section class="blog-header">
+    <div class="container">
+        <h1>Insect Screen Knowledge Base</h1>
+        <p>Explore our complete collection of articles – from product guides to application scenarios. Find the right screen solution for your home or business.</p>
+    </div>
+</section>
+
+<!-- 文章列表区域 -->
+<section class="articles-section">
+    <div class="container">
+        <!-- 分类1: 产品关键词系列 -->
+        <div class="category">
+            <h2>📚 Product Keyword Series</h2>
+            <div class="article-grid">
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen.html">Mosquito Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Complete guide to custom mosquito screens – materials, DIY installation, and worldwide shipping.</div><a href="https://www.insectscreen.cc/news/mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/fly-screen.html">Fly Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Keep flies, wasps and bees out with high‑transparency mesh. Ideal for kitchens and patios.</div><a href="https://www.insectscreen.cc/news/fly-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/insect-screen.html">Insect Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Comprehensive protection against all flying insects – mosquitoes, flies, midges, wasps.</div><a href="https://www.insectscreen.cc/news/insect-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-net-screen.html">Mosquito Net Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Traditional mosquito net meets modern DIY screen – perfect for bedrooms and travel.</div><a href="https://www.insectscreen.cc/news/mosquito-net-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/window-mosquito-screen.html">Window Mosquito Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Custom fit for casement, sliding, double‑hung and arched windows.</div><a href="https://www.insectscreen.cc/news/window-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/door-mosquito-screen.html">Door Mosquito Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Solutions for sliding, French, single‑hinged and pet doors.</div><a href="https://www.insectscreen.cc/news/door-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/insect-protection-screen.html">Insect Protection Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">All‑in‑one insect barrier for windows, doors, patios and commercial use.</div><a href="https://www.insectscreen.cc/news/insect-protection-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/anti-mosquito-screen.html">Anti Mosquito Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Specialized high‑density mesh to block Aedes, Anopheles and other disease vectors.</div><a href="https://www.insectscreen.cc/news/anti-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-mesh-screen.html">Mosquito Mesh Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Understanding mesh density – choose between 18×16, 20×20 and 24×24.</div><a href="https://www.insectscreen.cc/news/mosquito-mesh-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/fly-mesh-screen.html">Fly Mesh Screen</a></div><div class="post-meta">May 1, 2026</div><div class="post-excerpt">Coarser mesh for fly exclusion – high transparency, easy cleaning.</div><a href="https://www.insectscreen.cc/news/fly-mesh-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/retractable-mosquito-screen.html">Retractable Mosquito Screen</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Space‑saving roll‑up screens for windows and doors – invisible when not in use.</div><a href="https://www.insectscreen.cc/news/retractable-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/retractable-screen-door.html">Retractable Screen Door</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Hands‑free access with spring‑loaded retractable door screens.</div><a href="https://www.insectscreen.cc/news/retractable-screen-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/pleated-mosquito-screen.html">Pleated Mosquito Screen</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Accordion‑style folding screen for wide openings up to 4 meters.</div><a href="https://www.insectscreen.cc/news/pleated-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/pleated-screen-door.html">Pleated Screen Door</a></div><div class="post-meta">May 2, 2026</div><div class="post-excerpt">Folding door screen that stacks compactly – ideal for French doors.</div><a href="https://www.insectscreen.cc/news/pleated-screen-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/sliding-mosquito-screen.html">Sliding Mosquito Screen</a></div><div class="post-meta">May 2, 2026</div><div class="post-excerpt">Smooth‑glide horizontal screens for sliding windows and doors.</div><a href="https://www.insectscreen.cc/news/sliding-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/sliding-screen-door.html">Sliding Screen Door</a></div><div class="post-meta">May 2, 2026</div><div class="post-excerpt">Traditional sliding screen doors for patios – heavy‑duty options available.</div><a href="https://www.insectscreen.cc/news/sliding-screen-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/roll-up-mosquito-screen.html">Roll Up Mosquito Screen</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Spring‑assisted roll‑up screens – compact cassette, easy operation.</div><a href="https://www.insectscreen.cc/news/roll-up-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/magnetic-mosquito-screen.html">Magnetic Mosquito Screen</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">No‑drill, tool‑free magnetic screens for renters and temporary use.</div><a href="https://www.insectscreen.cc/news/magnetic-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/aluminum-mosquito-screen.html">Aluminum Mosquito Screen</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">6063‑T5 aluminum frames – strong, lightweight, rust‑proof, any colour.</div><a href="https://www.insectscreen.cc/news/aluminum-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/custom-mosquito-screen.html">Custom Mosquito Screen</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Made‑to‑measure screens for any size, shape, or window type.</div><a href="https://www.insectscreen.cc/news/custom-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/folding-mosquito-screen.html">Folding Mosquito Screen</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Concertina‑style folding screens for wide windows and doors.</div><a href="https://www.insectscreen.cc/news/folding-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/insect-screen-door.html">Insect Screen Door</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Complete doorway protection – retractable, sliding, folding, magnetic.</div><a href="https://www.insectscreen.cc/news/insect-screen-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-mesh-door.html">Mosquito Mesh Door</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">High‑density mesh door screens – PET or stainless steel.</div><a href="https://www.insectscreen.cc/news/mosquito-mesh-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-window.html">Mosquito Screen Window</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Custom window screens for every style – fixed, retractable, sliding.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-window.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/fly-screen-door.html">Fly Screen Door</a></div><div class="post-meta">May 3, 2026</div><div class="post-excerpt">Keep flies out of kitchens and commercial food areas.</div><a href="https://www.insectscreen.cc/news/fly-screen-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/insect-screen-window.html">Insect Screen Window</a></div><div class="post-meta">May 4, 2026</div><div class="post-excerpt">All‑purpose insect screen for any window – blocks mosquitoes, flies, wasps.</div><a href="https://www.insectscreen.cc/news/insect-screen-window.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-system.html">Mosquito Screen System</a></div><div class="post-meta">May 4, 2026</div><div class="post-excerpt">Integrated screens for every opening – complete home protection.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-system.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-frame.html">Mosquito Screen Frame</a></div><div class="post-meta">May 4, 2026</div><div class="post-excerpt">Aluminum frame options – colours, profiles, and installation methods.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-frame.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/pet-proof-mosquito-screen.html">Pet Proof Mosquito Screen</a></div><div class="post-meta">May 4, 2026</div><div class="post-excerpt">304 stainless steel mesh resists scratching and biting.</div><a href="https://www.insectscreen.cc/news/pet-proof-mosquito-screen.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/heavy-duty-mosquito-screen.html">Heavy Duty Mosquito Screen</a></div><div class="post-meta">May 4, 2026</div><div class="post-excerpt">Industrial‑strength screens for high‑traffic and commercial applications.</div><a href="https://www.insectscreen.cc/news/heavy-duty-mosquito-screen.html" class="read-more">Read more →</a></div>
+            </div>
+        </div>
+
+        <!-- 分类2: 使用场景系列 -->
+        <div class="category">
+            <h2>🏠 Application & Scenarios</h2>
+            <div class="article-grid">
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-balcony.html">Mosquito Screen for Balcony</a></div><div class="post-meta">May 4, 2026</div><div class="post-excerpt">Retractable, sliding, and magnetic screens for apartment balconies.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-balcony.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-patio-door.html">Mosquito Screen for Patio Door</a></div><div class="post-meta">May 4, 2026</div><div class="post-excerpt">Sliding, retractable or folding screens for sliding glass doors.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-patio-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-sliding-door.html">Mosquito Screen for Sliding Door</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">Traditional sliding screens for smooth‑glide operation.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-sliding-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-apartment.html">Mosquito Screen for Apartment</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">No‑drill magnetic and Velcro screens for renters.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-apartment.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-villa.html">Mosquito Screen for Villa</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">Complete screen systems for luxury homes and villas.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-villa.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-restaurant.html">Mosquito Screen for Restaurant</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">Commercial‑grade stainless steel screens for food safety.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-restaurant.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-garden-door.html">Mosquito Screen for Garden Door</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">Screens for French, sliding, and single‑hinged garden doors.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-garden-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-french-door.html">Mosquito Screen for French Door</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">Bi‑parting folding screens that meet in the middle.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-french-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-terrace.html">Mosquito Screen for Terrace</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">Large‑format screens for terraces and rooftop spaces.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-terrace.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-windows.html">Mosquito Screen for Windows</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">Complete guide to window screens – all types, all shapes.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-windows.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-kitchen-window.html">Mosquito Screen for Kitchen Window</a></div><div class="post-meta">May 5, 2026</div><div class="post-excerpt">Grease‑resistant, easy‑clean screens for cooking areas.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-kitchen-window.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-bedroom-window.html">Mosquito Screen for Bedroom Window</a></div><div class="post-meta">May 6, 2026</div><div class="post-excerpt">Quiet, invisible screens for peaceful sleep.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-bedroom-window.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-office-window.html">Mosquito Screen for Office Window</a></div><div class="post-meta">May 6, 2026</div><div class="post-excerpt">Professional screens for commercial office spaces.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-office-window.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-commercial-building.html">Mosquito Screen for Commercial Building</a></div><div class="post-meta">May 6, 2026</div><div class="post-excerpt">Heavy‑duty screens for stores, warehouses, and public buildings.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-commercial-building.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-hotel.html">Mosquito Screen for Hotel</a></div><div class="post-meta">May 6, 2026</div><div class="post-excerpt">Guest‑friendly screens for rooms, lobbies, and restaurants.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-hotel.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-cafe.html">Mosquito Screen for Cafe</a></div><div class="post-meta">May 6, 2026</div><div class="post-excerpt">Create a bug‑free outdoor dining atmosphere.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-cafe.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-resort.html">Mosquito Screen for Resort</a></div><div class="post-meta">May 6, 2026</div><div class="post-excerpt">Marine‑grade screens for coastal and tropical resorts.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-resort.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-outdoor-door.html">Mosquito Screen for Outdoor Door</a></div><div class="post-meta">May 7, 2026</div><div class="post-excerpt">Back doors, garden doors – let fresh air in, keep bugs out.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-outdoor-door.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-large-opening.html">Mosquito Screen for Large Opening</a></div><div class="post-meta">May 7, 2026</div><div class="post-excerpt">Folding and motorized screens for spans up to 4 meters.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-large-opening.html" class="read-more">Read more →</a></div>
+                <div class="article-card"><div class="post-title"><a href="https://www.insectscreen.cc/news/mosquito-screen-for-patio.html">Mosquito Screen for Patio</a></div><div class="post-meta">May 7, 2026</div><div class="post-excerpt">Create a screened outdoor living room – fixed or retractable.</div><a href="https://www.insectscreen.cc/news/mosquito-screen-for-patio.html" class="read-more">Read more →</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏 -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (click to copy)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 MBORMC Production Base, Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — DIY Insect Screen Manufacturer for Global Markets</p>
+        <p class="footer-address">Factory direct pricing · Worldwide shipping · 2-year DIY warranty</p>
+        <p><a href="https://www.insectscreen.cc/">Home</a> | <a href="https://www.insectscreen.cc/#products">Products</a> | <a href="https://www.insectscreen.cc/#inquiry">Contact</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Sitemap</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => alert('WeChat ID "FSMBOR" copied')).catch(() => prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR'));
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
