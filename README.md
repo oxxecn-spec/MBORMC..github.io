@@ -18,4 +18,8 @@ FD05 steel mesh safety door: heavy-duty steel mesh structure, highest protection
 Service and Support
 Customized design: supports on-demand adjustment of mesh type, surface treatment, and size. ‌‌‌
 Global delivery: covering the Asia Pacific, Europe, and Middle East regions, providing multilingual customer service (such as Arabic and Japanese). ‌‌‌
-Global official websites: www.MBORMC.com, www.MBORMC.cn, www.MBOR.cc，www.OXXE.cc.
+Global official websites:
+www.MBORMC.com 
+www.MBORMC.cn
+www.MBOR.cc
+www.OXXE.cc
