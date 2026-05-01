@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | Moustiquaires DIY – Burundi | Protection anti‑insectes sur mesure</title>
+    <meta name="description" content="MBORMC – moustiquaires sur mesure pour les foyers burundais. Moustiquaires DIY, systèmes enroulables, portes pliantes. Parfaites pour fenêtres à lamelles, coulissantes, portes-fenêtres. Livraison rapide à Bujumbura, Gitega, Ngozi, Muramvya, Rutana. Fabrique directe depuis la Chine.">
+    <link rel="canonical" href="https://www.insectscreen.cc/bi.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 样式与全球首页完全一致，未做任何改动 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (cliquez pour copier)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/bi.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#products">Moustiquaires DIY</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#why">Pourquoi MBORMC</a></li>
+            <li><a href="#inquiry">Devis</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">Installation DIY facile · Expédié depuis Foshan, Chine</span>
+            <h1>Éloignez moustiques & mouches — <em>Bujumbura • Gitega • Ngozi • Muramvya • Rutana</em></h1>
+            <p class="hero-desc">Moustiquaires sur mesure pour toutes fenêtres ou portes. Aucun outil nécessaire, installation en quelques minutes. Directement de notre usine à votre porte — 40‑60% moins cher que dans les magasins locaux.</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">1k+</div><div>Clients au Burundi</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>Pose en 10 min</div></div>
+                <div class="stat"><div class="stat-num">7-15 jours</div><div>Livraison rapide</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>Fret maritime + caisse en bois</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">Demander un devis →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">Voir les modèles</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="Exemple d'installation de moustiquaire DIY">
+        </div>
+    </div>
+</section>
+
+<!-- 产品区域：6个产品（链接与全球版一致） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Moustiquaires DIY pour les foyers burundais</h2>
+            <p>Idéales pour fenêtres à lamelles, coulissantes, portes-fenêtres</p>
+        </div>
+        <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Moustiquaire enroulable – Protection anti-moustiques, anti-insectes">
+                    <span class="img-keyword-tag">Anti-moustique · Tissu anti-insectes</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY en 10 min</div>
+                    <div class="product-title">MBORMC® H01 : Moustiquaire enroulable</div>
+                    <div class="product-desc">Tissu en fibres PET – excellente protection. Cadre en aluminium. Installation simple avec ruban adhésif ou vis fournis. S'enroule quand inutilisé.</div>
+                    <div class="product-materials">Matériaux : Tissu PET + cadre aluminium</div>
+                    <div class="product-price">Devis selon taille</div>
+                </div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="Porte moustiquaire pliante – Résistante aux animaux">
+                    <span class="img-keyword-tag">Porte · Résistante aux animaux</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 Résistante aux animaux</div>
+                    <div class="product-title">Porte moustiquaire pliante (Combo)</div>
+                    <div class="product-desc">Cadre aluminium + maille pliante en acier inoxydable 304 – empêche les moustiques et résiste aux griffures/morsures. Également disponible avec panneaux en PVC cristal transparent.</div>
+                    <div class="product-materials">Maille inox 304 / panneaux cristal + cadre aluminium</div>
+                    <div class="product-price">Devis selon taille</div>
+                </div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="Porte roulante + pliante – 2‑en‑1">
+                    <span class="img-keyword-tag">2‑en‑1 · Anti‑moustiques</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Design 2‑en‑1</div>
+                    <div class="product-title">Porte roulante + pliante</div>
+                    <div class="product-desc">Combinaison de porte roulante et pliante. Choix entre maille PET ou maille pliante 304 inox.</div>
+                    <div class="product-materials">Maille PET / inox 304 + cadre aluminium</div>
+                    <div class="product-price">Devis personnalisé</div>
+                </div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="Moustiquaire auto‑adhésive velcro – Sans outil">
+                    <span class="img-keyword-tag">Auto‑adhésif · Velcro</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Sans outil</div>
+                    <div class="product-title">Moustiquaire auto‑adhésive velcro</div>
+                    <div class="product-desc">Maille inox 304 avec ruban velcro (auto‑agrippant). Décollez et collez – aucun cadre requis. Idéal pour locations.</div>
+                    <div class="product-materials">Maille inox 304 + velcro auto‑adhésif</div>
+                    <div class="product-price">Devis selon taille</div>
+                </div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="Protection solaire – Moustiquaire + isolation thermique">
+                    <span class="img-keyword-tag">Protection solaire · Anti‑insectes</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Blocage de chaleur</div>
+                    <div class="product-title">Protection solaire / Store roulant</div>
+                    <div class="product-desc">Store extérieur en aluminium ou tissu – réduit chaleur et éblouissement, protège les meubles. Supports de montage DIY inclus.</div>
+                    <div class="product-materials">Coffre aluminium / tissu anti‑UV</div>
+                    <div class="product-price">Devis selon taille</div>
+                </div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="Rideau magnétique anti‑moustiques">
+                    <span class="img-keyword-tag">Magnétique · Anti‑mouches</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Se suspend comme un rideau</div>
+                    <div class="product-title">Rideau moustiquaire magnétique</div>
+                    <div class="product-desc">Rideau en maille de fibre de verre fine avec séparation magnétique centrale ou ourlet lesté. Passage facile – se referme automatiquement.</div>
+                    <div class="product-materials">Fibre de verre + bande magnétique / poids</div>
+                    <div class="product-price">Devis selon taille</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Cliquez sur un produit pour plus de détails. Toutes les moustiquaires sont fabriquées sur mesure selon vos dimensions exactes. <a href="#inquiry" style="color: var(--primary);">Demandez un devis gratuit →</a></p>
+    </div>
+</section>
+
+<!-- 公司介绍模块 -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>À propos de MBORMC</h2>
+            <p>Marque mondiale de moustiquaires sur mesure – conçue à Foshan, livrée partout dans le monde</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> est une marque internationale spécialisée dans les moustiquaires enroulables sur mesure et les systèmes de portes pliantes. Avec plus de <strong>15 ans d'expérience en extrusion d'aluminium et ingénierie de précision</strong>, nous servons des projets résidentiels, hôteliers et commerciaux dans plus de <strong>50 pays</strong>, y compris de nombreux clients satisfaits au Burundi.</p>
+                <p>Tous nos produits sont fabriqués dans notre usine de Foshan, en Chine, à partir d'alliage d'aluminium premium <strong>6063‑T5</strong>, offrant haute résistance, résistance à la corrosion et finition esthétique. Nous combinons des prix d'usine avec une expédition mondiale et des guides d'installation locaux pour rendre la protection DIY accessible à tous.</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">15+ ans d'expérience</span>
+                    <span class="highlight-badge">Aluminium 6063‑T5</span>
+                    <span class="highlight-badge">50+ pays desservis</span>
+                    <span class="highlight-badge">Direct usine</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Gammes de produits</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>Série H – Moustiquaires pour fenêtres</strong><br>Modèles enroulables automatiques, sécurité enfants, installation sans outil.</li>
+                    <li><span class="series-icon">🚪</span> <strong>Série F – Systèmes pour portes</strong><br>Designs pliants, coulissants, sans rail pour balcons, cuisines et cloisons intérieures.</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">Support multilingue (FR, RN, EN, CN, etc.) et livraison mondiale – nous rendons la protection sur mesure simple.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>Pourquoi les propriétaires burundais choisissent MBORMC</h2><p>Direct usine — pas d'intermédiaire, qualité DIY premium</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>Auto‑mesure, coupe sur mesure</h3><p>Nous fabriquons les moustiquaires selon vos dimensions exactes — aucune installation professionnelle requise.</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Livraison rapide au Burundi</h3><p>Expédition sous 3 jours ouvrables, livraison par fret aérien express ou maritime avec suivi.</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>Économisez 40‑60 % vs magasins locaux</h3><p>Prix direct usine — paiement en USD ou BIF. Pour commandes personnelles sous 50 USD, généralement sans droits de douane (petits colis).</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>Protection anti‑moustiques prouvée</h3><p>La maille fine bloque moustiques, mouches, moucherons – testée sous climat tropical burundais, pour aider à prévenir le paludisme.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>Questions fréquentes pour les acheteurs DIY</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">Comment mesurer ma fenêtre pour une moustiquaire DIY ?<span>+</span></button><div class="faq-answer">Un guide simple est fourni avec chaque commande — utilisez un mètre ruban, largeur et hauteur. Nous coupons la moustiquaire à vos mesures.</div></div>
+            <div class="faq-item"><button class="faq-question">Ai‑je besoin d'outils spéciaux ?<span>+</span></button><div class="faq-answer">Non. Toutes les moustiquaires sont livrées avec cadres clipsables, ruban adhésif ou tension à ressort — un tournevis suffit.</div></div>
+            <div class="faq-item"><button class="faq-question">Comment se passent les douanes et taxes pour le Burundi ?<span>+</span></button><div class="faq-answer">Pour les envois personnels de faible valeur (ex : moins de 50 USD), les droits de douane sont souvent minimes ou nuls. Nous pouvons aussi organiser un envoi DDP (tous frais inclus).</div></div>
+            <div class="faq-item"><button class="faq-question">Puis‑je obtenir un échantillon avant une commande en gros ?<span>+</span></button><div class="faq-answer">Oui, des kits d'échantillons sont envoyés au Burundi sous 7 jours. Contactez‑nous via WhatsApp.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品关键词模块（6个精选） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Nos principaux mots‑clés produits</h2>
+            <p>Découvrez toute la gamme de moustiquaires sur mesure pour votre maison</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>Moustiquaire</strong><p>Maillet fine haute densité bloque même les plus petits moustiques tout en laissant passer l'air. Parfaite pour chambres et séjours.</p></div>
+            <div class="keyword-item"><strong>Grille anti‑mouches</strong><p>Éloigne mouches, guêpes et autres insectes volants sans obstruer la vue. Disponible en fibre de verre, PET ou acier inoxydable.</p></div>
+            <div class="keyword-item"><strong>Protection anti‑insectes</strong><p>Protection complète contre moustiques, mouches, moucherons. Nos moustiquaires s'adaptent à tout type de fenêtre ou porte.</p></div>
+            <div class="keyword-item"><strong>Moustiquaire pour fenêtre</strong><p>Adaptée aux fenêtres à lamelles, coulissantes et oscillo-battantes. Kit d'installation DIY inclus.</p></div>
+            <div class="keyword-item"><strong>Moustiquaire pour porte</strong><p>Grilles robustes pour portes-fenêtres, portes d'entrée et vérandas. Options magnétiques ou enroulables.</p></div>
+            <div class="keyword-item"><strong>Grille anti‑animaux</strong><p>Maillet en acier inoxydable 304 – résiste aux griffures et morsures de chiens et chats. Idéal pour foyers avec animaux.</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Toutes les moustiquaires sont fabriquées sur mesure selon vos dimensions exactes. <a href="#inquiry" style="color: var(--primary);">Demandez un devis gratuit →</a></p>
+    </div>
+</section>
+
+<!-- 询价表单（布隆迪站） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>Demander un devis DIY — Livraison au Burundi</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>Nom complet</label>
+                <input type="text" name="name" placeholder="Jean Nduwimana" required>
+            </div>
+            <div class="form-group">
+                <label>Adresse e‑mail</label>
+                <input type="email" name="email" placeholder="jean@exemple.bi" required>
+            </div>
+            <div class="form-group">
+                <label>Province / Ville (Burundi)</label>
+                <input type="text" name="country" placeholder="ex. Bujumbura, Gitega, Ngozi" required>
+            </div>
+            <div class="form-group">
+                <label>Dimensions fenêtre/porte (L x H en cm ou pouces)</label>
+                <textarea name="message" rows="4" placeholder="Indiquez les quantités et dimensions. Exemple : 3 fenêtres à lamelles : 120x90cm chacune. 1 porte‑fenêtre : 200x210cm..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Envoyer la demande →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (cliquez pour copier)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 Base de production MBORMC : Dali Town, District de Nanhai, Foshan, Guangdong, Chine</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← Retour à l'accueil global</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — Fabricant de moustiquaires DIY pour le Burundi et le monde</p>
+        <p class="footer-address">Prix direct usine · Expédition mondiale · Garantie 2 ans</p>
+        <p><a href="#home">Accueil</a> | <a href="#products">Produits</a> | <a href="#inquiry">Contact</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Plan du site</a> | <a href="https://www.insectscreen.cc/Global.html">Site global</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('ID WeChat "FSMBOR" copié dans le presse‑papiers');
+        }).catch(() => {
+            prompt('Appuyez sur Ctrl+C pour copier l’ID WeChat :', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
