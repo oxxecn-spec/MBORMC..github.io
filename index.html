@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>MBORMC | DIY Fly Screens & Mosquito Nets – UK & Australia</title>
     <meta name="description" content="MBORMC – global custom insect screen brand. H Series window screens, F Series door systems. 6063-T5 aluminium, factory direct, worldwide shipping with wooden crate packaging.">
-    <!-- 规范域名 -->
     <link rel="canonical" href="https://www.insectscreen.cc/">
-    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -22,6 +20,11 @@
             color: #1e2a3a;
             line-height: 1.5;
             scroll-behavior: smooth;
+            overflow-y: auto;  /* 确保垂直滚动条可用 */
+        }
+
+        html {
+            overflow-y: auto;  /* 确保根元素滚动条可用 */
         }
 
         :root {
@@ -182,7 +185,6 @@
             background: var(--gray-border);
         }
 
-        /* 桌面端强制一行排列 */
         @media (min-width: 769px) {
             .hero-stats {
                 flex-wrap: nowrap;
@@ -207,7 +209,7 @@
             margin: 0 auto;
         }
 
-        /* products grid - 修改产品卡片为可点击链接 + 真实图片 + 图片关键词标签 */
+        /* products grid */
         .products-section {
             padding: 4rem 0;
             background: var(--gray-light);
@@ -248,7 +250,6 @@
             object-fit: cover;
             display: block;
         }
-        /* 图片关键词标签 */
         .img-keyword-tag {
             position: absolute;
             bottom: 12px;
@@ -326,7 +327,7 @@
             margin-bottom: 1rem;
         }
 
-        /* 公司介绍模块 */
+        /* about */
         .about-section {
             padding: 4rem 0;
             background: white;
@@ -372,7 +373,7 @@
             min-width: 2rem;
         }
 
-        /* 关键词模块 */
+        /* keywords grid */
         .keywords-section {
             padding: 4rem 0;
             background: white;
@@ -460,7 +461,7 @@
             transform: translateY(-2px);
         }
 
-        /* 社交图标 */
+        /* social icons */
         .social-icons {
             display: flex;
             justify-content: center;
@@ -572,7 +573,7 @@
             cursor: pointer;
         }
 
-        /* 右侧浮动联系栏 */
+        /* floating contact */
         .floating-contact {
             position: fixed;
             right: 20px;
@@ -605,7 +606,7 @@
         .contact-icon.whatsapp:hover { background: #25D366; color: white; }
         .contact-icon.wechat:hover { background: #07C160; color: white; }
 
-        /* 响应式 */
+        /* responsive */
         @media (max-width: 768px) {
             .floating-contact {
                 right: 10px;
@@ -723,7 +724,7 @@
         </div>
         <div class="product-grid">
             <!-- 产品1: 回卷式防蚊纱窗 -->
-            <a href="#" class="product-card" target="_blank" rel="noopener"> <!-- 请替换 # 为您的产品详情链接 -->
+            <a href="#" class="product-card" target="_blank" rel="noopener">
                 <div class="product-img">
                     <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Retractable Roll-Up Screen – Mosquito Screen, Fly Mesh, Insect Protection">
                     <span class="img-keyword-tag">Mosquito Screen · Fly Mesh</span>
