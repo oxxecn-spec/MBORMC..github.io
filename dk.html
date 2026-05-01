@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | DIY Myggenet – Danmark | Skræddersyede Insektskærme</title>
+    <meta name="description" content="MBORMC – skræddersyede insektskærme til danske hjem. DIY myggenet, rulleloft, folde døre. Perfekte til skydedøre, drej- og vipvinduer, altandøre. Hurtig levering til København, Aarhus, Odense, Aalborg, Esbjerg. Direkte fra fabrik i Kina.">
+    <link rel="canonical" href="https://www.insectscreen.cc/dk.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* 样式与全球首页完全一致，未做任何改动 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏 -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (klik for at kopiere)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/dk.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Hjem</a></li>
+            <li><a href="#products">DIY net</a></li>
+            <li><a href="#about">Om os</a></li>
+            <li><a href="#why">Hvorfor MBORMC</a></li>
+            <li><a href="#inquiry">Forespørg pris</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">Nem DIY installation · Forsendelse fra Foshan, Kina</span>
+            <h1>Beskyttelse mod myg og insekter — <em>København • Aarhus • Odense • Aalborg • Esbjerg</em></h1>
+            <p class="hero-desc">Skræddersyede net til ethvert vindue eller dør. Ingen specialværktøj nødvendig – monter selv på få minutter. Direkte fra fabrikken til din dør — op til 60% billigere end i lokale butikker.</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">150+</div><div>Kunder i Danmark</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>Montering på 10 min</div></div>
+                <div class="stat"><div class="stat-num">7-15 dage</div><div>Hurtig levering</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>Søfragt + træemballage</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">Forespørg pris →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">Se nettyper</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="Eksempel på DIY myggenet installation">
+        </div>
+    </div>
+</section>
+
+<!-- 产品区域：6个产品（链接与全球版一致） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>DIY insektskærme til danske hjem</h2>
+            <p>Tilpasset til skydedøre, drej- og vipvinduer og altandøre</p>
+        </div>
+        <div class="product-grid">
+            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Rullegardin – beskyttelse mod myg og fluer">
+                    <span class="img-keyword-tag">Mod myg · Mod fluer</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY 10 min</div>
+                    <div class="product-title">MBORMC® H01: Rullegardin</div>
+                    <div class="product-desc">PET-net – fremragende beskyttelse mod myg. Aluminiumsramme. Nem installation med inkluderet klæbebånd eller skruer. Kan rulles op, når det ikke er i brug.</div>
+                    <div class="product-materials">Materiale: PET-net + aluminiumsramme</div>
+                    <div class="product-price">Pris efter størrelse</div>
+                </div>
+            </a>
+            <!-- 产品2: 防蚊折叠纱门 -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="Folde dør med net – kæledyrsikker">
+                    <span class="img-keyword-tag">Dør · Kæledyrsikker</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 Kradsesikker</div>
+                    <div class="product-title">Folde dør med net (kombi)</div>
+                    <div class="product-desc">Aluminiumsramme + folde net af rustfrit stål 304 – holder myg ude og modstår ridser/ bid. Fås også med gennemsigtigt PVC-panel.</div>
+                    <div class="product-materials">Rustfrit stål 304 / krystalpanel + aluminiumsramme</div>
+                    <div class="product-price">Pris efter størrelse</div>
+                </div>
+            </a>
+            <!-- 产品3: 回卷+折叠组合 -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="Rulle + folde dør – 2 i 1">
+                    <span class="img-keyword-tag">2 i 1 · Mod insekter</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">2 i 1 design</div>
+                    <div class="product-title">Rulle + folde dør</div>
+                    <div class="product-desc">Kombination af rullegardin og folde-net. Valgmuligheder: PET-net eller folde-net i rustfrit stål 304.</div>
+                    <div class="product-materials">PET / rustfrit 304 + aluminiumsramme</div>
+                    <div class="product-price">Pris efter mål</div>
+                </div>
+            </a>
+            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="Selvklæbende Velcro – uden værktøj">
+                    <span class="img-keyword-tag">Selvklæbende · Velcro</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Uden værktøj</div>
+                    <div class="product-title">Selvklæbende Velcro net</div>
+                    <div class="product-desc">Net i rustfrit stål 304 med Velcro-bånd (krog og løkke). Klar til at klistre på – ingen ramme nødvendig. Ideel til lejeboliger.</div>
+                    <div class="product-materials">Rustfrit 304 + selvklæbende Velcro</div>
+                    <div class="product-price">Pris efter størrelse</div>
+                </div>
+            </a>
+            <!-- 产品5: 遮阳卷帘 -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="Solafskærmning – net + termisk isolering">
+                    <span class="img-keyword-tag">Solafskærmning · Mod insekter</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Termisk blokering</div>
+                    <div class="product-title">Solafskærmning / udvendige rulleskodder</div>
+                    <div class="product-desc">Udvendig aluminiums- eller stofpersienne – reducerer varme og blænding, beskytter møbler. Inkluderer beslag til DIY-montering.</div>
+                    <div class="product-materials">Aluminiumskassette / UV-beskyttende stof</div>
+                    <div class="product-price">Pris efter størrelse</div>
+                </div>
+            </a>
+            <!-- 产品6: 防蚊磁吸门帘 -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="Magnetisk myggenet gardin">
+                    <span class="img-keyword-tag">Magnetisk · Mod fluer</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">Hænger som et gardin</div>
+                    <div class="product-title">Magnetisk myggenet gardin</div>
+                    <div class="product-desc">Gardin i glasfibernet med magnetlukning i midten eller vægtede kanter. Nem passage – lukker automatisk.</div>
+                    <div class="product-materials">Glasfiber + magneter / vægte</div>
+                    <div class="product-price">Pris efter størrelse</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Klik på et produkt for yderligere detaljer. Alle net fremstilles efter mål på dine vinduer/døre. <a href="#inquiry" style="color: var(--primary);">Anmod om uforpligtende tilbud →</a></p>
+    </div>
+</section>
+
+<!-- 公司介绍模块 -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Om MBORMC</h2>
+            <p>Globalt mærke af skræddersyede insektskærme – designet i Foshan, leveret verden over</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> er et internationalt mærke, der specialiserer sig i skræddersyede rullelofter mod insekter og folde dørsystemer. Med mere end <strong>15 års erfaring</strong> inden for aluminiumsforarbejdning og præcisionsteknik betjener vi bolig-, hotel- og kommercielle projekter i mere end <strong>50 lande</strong>, herunder mange kunder i Danmark.</p>
+                <p>Alle vores produkter fremstilles på vores egen fabrik i Foshan, Kina, ved hjælp af højkvalitets aluminiumslegering <strong>6063-T5</strong> – som giver høj styrke, korrosionsbestandighed og en elegant finish. Vi tilbyder direkte fabrikspriser med global forsendelse og lokale installationsvejledninger, så DIY-beskyttelse er tilgængelig overalt.</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">15+ års erfaring</span>
+                    <span class="highlight-badge">Aluminium 6063-T5</span>
+                    <span class="highlight-badge">Betjener 50+ lande</span>
+                    <span class="highlight-badge">Direkte fra fabrik</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">Produktserier</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>Serie H – Net til vinduer</strong><br>Automatiske rullemodeller, børnesikring, værktøjsløs montering.</li>
+                    <li><span class="series-icon">🚪</span> <strong>Serie F – Systemer til døre</strong><br>Folde- og skydedesigns, uden skinner, til altaner, køkkener og indvendige skillevægge.</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">Flersproget support (DA, EN, CN, DE, FR, etc.) og global forsendelse – vi gør skræddersyet beskyttelse enkel.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>Hvorfor danske hjem vælger MBORMC</h2><p>Direkte fra fabrikken — ingen mellemled, enestående DIY-kvalitet</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>Mål selv, vi skærer til</h3><p>Vi fremstiller nettet præcis efter dine vinduesmål – ingen professionel installation nødvendig.</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Hurtig levering til Danmark</h3><p>Ordrer afsendes inden for 3 dage, fly- eller søfragt med sporing.</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>Spar 40-60 % i forhold til lokale butikker</h3><p>Fabrikspriser — betal i EUR eller DKK. For små forsendelser (under ca. 1150 DKK) er der normalt ingen told, men moms kan forekomme. Vi kan tilbyde DDP-levering (inkl. afgifter).</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>Dokumenteret myggebekæmpelse</h3><p>Fint netværk blokerer myg, fluer og små insekter – testet i dansk klima, hjælper med at reducere risikoen for insektbårne sygdomme.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>Ofte stillede spørgsmål til DIY-købere</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">Hvordan måler jeg mit vindue til DIY-net?<span>+</span></button><div class="faq-answer">Ved hver bestilling medfølger en simpel vejledning – brug bare et målebånd, bredde og højde. Vi skærer nettet efter dine mål.</div></div>
+            <div class="faq-item"><button class="faq-question">Har jeg brug for specialværktøj?<span>+</span></button><div class="faq-answer">Nej. Alle net leveres med nemt samlelige rammer, klæbebånd eller fjedre – en skruetrækker er nok.</div></div>
+            <div class="faq-item"><button class="faq-question">Hvordan fungerer told og moms for Danmark?<span>+</span></button><div class="faq-answer">For private forsendelser af lav værdi (under ca. 1150 DKK) er der normalt ingen told, men 25% dansk moms kan opkræves. For større ordrer kan vi arrangere DDP-forsendelse (inklusiv told og moms). Kontakt os for mere information.</div></div>
+            <div class="faq-item"><button class="faq-question">Kan jeg få en prøve, før jeg bestiller et større parti?<span>+</span></button><div class="faq-answer">Ja. Prøvesæt sendes til Danmark inden for 7 dage. Kontakt os via WhatsApp.</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品关键词模块（6个精选） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>Nøgleord for vores produkter</h2>
+            <p>Opdag hele vores sortiment af net – skræddersyet til dit hjem</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>Myggenet</strong><p>Højdensitet-net, der blokerer selv de mindste myg, mens luftstrømmen opretholdes. Perfekt til soveværelser og stuer.</p></div>
+            <div class="keyword-item"><strong>Flue net</strong><p>Holder fluer, kakerlakker og andre flyvende insekter ude uden at blokere udsigten. Fås i glasfiber, PET eller rustfrit stål.</p></div>
+            <div class="keyword-item"><strong>Insektskærm</strong><p>Alt-i-en beskyttelse mod myg, fluer, små insekter og knott. Vores skræddersyede net passer til enhver vindues- eller dørtype.</p></div>
+            <div class="keyword-item"><strong>Vinduesnet</strong><p>Tilpasset til skydedøre, drej- og vipvinduer og hængslede vinduer. Inkluderer DIY-monteringssæt.</p></div>
+            <div class="keyword-item"><strong>Dørnet</strong><p>Robust net til altandøre, hoveddøre og terrasser. Magnetiske eller rulle-løsninger.</p></div>
+            <div class="keyword-item"><strong>Kæledyrsikret net</strong><p>Rustfrit stål 304-net, der modstår ridser og bid fra hunde og katte. Ideel til familier med kæledyr.</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Alle net fremstilles efter præcise mål på dine vinduer/døre. <a href="#inquiry" style="color: var(--primary);">Anmod om uforpligtende tilbud →</a></p>
+    </div>
+</section>
+
+<!-- 询价表单（丹麦站） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>Forespørg pris DIY — Levering til Danmark</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>Fulde navn</label>
+                <input type="text" name="name" placeholder="Lars Jensen" required>
+            </div>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="lars@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>By / Region (Danmark)</label>
+                <input type="text" name="country" placeholder="F.eks. København, Aarhus, Odense, Aalborg" required>
+            </div>
+            <div class="form-group">
+                <label>Mål på vindue/dør (bredde x højde i cm eller tommer)</label>
+                <textarea name="message" rows="4" placeholder="Fortæl os om antal og størrelser. Eks.: 3 skydedøre: 120x90 cm hver. 1 altandør: 200x210 cm..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send forespørgsel →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（含邮箱和回首页链接） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (klik for at kopiere)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 MBORMC produktionsbase: Dali Town, Nanhai District, Foshan, Guangdong, Kina</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← Tilbage til global startside</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — Producent af DIY insektskærme til Danmark og verden</p>
+        <p class="footer-address">Direkte fabrikspriser · Global forsendelse · 2 års DIY-garanti</p>
+        <p><a href="#home">Hjem</a> | <a href="#products">Produkter</a> | <a href="#inquiry">Kontakt</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Sideoversigt</a> | <a href="https://www.insectscreen.cc/Global.html">Global side</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID "FSMBOR" er kopieret');
+        }).catch(() => {
+            prompt('Tryk Ctrl+C for at kopiere WeChat ID:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
