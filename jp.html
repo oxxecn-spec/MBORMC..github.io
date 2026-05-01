@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>MBORMC | DIY虫除けスクリーン – 日本 | カスタム蚊取りネット・フライスクリーン</title>
+    <meta name="description" content="MBORMC – 日本向けカスタム虫除けスクリーンブランド。DIY取付け簡単、オーダーメイドの蚊取りネット、引き違い窓・FIX窓・掃出し窓に対応。東京、大阪、横浜、名古屋、福岡、札幌など全国配送。中国佛山直送・工場直送価格。">
+    <link rel="canonical" href="https://www.insectscreen.cc/jp.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* スタイルはグローバル版と完全に同一（変更なし） */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary);
+            padding: 0.2rem 0.9rem;
+            border-radius: 2rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        .hero h1 em {
+            color: var(--primary);
+            font-style: normal;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.8rem;
+        }
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
+        }
+        .stat {
+            text-align: left;
+            flex: 1 1 auto;
+        }
+        .stat-num {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            white-space: nowrap;
+        }
+        .hero-img img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: var(--gray-border);
+        }
+
+        @media (min-width: 769px) {
+            .hero-stats {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .stat {
+                flex: 1;
+            }
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .section-head p {
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* products grid */
+        .products-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+        .product-img {
+            position: relative;
+            aspect-ratio: 4/3;
+            background: #f1f5f9;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-keyword-tag {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(227, 160, 24, 0.9);
+            color: #1e2a3a;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(2px);
+            letter-spacing: 0.3px;
+            z-index: 2;
+            transition: background 0.2s;
+        }
+        .product-card:hover .img-keyword-tag {
+            background: #c68912;
+            color: white;
+        }
+        .product-body {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .diy-badge {
+            display: inline-block;
+            background: #e6f7e6;
+            color: #2c6e2c;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.2rem 0.5rem;
+            border-radius: 2rem;
+            margin-bottom: 0.5rem;
+            align-self: flex-start;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        .product-materials {
+            font-size: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-top: auto;
+        }
+        .product-price {
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin-top: 0.5rem;
+        }
+
+        /* features */
+        .features-section {
+            padding: 4rem 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .feature-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* about */
+        .about-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .about-text p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .about-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .highlight-badge {
+            background: var(--gray-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        .series-list {
+            list-style: none;
+            padding: 0;
+        }
+        .series-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.6rem;
+        }
+        .series-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 2rem;
+        }
+
+        /* keywords grid */
+        .keywords-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        .keywords-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .keyword-item {
+            background: var(--gray-light);
+            padding: 1.2rem;
+            border-radius: 1rem;
+            transition: 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+        .keyword-item strong {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-item p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* inquiry form */
+        .inquiry-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .inquiry-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            background: white;
+        }
+        .inquiry-container h2 {
+            text-align: center;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: #2c3e44;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--gray-border);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            transition: 0.2s;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: var(--dark);
+            color: white;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+        .social-icon.facebook:hover { background: #1877F2; color: white; }
+        .social-icon.instagram:hover { background: #E4405F; color: white; }
+        .social-icon.xiaohongshu:hover { background: #FE2C55; color: white; }
+        .social-icon.xiaohongshu {
+            background: #f1f5f9;
+            color: #FE2C55;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .social-icon.xiaohongshu:hover {
+            background: #FE2C55;
+            color: white;
+        }
+
+        /* contact bar */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* faq */
+        .faq-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--gray-border);
+            margin-bottom: 0.25rem;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            display: none;
+            padding-bottom: 1rem;
+            color: var(--text-muted);
+        }
+        .faq-answer.show {
+            display: block;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* floating contact */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .stat {
+                min-width: 120px;
+                flex: 1 0 auto;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .keywords-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .img-keyword-tag {
+                font-size: 0.6rem;
+                bottom: 8px;
+                left: 8px;
+                padding: 2px 8px;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右側フローティング連絡アイコン -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (クリックでコピー)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/jp.html" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="メニュー">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#products">DIYスクリーン</a></li>
+            <li><a href="#about">会社概要</a></li>
+            <li><a href="#why">選ばれる理由</a></li>
+            <li><a href="#inquiry">お見積り</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div>
+            <span class="hero-badge">DIY簡単取り付け · 中国佛山より直送</span>
+            <h1>蚊・ハエをシャットアウト — <em>東京 • 大阪 • 横浜 • 名古屋 • 福岡 • 札幌</em></h1>
+            <p class="hero-desc">どんな窓やドアにも合わせたオーダーメイドの虫除けスクリーン。工具不要、数分で自分で取り付け可能。工場直送だから地元店より40〜60％お得。</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">8k+</div><div>日本の顧客</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div>簡単10分取付</div></div>
+                <div class="stat"><div class="stat-num">7-15日</div><div>迅速配送</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div>海上輸送 + 木枠梱包</div></div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <a href="#inquiry" class="btn">お見積り依頼 →</a>
+                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">商品一覧を見る</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="DIY虫除けスクリーン取り付け例">
+        </div>
+    </div>
+</section>
+
+<!-- 製品エリア：6製品（リンクはグローバル版と同じ） -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>日本の住宅向けDIY虫除けスクリーン</h2>
+            <p>引き違い窓、FIX窓、掃出し窓、フレンチドアなどに最適</p>
+        </div>
+        <div class="product-grid">
+            <!-- 製品1: 巻取り式スクリーン -->
+            <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="巻取り式スクリーン – 蚊取りネット・フライスクリーン">
+                    <span class="img-keyword-tag">蚊取りネット · フライスクリーン</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🔧 DIY 10分</div>
+                    <div class="product-title">MBORMC® H01: 巻取り式スクリーン</div>
+                    <div class="product-desc">PETファイバーメッシュ – 優れた防虫効果。アルミフレーム。付属の粘着テープまたはネジで簡単取付。使用しない時は巻き上げ可能。</div>
+                    <div class="product-materials">素材: PETメッシュ + アルミフレーム</div>
+                    <div class="product-price">サイズにより見積</div>
+                </div>
+            </a>
+            <!-- 製品2: 折りたたみスクリーンドア -->
+            <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="折りたたみスクリーンドア – ペット対策">
+                    <span class="img-keyword-tag">ドアスクリーン · ペット対策</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">🐾 ペットに強い</div>
+                    <div class="product-title">折りたたみスクリーンドア（コンボ）</div>
+                    <div class="product-desc">アルミフレーム＋304ステンレス折りたたみメッシュ – 蚊を防ぎ、ペットの引っかき・噛み付きにも強い。透明クリスタル折りたたみパネルも選択可能。</div>
+                    <div class="product-materials">304SSメッシュ／クリスタルパネル＋アルミフレーム</div>
+                    <div class="product-price">サイズにより見積</div>
+                </div>
+            </a>
+            <!-- 製品3: 巻取り＋折りたたみコンビ -->
+            <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="巻取り＋折りたたみスクリーンドア – 2-in-1">
+                    <span class="img-keyword-tag">2-in-1 · 蚊帳ネット</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">2-in-1設計</div>
+                    <div class="product-title">巻取り＋折りたたみスクリーンドア</div>
+                    <div class="product-desc">巻取り式と折りたたみ式を組み合わせ。PETファイバーメッシュ＋304折りたたみメッシュから選択可能。</div>
+                    <div class="product-materials">PETメッシュ／304メッシュ＋アルミフレーム</div>
+                    <div class="product-price">カスタム見積</div>
+                </div>
+            </a>
+            <!-- 製品4: 貼り付けマジックテープスクリーン -->
+            <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="貼り付けマジックテープスクリーン – 工具不要">
+                    <span class="img-keyword-tag">貼り付け · マジックテープ</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">工具不要</div>
+                    <div class="product-title">貼り付けマジックテープスクリーン</div>
+                    <div class="product-desc">304ステンレスメッシュ＋面ファスナー（マジックテープ）。はがして貼るだけ – フレーム不要。賃貸住宅に最適。</div>
+                    <div class="product-materials">304SSメッシュ＋自己粘着マジックテープ</div>
+                    <div class="product-price">サイズにより見積</div>
+                </div>
+            </a>
+            <!-- 製品5: ソーラーシェーディング／遮熱ロールスクリーン -->
+            <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="遮熱スクリーン – 虫除け＋断熱">
+                    <span class="img-keyword-tag">遮熱 · 防虫</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">遮熱効果</div>
+                    <div class="product-title">ソーラーシェーディング／ロールスクリーン</div>
+                    <div class="product-desc">アルミまたはファブリック製外付けロールスクリーン – 熱や眩しさを軽減、家具を保護。DIY取付金具付属。</div>
+                    <div class="product-materials">アルミカセット／UVカット生地</div>
+                    <div class="product-price">サイズにより見積</div>
+                </div>
+            </a>
+            <!-- 製品6: マグネット式蚊取りカーテン -->
+            <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
+                <div class="product-img">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="マグネット式蚊取りカーテン">
+                    <span class="img-keyword-tag">マグネット · フライスクリーン</span>
+                </div>
+                <div class="product-body">
+                    <div class="diy-badge">カーテンのように吊るすだけ</div>
+                    <div class="product-title">マグネット式蚊取りカーテン</div>
+                    <div class="product-desc">微細なファイバーグラスメッシュ、中央マグネットスプリットまたはおもり付き。歩いて通ると自動で閉まります。</div>
+                    <div class="product-materials">ファイバーグラスメッシュ＋マグネット／おもり</div>
+                    <div class="product-price">サイズにより見積</div>
+                </div>
+            </a>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">各製品をクリックすると詳細をご覧いただけます。全てのスクリーンはお客様の窓・ドアの寸法に合わせてオーダー生産します。<a href="#inquiry" style="color: var(--primary);">無料お見積りをリクエスト →</a></p>
+    </div>
+</section>
+
+<!-- 会社紹介モジュール -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>MBORMCについて</h2>
+            <p>世界対応のカスタム虫除けスクリーンブランド – 佛山に拠点、世界中へ発送</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p><strong>MBORMC</strong> は、オーダーメイドの巻取り式虫除けスクリーンと折りたたみドアシステムを専門とするグローバルブランドです。<strong>15年以上のアルミ押出成形と精密加工の経験</strong>を持ち、50か国以上の住宅、ホテル、商業施設に製品を提供しています。日本国内でも多くのお客様にご愛用いただいています。</p>
+                <p>全ての製品は、中国仏山の自社工場で高級 <strong>6063-T5アルミ合金</strong> を使用して製造され、高い強度、耐食性、美しい仕上がりを実現しています。工場直送価格、世界配送、現地での取付ガイダンスを組み合わせ、DIY防虫対策をより身近なものにしています。</p>
+                <div class="about-highlights">
+                    <span class="highlight-badge">15年以上の経験</span>
+                    <span class="highlight-badge">6063-T5アルミ</span>
+                    <span class="highlight-badge">50か国以上で実績</span>
+                    <span class="highlight-badge">工場直送</span>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 1rem; font-size: 1.3rem;">製品シリーズ</h3>
+                <ul class="series-list">
+                    <li><span class="series-icon">🪟</span> <strong>Hシリーズ – 窓用スクリーン</strong><br>自動巻取り、チャイルドセーフ、工具不要の取付けモデル。</li>
+                    <li><span class="series-icon">🚪</span> <strong>Fシリーズ – ドアシステム</strong><br>折りたたみ、スライド、レースレスデザイン。バルコニー、キッチン、室内間仕切りに最適。</li>
+                </ul>
+                <p style="margin-top: 1.2rem; font-size: 0.9rem; color: var(--text-muted);">多言語サポート（英語、中国語、フランス語、ドイツ語など）とグローバル配送 – あなたの家にぴったりの防虫対策をお届けします。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="features-section">
+    <div class="container">
+        <div class="section-head"><h2>日本の住宅所有者がMBORMCを選ぶ理由</h2><p>中国工場直送 — 中間マージンなし、高品質DIY</p></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon">📏</div><h3>セルフ採寸・カスタムカット</h3><p>お客様の窓寸法に合わせてスクリーンを製造 — 専門業者の設置は不要です。</p></div>
+            <div class="feature-card"><div class="feature-icon">✈️</div><h3>日本への迅速配送</h3><p>ご注文後3営業日以内に出荷、国際速達または海上輸送でお届けします。</p></div>
+            <div class="feature-card"><div class="feature-icon">💰</div><h3>地元店より40-60%お得</h3><p>工場直送価格 — 円建てでのお支払い可能（PayPal・銀行振込）。個人輸入の関税は通常なし。</p></div>
+            <div class="feature-card"><div class="feature-icon">🦟</div><h3>実証済みの防虫効果</h3><p>目の細かいメッシュが蚊、ハエ、ブユなどをブロック — 日本の夏にも対応。</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ（日本語） -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-head"><h2>DIY購入者向けよくある質問</h2></div>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item"><button class="faq-question">DIYスクリーンの窓の測り方は？<span>+</span></button><div class="faq-answer">ご注文時に簡単なガイドを同封します。メジャーで幅と高さを測るだけです。その数値に合わせてスクリーンをカットします。</div></div>
+            <div class="faq-item"><button class="faq-question">特別な工具は必要ですか？<span>+</span></button><div class="faq-answer">いいえ。全てのスクリーンには、クリップフレーム、粘着テープ、またはスプリングテンションが付属しており、ドライバー一本で十分です。</div></div>
+            <div class="faq-item"><button class="faq-question">関税や輸入税はどうなりますか？<span>+</span></button><div class="faq-answer">個人輸入で10,000円以下の小包は関税・消費税が免除される場合が多いです（詳細は税関にご確認ください）。法人向けにはDDP発送も承ります。</div></div>
+            <div class="faq-item"><button class="faq-question">まとめ注文前にサンプルはもらえますか？<span>+</span></button><div class="faq-answer">はい、サンプルキットを日本へ7日以内に発送します。WhatsAppでお問い合わせください。</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- 製品キーワードモジュール（6個） -->
+<section class="keywords-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>主な製品キーワード</h2>
+            <p>当社が提供するスクリーンの全範囲 – あなたの家に合わせてオーダーメイド</p>
+        </div>
+        <div class="keywords-grid">
+            <div class="keyword-item"><strong>蚊取りスクリーン</strong><p>高密度ファインメッシュで小さな蚊もブロックし、通気性を維持。寝室やリビングに最適。</p></div>
+            <div class="keyword-item"><strong>フライスクリーン</strong><p>ハエやハチなどの飛翔昆虫を視界を遮らずにシャットアウト。ファイバーグラス、PET、ステンレスから選択可能。</p></div>
+            <div class="keyword-item"><strong>虫除けスクリーン</strong><p>蚊、ハエ、ブユなどを総合的に防ぐカスタムスクリーン。あらゆる窓・ドアタイプにフィット。</p></div>
+            <div class="keyword-item"><strong>窓用蚊取りネット</strong><p>引き違い窓、FIX窓、開き窓などに合わせて調整。DIY取付キット付属。</p></div>
+            <div class="keyword-item"><strong>ドア用虫除けスクリーン</strong><p>フレンチドア、掃出し窓、玄関ドア向けの頑丈スクリーン。マグネット式や巻取り式を選択可能。</p></div>
+            <div class="keyword-item"><strong>ペット対策スクリーン</strong><p>猫や犬の引っかき・噛み付きに強いステンレスメッシュ。ペットとの共生住宅に最適。</p></div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">全てのスクリーンはお客様の窓・ドアの寸法に合わせてオーダー生産します。<a href="#inquiry" style="color: var(--primary);">無料お見積りをリクエスト →</a></p>
+    </div>
+</section>
+
+<!-- お問い合わせフォーム（日本向け） -->
+<section id="inquiry" class="inquiry-section">
+    <div class="inquiry-container">
+        <h2>DIYお見積り依頼 — 日本へ発送</h2>
+        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+                <label>お名前</label>
+                <input type="text" name="name" placeholder="山田 太郎" required>
+            </div>
+            <div class="form-group">
+                <label>メールアドレス</label>
+                <input type="email" name="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label>市区町村（都道府県）</label>
+                <input type="text" name="country" placeholder="例: 東京都渋谷区" required>
+            </div>
+            <div class="form-group">
+                <label>窓・ドアの寸法（幅 × 高さ）cmまたはインチ</label>
+                <textarea name="message" rows="4" placeholder="数量と寸法をお知らせください。例: 窓3枚: 120×90cm / 掃出し窓1枚: 200×210cm" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">お見積りを送信 →</button>
+        </form>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://xhslink.com/m/9u98BmY3tyS" class="social-icon xiaohongshu" target="_blank" rel="noopener" title="Xiaohongshu">
+                📕
+            </a>
+            <a href="https://www.threads.com/@mbormcnn" class="social-icon instagram" target="_blank" rel="noopener" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- 底部お問い合わせバー（メール追加、グローバルホームへのリンク） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (クリックでコピー)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 MBORMC 生産拠点: 中国広東省仏山市南海区大瀝鎮</span>
+            <br>
+            <a href="https://www.insectscreen.cc/" style="font-size: 0.8rem;">← グローバルホームに戻る</a>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — 日本および世界向けDIY虫除けスクリーンメーカー</p>
+        <p class="footer-address">工場直送価格 · 世界中へ発送 · 2年保証</p>
+        <p><a href="#home">ホーム</a> | <a href="#products">製品</a> | <a href="#inquiry">お問い合わせ</a> | <a href="https://www.insectscreen.cc/sitemap.xml">サイトマップ</a> | <a href="https://www.insectscreen.cc/">グローバルサイト</a></p>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const ans = btn.nextElementSibling;
+            ans.classList.toggle('show');
+            const span = btn.querySelector('span');
+            if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
+        });
+    });
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID「FSMBOR」をコピーしました');
+        }).catch(() => {
+            prompt('WeChat IDをコピーしてください:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
