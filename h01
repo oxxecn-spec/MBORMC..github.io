@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Product Name | MBORMC DIY Insect Screens</title>
+    <meta name="description" content="Detailed information about our custom insect screen – easy DIY installation, premium materials, global shipping.">
+    <link rel="canonical" href="https://www.insectscreen.cc/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* === 完全复用首页样式（仅保留公共部分，保持风格一致）=== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* floating contact (same as homepage) */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* contact bar (footer style) */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        /* footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+
+        /* 移动端菜单及响应式辅助（与首页保持一致） */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* 产品详情页特有样式（保持首页风格） */
+        .product-detail {
+            padding: 4rem 0;
+        }
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .product-gallery img {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+        }
+        .product-info h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 1rem 0;
+        }
+        .product-meta {
+            margin: 1rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid var(--gray-border);
+            border-bottom: 1px solid var(--gray-border);
+        }
+        .product-meta p {
+            margin: 0.5rem 0;
+        }
+        .product-actions {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .specs-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        .specs-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
+        }
+        .specs-icon {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 1.8rem;
+        }
+        @media (max-width: 768px) {
+            .product-detail-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 右侧浮动联系栏（与首页相同） -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (click to copy)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<!-- 导航栏（与首页完全一致） -->
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="https://www.insectscreen.cc/" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="https://www.insectscreen.cc/">Home</a></li>
+            <li><a href="https://www.insectscreen.cc/#products">DIY Screens</a></li>
+            <li><a href="https://www.insectscreen.cc/#about">About</a></li>
+            <li><a href="https://www.insectscreen.cc/#why">Why MBORMC</a></li>
+            <li><a href="https://www.insectscreen.cc/#inquiry">Get Quote</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<!-- 产品详情内容（示例替换） -->
+<section class="product-detail">
+    <div class="container">
+        <div class="product-detail-grid">
+            <!-- 左侧图片区 -->
+            <div class="product-gallery">
+                <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Retractable Roll-Up Screen">
+            </div>
+            <!-- 右侧信息区 -->
+            <div class="product-info">
+                <h1>Retractable Roll-Up Screen</h1>
+                <div class="product-price">Quote by size (from £45 / AU$85 for window)</div>
+                <div class="product-meta">
+                    <p><strong>DIY Badge:</strong> 🔧 DIY in 10 mins</p>
+                    <p><strong>Materials:</strong> PET mesh + Aluminium frame</p>
+                </div>
+                <p>PET fiber mesh – excellent mosquito protection. Aluminum frame. Simple installation with included adhesive tape or screws. Rolls up when not needed. Perfect for UK sash windows and Australian sliding windows.</p>
+                <ul class="specs-list">
+                    <li><span class="specs-icon">✅</span> Custom made to your exact measurements</li>
+                    <li><span class="specs-icon">✅</span> No tools required for installation</li>
+                    <li><span class="specs-icon">✅</span> UV‑resistant, rust‑proof materials</li>
+                    <li><span class="specs-icon">✅</span> Ships worldwide from Foshan, China</li>
+                </ul>
+                <div class="product-actions">
+                    <a href="#inquiry" class="btn">Get a Quote →</a>
+                    <a href="https://wa.me/8613536600067" class="btn btn-outline">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细描述区块（可选） -->
+        <div style="margin-top: 3rem; background: var(--gray-light); padding: 2rem; border-radius: var(--radius);">
+            <h3 style="margin-bottom: 1rem;">Product Details</h3>
+            <p>This retractable roll‑up screen is engineered for simplicity and durability. The high‑density PET mesh blocks mosquitoes, flies, and midges while maintaining natural airflow. The aluminium frame is available in any colour to match your existing windows. Installation takes minutes: simply attach the frame using the supplied adhesive tape or screws – no professional help needed.</p>
+            <p style="margin-top: 0.8rem;">All MBORMC screens are manufactured in our Foshan factory using 6063‑T5 aluminium. We offer global shipping with wooden crate packaging, and every order comes with a detailed DIY installation guide.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 底部联系栏（与首页相同） -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (click to copy)</a>
+            <span>📍 MBORMC Production Base, Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+        </div>
+    </div>
+</div>
+
+<!-- 页脚（与首页相同） -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — DIY Insect Screen Manufacturer for UK & Australia</p>
+        <p class="footer-address">Factory direct pricing · Worldwide shipping · 2-year DIY warranty</p>
+        <p><a href="https://www.insectscreen.cc/">Home</a> | <a href="https://www.insectscreen.cc/#products">Products</a> | <a href="https://www.insectscreen.cc/#inquiry">Contact</a></p>
+    </div>
+</footer>
+
+<script>
+    // 移动端菜单（复用首页逻辑）
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    // 微信复制功能
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID "FSMBOR" copied to clipboard');
+        }).catch(() => {
+            prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR');
+        });
+    }
+    const wechatBtn = document.getElementById('wechatCopyBtn');
+    if(wechatBtn) wechatBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+</script>
+</body>
+</html>
