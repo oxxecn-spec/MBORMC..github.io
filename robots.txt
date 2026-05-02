@@ -1,5 +1,5 @@
 # robots.txt for mbormc.com
-# Allow all search engines to crawl the entire site
+# Allow all crawlers – including AI, search engines, and any bots
 
 User-agent: *
 Allow: /
