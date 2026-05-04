@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.mbormc.com/sitemap.xml
+Sitemap: https://www.insectscreen.cc/sitemap.xml
