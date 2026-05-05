@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>404 · Page Not Found | MBORMC Insect Screens</title>
+    <meta name="description" content="404 error – The page you are looking for seems to have flown away. Explore MBORMC custom insect screens and DIY mosquito nets for your home.">
+    <link rel="canonical" href="https://www.insectscreen.cc/404">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ===== 完整保留首页样式体系 ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            overflow-y: auto;
+        }
+
+        html {
+            overflow-y: auto;
+        }
+
+        :root {
+            --primary: #e3a018;
+            --primary-dark: #c68912;
+            --dark: #1e2a3a;
+            --gray-light: #f8fafc;
+            --gray-border: #e2e8f0;
+            --text-muted: #475569;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 20px rgba(0,0,0,0.06);
+            --radius: 1rem;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* navigation */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            color: var(--dark);
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-weight: 600;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary-dark);
+        }
+        .btn-outline:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .btn-dark {
+            background: var(--dark);
+            color: white;
+        }
+        .btn-dark:hover {
+            background: #2d3e50;
+            transform: translateY(-2px);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-dark);
+        }
+
+        /* hero 基础样式用于404模块 */
+        .hero {
+            background: linear-gradient(120deg, #fffaf2 0%, #ffffff 100%);
+            padding: 4rem 0 3.5rem;
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-head h2 {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* 404 专用动画 */
+        @keyframes floatInsect {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(4deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .floating-mosquito {
+            animation: floatInsect 3s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        /* 快速帮助卡片 */
+        .help-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .help-card {
+            background: white;
+            border-radius: 2rem;
+            padding: 0.5rem 1.2rem;
+            border: 1px solid var(--gray-border);
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .help-card:hover {
+            border-color: var(--primary);
+            background: var(--gray-light);
+            color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            .floating-contact {
+                right: 10px;
+                gap: 8px;
+            }
+            .contact-icon {
+                width: 42px;
+                height: 42px;
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            .contact-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* 浮动联系按钮 */
+        .floating-contact {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #f1f5f9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: #1e2a3a;
+        }
+        .contact-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .contact-icon.whatsapp:hover { background: #25D366; color: white; }
+        .contact-icon.wechat:hover { background: #07C160; color: white; }
+
+        /* 底部样式 */
+        .contact-bar {
+            background: var(--gray-light);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-top: 1px solid var(--gray-border);
+        }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a, .contact-links span {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .contact-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 2rem 0 1.5rem;
+            text-align: center;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer-address {
+            font-size: 0.85rem;
+            margin-top: 0.8rem;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+
+        /* 404 主区域额外增强 */
+        .error-msg {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 550px;
+            margin: 1rem auto;
+        }
+        .big-404 {
+            font-size: clamp(6rem, 18vw, 12rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #1e2a3a, #e3a018, #c68912);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin: 0.5rem 0;
+            text-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .bug-icon {
+            font-size: 3.2rem;
+            color: var(--primary);
+            opacity: 0.7;
+            margin: 0 0.2rem;
+        }
+        .btn-group-404 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- === 浮动联系 (完全保留首页样式) === -->
+<div class="floating-contact">
+    <a href="https://wa.me/8613536600067" class="contact-icon whatsapp" target="_blank" rel="noopener" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="contact-icon wechat" id="wechatFloatingBtn" title="WeChat (click to copy)">
+        <i class="fab fa-weixin"></i>
+    </div>
+</div>
+
+<!-- === 导航栏 (链接均指向首页及锚点, 保持风格) === -->
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="/" class="logo">MBORMC</a>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#products">DIY Screens</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#why">Why MBORMC</a></li>
+            <li><a href="/">News</a></li>
+            <li><a href="/#inquiry">Get Quote</a></li>
+        </ul>
+        <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
+    </div>
+</nav>
+
+<!-- === 404 核心错误区域 (沿用首页柔和背景，风格统一) === -->
+<section class="hero" style="padding: 5rem 0 6rem;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+        <!-- 徽章(类似首页hero-badge) -->
+        <span class="hero-badge" style="display: inline-block; background: var(--primary); padding: 0.2rem 0.9rem; border-radius: 2rem; font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem;">
+            <i class="fas fa-map-signs"></i> 404 · Navigation Lost
+        </span>
+        
+        <!-- 动态昆虫图标 + 大数字 -->
+        <div class="floating-mosquito">
+            <i class="fas fa-mosquito bug-icon"></i>
+            <i class="fas fa-fly bug-icon" style="font-size: 2.8rem;"></i>
+        </div>
+        <div class="big-404">404</div>
+        
+        <h2 style="font-size: 1.9rem; font-weight: 700; color: var(--dark); margin-top: 0.5rem;">
+            Oops! That page flew away.
+        </h2>
+        <div class="error-msg">
+            <i class="fas fa-leaf" style="color: var(--primary-dark); margin-right: 6px;"></i> 
+            It seems the insect screen you’re looking for is either removed, renamed, or never existed.  
+            But don’t worry — we still have the perfect DIY mosquito net for your windows & doors.
+        </div>
+        
+        <!-- 主要操作按钮组 -->
+        <div class="btn-group-404">
+            <a href="/" class="btn">
+                <i class="fas fa-home"></i> Back to Homepage
+            </a>
+            <a href="/#products" class="btn btn-outline">
+                <i class="fas fa-grip"></i> Browse DIY Screens
+            </a>
+            <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank">
+                <i class="fab fa-whatsapp"></i> Live Support
+            </a>
+        </div>
+        
+        <!-- 快速帮助卡片列表: 常用产品/服务直达 (提升用户体验) -->
+        <div style="margin-top: 3rem;">
+            <p style="font-weight: 500; margin-bottom: 1rem; color: var(--dark);">
+                <i class="fas fa-lightbulb" style="color: var(--primary);"></i>  Need help? Try these popular sections:
+            </p>
+            <div class="help-links">
+                <a href="/#products" class="help-card"><i class="fas fa-diy"></i> DIY Installation Kits</a>
+                <a href="/#inquiry" class="help-card"><i class="fas fa-calculator"></i> Request Custom Quote</a>
+                <a href="/#why" class="help-card"><i class="fas fa-shipping-fast"></i> Global Shipping Info</a>
+                <a href="#" id="wechatHelpBtn" class="help-card"><i class="fab fa-weixin"></i> WeChat: FSMBOR</a>
+                <a href="mailto:info@mbormc.com" class="help-card"><i class="fas fa-envelope"></i> info@mbormc.com</a>
+            </div>
+        </div>
+        
+        <!-- 有趣小手绘分割 / 增加品牌关键词 -->
+        <div style="margin-top: 3rem; border-top: 1px solid var(--gray-border); padding-top: 1.8rem;">
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+                <i class="fas fa-check-circle" style="color: var(--primary);"></i> Custom insect screens for UK, USA, Australia, Japan, Europe & worldwide<br>
+                Retractable screens · Folding doors · Magnetic curtains · Velcro DIY nets
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- === 底部联系栏 (完全保留首页风格) === -->
+<div class="contact-bar">
+    <div class="container">
+        <div class="contact-links">
+            <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
+            <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (click to copy)</a>
+            <a href="mailto:info@mbormc.com">✉️ info@mbormc.com</a>
+            <span>📍 MBORMC Production Base, Dali Town, Nanhai District, Foshan, Guangdong, China</span>
+        </div>
+    </div>
+</div>
+
+<!-- === 页脚 === -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 MBORMC® — DIY Insect Screen Manufacturer for Global Markets</p>
+        <p class="footer-address">Factory direct pricing · Worldwide shipping · 2-year DIY warranty</p>
+        <p>
+            <a href="/">Home</a> | 
+            <a href="/#products">Products</a> | 
+            <a href="/#inquiry">Contact</a> | 
+            <a href="/sitemap.xml">Sitemap</a> | 
+            <a href="/">Global sites</a>
+        </p>
+    </div>
+</footer>
+
+<!-- === 脚本(移动菜单 + 微信复制，完全兼容首页行为) === -->
+<script>
+    // 移动端菜单切换
+    const menuToggle = document.getElementById('mobileMenuBtn');
+    const navList = document.getElementById('navLinks');
+    if(menuToggle) {
+        menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
+    }
+    
+    // 通用复制微信功能 (与首页保持一致)
+    function copyWechat() {
+        navigator.clipboard.writeText('FSMBOR').then(() => {
+            alert('WeChat ID "FSMBOR" copied to clipboard');
+        }).catch(() => {
+            prompt('Press Ctrl+C to copy WeChat ID:', 'FSMBOR');
+        });
+    }
+    
+    // 底部复制按钮
+    const wechatCopyBtn = document.getElementById('wechatCopyBtn');
+    if(wechatCopyBtn) wechatCopyBtn.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    
+    // 浮动图标复制
+    const wechatFloating = document.getElementById('wechatFloatingBtn');
+    if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
+    
+    // 帮助卡片中WeChat帮助按钮
+    const wechatHelp = document.getElementById('wechatHelpBtn');
+    if(wechatHelp) wechatHelp.addEventListener('click', (e) => { e.preventDefault(); copyWechat(); });
+    
+    // 确保所有指向#的链接保持温和 (不影响404体验)
+    document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            // 如果锚点不存在于当前页面，不做默认跳转，因为当前页是404，无对应ID，防止页面跳动
+            const targetId = this.getAttribute('href').substring(1);
+            if(targetId && !document.getElementById(targetId)) {
+                e.preventDefault();
+                window.location.href = '/' + this.getAttribute('href');
+            }
+        });
+    });
+</script>
+</body>
+</html>
