@@ -1,16 +1,14 @@
-name: Generate Sitemap
+name: Generate Sitemap for insectscreen.cc
 
-# 临时解决 Node.js 版本问题
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   push:
     branches:
-      - main          # ⚠️ 请替换为您的实际部署分支（main / master / gh-pages）
-  workflow_dispatch:  # 允许手动触发
+      - main          # ⚠️ 請根據您的 Pages 部署分支修改（main / master / gh-pages）
+  workflow_dispatch:
 
-# 关键：授予 GitHub Actions 写入权限
 permissions:
   contents: write
 
@@ -23,12 +21,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: main      # ⚠️ 请替换为您的实际部署分支
+          ref: main      # 與上方 branches 保持一致
 
       - name: Generate sitemap
         uses: cicirello/generate-sitemap@v1
         with:
-          base-url-path: https://www.insectscreen.cc/   # ⚠️ 关键! 域名
+          base-url-path: https://www.insectscreen.cc/
+          include-html: true
           exclude-paths: |
             /404.html
             /assets/
