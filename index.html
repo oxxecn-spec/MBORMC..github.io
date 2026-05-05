@@ -8,7 +8,7 @@
     <link rel="canonical" href="https://www.insectscreen.cc/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* 样式完全保持原样，未做任何改动 */
+        /* 样式完全保持原样 */
         * {
             margin: 0;
             padding: 0;
@@ -719,7 +719,7 @@
     </div>
 </section>
 
-<!-- 产品区域（产品卡片链接完全不变） -->
+<!-- 产品区域 -->
 <section id="products" class="products-section">
     <div class="container">
         <div class="section-head">
@@ -816,7 +816,7 @@
     </div>
 </section>
 
-<!-- 公司介绍模块（未改动） -->
+<!-- 公司介绍模块 -->
 <section id="about" class="about-section">
     <div class="container">
         <div class="section-head">
@@ -858,7 +858,7 @@
     </div>
 </section>
 
-<!-- FAQ（未改动） -->
+<!-- FAQ -->
 <section class="faq-section">
     <div class="container">
         <div class="section-head"><h2>Quick Answers for DIY Buyers</h2></div>
@@ -871,7 +871,7 @@
     </div>
 </section>
 
-<!-- 产品关键词模块（未改动） -->
+<!-- 产品关键词模块 -->
 <section class="keywords-section">
     <div class="container">
         <div class="section-head">
@@ -890,7 +890,7 @@
     </div>
 </section>
 
-<!-- ========= 最新文章模块（移至询价表单上方，显示3篇） ========= -->
+<!-- ========= 最新文章模块（移至询价表单上方，显示3篇，并删除描述中的"custom"） ========= -->
 <section class="latest-articles-section">
     <div class="container">
         <div class="section-head">
@@ -948,7 +948,7 @@
     </div>
 </section>
 
-<!-- 底部联系栏：新增邮箱 info@mbormc.com -->
+<!-- 底部联系栏 -->
 <div class="contact-bar">
     <div class="container">
         <div class="contact-links">
@@ -995,7 +995,7 @@
     const wechatFloating = document.getElementById('wechatFloatingBtn');
     if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
 
-    // 加载最新3篇文章
+    // 加载最新3篇文章，并删除描述中的 "custom" 单词（不区分大小写）
     fetch('/articles.json')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
@@ -1011,15 +1011,21 @@
             // 按日期倒序排序并取前3篇
             const sorted = [...articles].sort((a, b) => (a.date < b.date ? 1 : -1));
             const latest3 = sorted.slice(0, 3);
-            container.innerHTML = latest3.map(article => `
-                <a href="${article.link}" class="product-card" style="display: flex; flex-direction: column; text-decoration: none; padding: 1.2rem;">
-                    <h3 style="color: var(--primary-dark, #c68912); margin-bottom: 0.5rem; font-size: 1.2rem;">${escapeHtml(article.title)}</h3>
-                    <p style="color: var(--text-muted, #475569); font-size: 0.9rem; margin-bottom: 1rem;">${escapeHtml(article.description) || 'Click to read full article'}</p>
-                    <div style="margin-top: auto; font-size: 0.8rem; color: #94a3b8;">
-                        <i class="far fa-calendar-alt"></i> ${article.date}
-                    </div>
-                </a>
-            `).join('');
+            container.innerHTML = latest3.map(article => {
+                let desc = article.description || 'Click to read full article';
+                // 删除所有的 "custom" 单词（不区分大小写），注意保留单词前后的空格
+                desc = desc.replace(/custom\s*/gi, '').replace(/\s{2,}/g, ' ').trim();
+                if (desc === '') desc = 'Click to read full article';
+                return `
+                    <a href="${article.link}" class="product-card" style="display: flex; flex-direction: column; text-decoration: none; padding: 1.2rem;">
+                        <h3 style="color: var(--primary-dark, #c68912); margin-bottom: 0.5rem; font-size: 1.2rem;">${escapeHtml(article.title)}</h3>
+                        <p style="color: var(--text-muted, #475569); font-size: 0.9rem; margin-bottom: 1rem;">${escapeHtml(desc)}</p>
+                        <div style="margin-top: auto; font-size: 0.8rem; color: #94a3b8;">
+                            <i class="far fa-calendar-alt"></i> ${article.date}
+                        </div>
+                    </a>
+                `;
+            }).join('');
         })
         .catch(error => {
             console.error('加载最新文章失败:', error);
