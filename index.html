@@ -661,10 +661,10 @@
             }
         }
 
-        /* 新增：最新文章模块的额外样式 (复用product-card即可，无需额外) */
+        /* 新增：最新文章模块样式 */
         .latest-articles-section {
-            padding: 0 0 4rem 0;
-            background: var(--gray-light);
+            padding: 4rem 0 2rem 0;
+            background: #ffffff;
         }
     </style>
 </head>
@@ -816,23 +816,6 @@
     </div>
 </section>
 
-<!-- ========= 新增：最新文章模块 (显示6篇最新文章) ========= -->
-<section class="latest-articles-section">
-    <div class="container">
-        <div class="section-head">
-            <h2>📝 Latest News & DIY Tips</h2>
-            <p>Stay updated with our latest guides, product news, and mosquito protection insights</p>
-        </div>
-        <div id="home-latest-articles" class="product-grid">
-            <div style="text-align: center; grid-column: 1/-1; padding: 2rem;">加载最新文章...</div>
-        </div>
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://www.insectscreen.cc/news/news" class="btn btn-outline">📖 查看所有文章 →</a>
-        </div>
-    </div>
-</section>
-<!-- ========= 新增结束 ========= -->
-
 <!-- 公司介绍模块（未改动） -->
 <section id="about" class="about-section">
     <div class="container">
@@ -907,7 +890,24 @@
     </div>
 </section>
 
-<!-- 询价表单（未改动） -->
+<!-- ========= 最新文章模块（移至询价表单上方，显示3篇） ========= -->
+<section class="latest-articles-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>📝 Latest News & DIY Tips</h2>
+            <p>Stay updated with our latest guides, product news, and mosquito protection insights</p>
+        </div>
+        <div id="home-latest-articles" class="product-grid">
+            <div style="text-align: center; grid-column: 1/-1; padding: 2rem;">Loading latest articles...</div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.insectscreen.cc/news/news" class="btn btn-outline">📖 View all articles →</a>
+        </div>
+    </div>
+</section>
+<!-- ========= 最新文章模块结束 ========= -->
+
+<!-- 询价表单 -->
 <section id="inquiry" class="inquiry-section">
     <div class="inquiry-container">
         <h2>Get a DIY Quote — Ships Worldwide</h2>
@@ -995,7 +995,7 @@
     const wechatFloating = document.getElementById('wechatFloatingBtn');
     if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
 
-    // ========= 新增：加载最新6篇文章 =========
+    // 加载最新3篇文章
     fetch('/articles.json')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
@@ -1005,13 +1005,13 @@
             const container = document.getElementById('home-latest-articles');
             if (!container) return;
             if (!articles || articles.length === 0) {
-                container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">暂无文章，敬请期待。</div>';
+                container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">No articles yet. Check back soon.</div>';
                 return;
             }
-            // 按日期倒序排序并取前6篇
+            // 按日期倒序排序并取前3篇
             const sorted = [...articles].sort((a, b) => (a.date < b.date ? 1 : -1));
-            const latest6 = sorted.slice(0, 6);
-            container.innerHTML = latest6.map(article => `
+            const latest3 = sorted.slice(0, 3);
+            container.innerHTML = latest3.map(article => `
                 <a href="${article.link}" class="product-card" style="display: flex; flex-direction: column; text-decoration: none; padding: 1.2rem;">
                     <h3 style="color: var(--primary-dark, #c68912); margin-bottom: 0.5rem; font-size: 1.2rem;">${escapeHtml(article.title)}</h3>
                     <p style="color: var(--text-muted, #475569); font-size: 0.9rem; margin-bottom: 1rem;">${escapeHtml(article.description) || 'Click to read full article'}</p>
@@ -1024,7 +1024,7 @@
         .catch(error => {
             console.error('加载最新文章失败:', error);
             const container = document.getElementById('home-latest-articles');
-            if (container) container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">暂时无法加载文章，请刷新重试。</div>';
+            if (container) container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">Unable to load articles. Please refresh.</div>';
         });
 
     function escapeHtml(str) {
@@ -1036,7 +1036,6 @@
             return m;
         });
     }
-    // ========= 新增结束 =========
 </script>
 </body>
 </html>
