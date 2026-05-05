@@ -1,0 +1,48 @@
+name: Auto Generate Articles JSON from /news/
+
+on:
+  push:
+    paths:
+      - 'news/*.html'            # 监 news 文件夹下的 html 文件
+  workflow_dispatch:
+
+jobs:
+  scan-and-generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Extract titles & descriptions from HTML files in /news/
+        run: |
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          const newsDir = './news';
+          if (!fs.existsSync(newsDir)) {
+            fs.writeFileSync('./articles.json', '[]');
+            process.exit(0);
+          }
+          const files = fs.readdirSync(newsDir).filter(f => f.endsWith('.html'));
+          const articles = [];
+          for (const file of files) {
+            const content = fs.readFileSync(path.join(newsDir, file), 'utf8');
+            const titleMatch = content.match(/<title>(.*?)<\/title>/i);
+            const descMatch = content.match(/<meta\s+name=["']description["']\s+content=["'](.*?)["']/i);
+            articles.push({
+              title: titleMatch ? titleMatch[1].trim() : file.replace('.html', ''),
+              description: descMatch ? descMatch[1].trim() : '',
+              link: '/news/' + file,
+              date: fs.statSync(path.join(newsDir, file)).mtime.toISOString().slice(0,10)
+            });
+          }
+          fs.writeFileSync('./articles.json', JSON.stringify(articles, null, 2));
+          "
+      - name: Commit and push articles.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add articles.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto update articles.json from /news/"
+          git push
