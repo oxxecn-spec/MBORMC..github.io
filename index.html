@@ -396,7 +396,7 @@
             margin: 0;
         }
 
-        /* inquiry form */
+        /* inquiry section - 使用新表单替换 */
         .inquiry-section {
             padding: 4rem 0;
             background: #ffffff;
@@ -416,46 +416,55 @@
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
         }
-        .form-group {
-            margin-bottom: 1.2rem;
+        /* 新表单样式微调（与原有容器协调） */
+        .inquiry-container form {
+            max-width: 100% !important;
+            padding: 0 !important;
+            background: transparent !important;
+            border-radius: 0 !important;
         }
-        label {
-            display: block;
-            margin-bottom: 0.4rem;
-            font-weight: 600;
-            color: #2c3e44;
-        }
-        input, textarea {
+        .inquiry-container form input,
+        .inquiry-container form select,
+        .inquiry-container form textarea {
             width: 100%;
-            padding: 0.75rem 1rem;
+            padding: 12px;
+            margin: 0 0 12px 0;
             border: 1px solid var(--gray-border);
-            border-radius: 0.75rem;
+            border-radius: 8px;
             font-family: inherit;
-            transition: 0.2s;
+            font-size: 1rem;
         }
-        input:focus, textarea:focus {
+        .inquiry-container form input:focus,
+        .inquiry-container form select:focus,
+        .inquiry-container form textarea:focus {
             outline: none;
             border-color: var(--primary);
             box-shadow: 0 0 0 2px rgba(227,160,24,0.2);
         }
-        .submit-btn {
-            width: 100%;
-            padding: 0.8rem;
-            background-color: var(--dark);
+        .inquiry-container form .form-row {
+            display: flex;
+            gap: 12px;
+        }
+        .inquiry-container form .form-row input {
+            flex: 1;
+        }
+        .inquiry-container form button[type="submit"] {
+            background: var(--dark);
             color: white;
+            padding: 12px 20px;
             border: none;
-            border-radius: 2rem;
+            border-radius: 40px;
+            cursor: pointer;
             font-weight: 700;
             font-size: 1rem;
-            cursor: pointer;
             transition: 0.3s;
+            width: 100%;
         }
-        .submit-btn:hover {
-            background-color: var(--primary-dark);
+        .inquiry-container form button[type="submit"]:hover {
+            background: var(--primary-dark);
             transform: translateY(-2px);
         }
-
-        /* social icons */
+        /* 社交图标 */
         .social-icons {
             display: flex;
             justify-content: center;
@@ -658,6 +667,10 @@
             }
             .logo {
                 font-size: 1.3rem;
+            }
+            .inquiry-container form .form-row {
+                flex-direction: column;
+                gap: 0;
             }
         }
 
@@ -907,33 +920,28 @@
 </section>
 <!-- ========= 最新文章模块结束 ========= -->
 
-<!-- 询价表单 -->
+<!-- ====== 询价表单区域（已替换为您提供的新表单） ====== -->
 <section id="inquiry" class="inquiry-section">
     <div class="inquiry-container">
-        <h2>Get a DIY Quote — Ships Worldwide</h2>
-        <form action="https://formsubmit.co/bb260e713201e3ded72c5866bab8d659" method="POST">
-            <input type="text" name="_honey" style="display:none">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_template" value="table">
-            <div class="form-group">
-                <label>Full Name</label>
-                <input type="text" name="name" placeholder="John Smith" required>
+        <h2>Submit a Support Request</h2>
+        <form action="https://api.formsubmit.cc/submit" method="POST">
+            <input type="hidden" name="_to_id" value="biy0grk2w8">
+            <div class="form-row">
+                <input type="text" name="order_number" placeholder="Order #" required>
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
-            <div class="form-group">
-                <label>Email Address</label>
-                <input type="email" name="email" placeholder="example@mail.com" required>
-            </div>
-            <div class="form-group">
-                <label>Country</label>
-                <input type="text" name="country" placeholder="e.g. United Kingdom, Australia, USA, Japan, Germany" required>
-            </div>
-            <div class="form-group">
-                <label>Window/Door Sizes (W x H in cm or inches)</label>
-                <textarea name="message" rows="4" placeholder="Tell us quantities and sizes. Example: 3 windows: 120x90cm each. 1 sliding door: 200x210cm..." required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send DIY Inquiry →</button>
+            <input type="email" name="email" placeholder="Email used for order" required>
+            <select name="issue_type" required>
+                <option value="">Select an issue</option>
+                <option value="Shipping & Delivery">Shipping & Delivery</option>
+                <option value="Returns & Refunds">Returns & Refunds</option>
+                <option value="Product Issue">Product Issue</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Please describe your issue" required></textarea>
+            <button type="submit">Submit Request →</button>
         </form>
 
+        <!-- 保留社交图标 -->
         <div class="social-icons">
             <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
                 <i class="fab fa-facebook-f"></i>
