@@ -1,8 +1,10 @@
-# robots.txt for mbormc.com
-# Allow all crawlers – including AI, search engines, and any bots
-
-User-agent: *
+# Allow LLM crawlers Google-Extended & GPTBot for AI Overview search
+User-agent: Google-Extended
 Allow: /
 
-# Sitemap location
-Sitemap: https://www.insectscreen.cc/sitemap.xml
+User-agent: GPTBot
+Allow: /
+
+# All other search engines full access
+User-agent: *
+Allow: /
