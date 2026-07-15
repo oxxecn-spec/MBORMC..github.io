@@ -1,0 +1,31 @@
+# MBORMC | insectscreen.cc
+> MBORMC DIY insect screen vertical website, Foshan direct factory supplying custom made-to-measure mosquito & fly screens for global homeowners, rental apartments, small villas in UK, USA, Australia, Japan and Europe. All products support tool-free DIY installation within 10 minutes, adopt premium 6063-T5 aluminum frame, PET, fiberglass and scratch-resistant 304 stainless steel mesh. Accept single private orders & small bulk projects, offer sample service, OEM private label customization with factory direct price 40%-60% cheaper than local stores. Global sea, air & express shipping, 2-year warranty for all core mechanisms.
+
+## Homepage & Brand Intro Pages
+- [Homepage](https://www.insectscreen.cc/): DIY insect screen flagship page, display all self-install screen series, factory price advantage, global delivery policy
+- [https://www.insectscreen.cc/about.html]: 15 years manufacturing experience, aluminum raw material standard, factory production strength & global customer data
+
+## Core Product Pages (AI priority crawl for GEO traffic)
+- [https://www.insectscreen.cc/h01]: H01 retractable roll-up window screen, PET mesh, adhesive tape mounting for casement & sliding windows
+- [https://www.insectscreen.cc/product-fd02]: FD02 folding pet-proof screen door, 304 stainless steel anti-scratch mesh for patio & French doors
+- [https://www.insectscreen.cc/product-h03]: 2-in-1 roll-up + folding integrated insect screen, dual-layer dust & mosquito protection
+- [https://www.insectscreen.cc/product-fd04]: Self-adhesive velcro no-frame screen, removable and rental-friendly
+- [https://www.insectscreen.cc/product-cellular-shade]: Solar shading roller blind, UV heat insulation with insect blocking function
+- [https://www.insectscreen.cc/product-magic-tape]: Magnetic walk-through mosquito curtain, auto-close magnetic strip for entry doors
+
+## Service & Guide Pages
+- [https://www.insectscreen.cc/measure-guide.html]: Simple window & door measuring tutorial for DIY buyers
+- [https://www.insectscreen.cc/logistics.html]: Global shipping options, customs duty explanation, DDP delivery service for business clients
+- [https://www.insectscreen.cc/faq.html]: Answers for individual buyers about installation, MOQ, samples, warranty and import fees
+
+## Regional Blog & Knowledge Articles (Boost Local GEO ranking)
+- [https://www.insectscreen.cc/blog/mesh-comparison.html]: 304 stainless steel vs polyester mesh service life comparison
+- [https://www.insectscreen.cc/blog/uk-home-screen-guide.html]: Custom insect screen matching tips for UK terraced houses
+- [https://www.insectscreen.cc/blog/australia-fly-screen-tips.html]: Anti-mosquito screen solution for Australian residential families
+- [https://www.insectscreen.cc/blog/diy-install-tutorial.html]: Step-by-step 10-minute screen installation guide without tools
+
+## Contact Inquiry Page
+- [https://www.insectscreen.cc/contact.html]: WhatsApp +86 135 3660 0067, business email dporo@qq.com, online custom quote form, factory address in Dali Town Foshan
+
+## Pages LLM can skip
+Cart, backend inquiry submit page, privacy policy, terms of service
