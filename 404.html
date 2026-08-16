@@ -173,6 +173,22 @@
             transform: translateY(-2px);
         }
 
+        /* 自动跳转提示 */
+        .redirect-notice {
+            margin-top: 1.8rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            background: rgba(227, 160, 24, 0.08);
+            padding: 0.6rem 1.6rem;
+            border-radius: 2.5rem;
+            display: inline-block;
+            backdrop-filter: blur(2px);
+        }
+        .redirect-notice i {
+            color: var(--primary);
+            margin-right: 0.5rem;
+        }
+
         /* responsive */
         @media (max-width: 768px) {
             .floating-contact {
@@ -393,6 +409,11 @@
             </a>
         </div>
         
+        <!-- 自动跳转提示 -->
+        <div class="redirect-notice">
+            <i class="fas fa-arrow-right"></i> You will be redirected to the homepage in <span id="countdown">3</span> seconds.
+        </div>
+        
         <!-- 快速帮助卡片列表: 常用产品/服务直达 (提升用户体验) -->
         <div style="margin-top: 3rem;">
             <p style="font-weight: 500; margin-bottom: 1rem; color: var(--dark);">
@@ -444,7 +465,7 @@
     </div>
 </footer>
 
-<!-- === 脚本(移动菜单 + 微信复制，完全兼容首页行为) === -->
+<!-- === 脚本(移动菜单 + 微信复制 + 3秒自动跳转) === -->
 <script>
     // 移动端菜单切换
     const menuToggle = document.getElementById('mobileMenuBtn');
@@ -477,7 +498,6 @@
     // 确保所有指向#的链接保持温和 (不影响404体验)
     document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            // 如果锚点不存在于当前页面，不做默认跳转，因为当前页是404，无对应ID，防止页面跳动
             const targetId = this.getAttribute('href').substring(1);
             if(targetId && !document.getElementById(targetId)) {
                 e.preventDefault();
@@ -485,6 +505,31 @@
             }
         });
     });
+
+    // ===== 3秒自动跳转 + 倒计时 =====
+    (function() {
+        var countdownEl = document.getElementById('countdown');
+        var seconds = 3;
+        var redirectUrl = 'https://www.insectscreen.cc/';
+
+        if (countdownEl) {
+            var timer = setInterval(function() {
+                seconds -= 1;
+                if (seconds >= 0) {
+                    countdownEl.textContent = seconds;
+                }
+                if (seconds <= 0) {
+                    clearInterval(timer);
+                    window.location.href = redirectUrl;
+                }
+            }, 1000);
+        } else {
+            // 容错：如果倒计时元素不存在，直接跳转
+            setTimeout(function() {
+                window.location.href = redirectUrl;
+            }, 3000);
+        }
+    })();
 </script>
 </body>
 </html>
