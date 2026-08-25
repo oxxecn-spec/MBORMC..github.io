@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>MBORMC | Global Custom Insect Screens – DIY Mosquito Nets Worldwide</title>
-    <meta name="description" content="MBORMC – global custom insect screen brand. DIY fly screens, retractable mosquito nets, folding door systems. Factory direct from China, worldwide shipping with wooden crate. Serve UK, USA, Australia, Europe, Japan, and more.">
+    <title>MBORMC InsectScreen – Custom Mosquito Screens & DIY Protection</title>
+    <meta name="description" content="MBORMC InsectScreen – custom mosquito screens and insect protection. DIY fly screens, retractable nets, folding door systems. Factory direct from China, worldwide shipping. Serving UK, USA, Australia, Europe, Japan, and more.">
     <link rel="canonical" href="https://www.insectscreen.cc/">
+    <link rel="alternate" hreflang="en" href="https://www.insectscreen.cc/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://www.insectscreen.cc/zh.html">
+    <meta property="og:title" content="MBORMC InsectScreen – Custom Mosquito Screens & DIY Protection" />
+    <meta property="og:description" content="MBORMC InsectScreen – custom-fit insect screens for any window or door. DIY installation, global shipping to UK, USA, Australia, Europe & more." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.insectscreen.cc/" />
+    <meta property="og:image" content="https://www.insectscreen.cc/images/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MBORMC InsectScreen",
+            "url": "https://www.insectscreen.cc",
+            "description": "Custom mosquito screens and insect protection for windows and doors. DIY installation, factory direct from Foshan, China.",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+86-135-3660-0067",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Chinese"]
+            },
+            "sameAs": [
+                "https://www.facebook.com/mbormc",
+                "https://www.instagram.com/mbormc",
+                "https://www.pinterest.com/mbormc",
+                "https://www.youtube.com/c/mbormc"
+            ]
+        }
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* 样式完全保持原样 */
+        /* ========== 样式 ========== */
         * {
             margin: 0;
             padding: 0;
@@ -67,6 +98,17 @@
             text-decoration: none;
             color: var(--dark);
             letter-spacing: -0.3px;
+        }
+        .logo span {
+            color: var(--primary);
+        }
+        .logo .tagline {
+            font-size: 0.6rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            display: block;
+            margin-top: -2px;
         }
         .nav-links {
             display: flex;
@@ -137,6 +179,7 @@
             font-size: 0.8rem;
             font-weight: 700;
             margin-bottom: 1.2rem;
+            color: #1e2a3a;
         }
         .hero h1 {
             font-size: 2.8rem;
@@ -147,6 +190,13 @@
         .hero h1 em {
             color: var(--primary);
             font-style: normal;
+        }
+        .hero h1 .highlight {
+            background: var(--primary);
+            color: #1e2a3a;
+            padding: 0.1rem 0.6rem;
+            border-radius: 0.3rem;
+            display: inline-block;
         }
         .hero-desc {
             font-size: 1.1rem;
@@ -172,11 +222,34 @@
             gap: 0.3rem;
             white-space: nowrap;
         }
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
         .hero-img img {
             width: 100%;
             border-radius: var(--radius);
             box-shadow: var(--shadow-md);
             background: var(--gray-border);
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: flex-start;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 0.6rem 0;
+            margin: 0.5rem 0 0.8rem;
+        }
+        .trust-badges span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .trust-badges i {
+            color: var(--primary);
         }
 
         @media (min-width: 769px) {
@@ -202,6 +275,10 @@
             max-width: 680px;
             margin: 0 auto;
         }
+        .section-head .sub-highlight {
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
 
         /* products grid */
         .products-section {
@@ -224,6 +301,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            border: 1px solid var(--gray-border);
         }
         .product-card:hover {
             transform: translateY(-6px);
@@ -291,6 +369,17 @@
             margin-bottom: 0.75rem;
             line-height: 1.4;
         }
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: #f59e0b;
+            margin: 0.2rem 0 0.4rem;
+        }
+        .product-rating span {
+            color: var(--text-muted);
+        }
         .product-materials {
             font-size: 0.8rem;
             color: var(--primary-dark);
@@ -303,9 +392,65 @@
             margin-top: 0.5rem;
         }
 
+        /* ===== InsectScreen Collection 专区（新增） ===== */
+        .collection-section {
+            padding: 4rem 0;
+            background: #ffffff;
+        }
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .collection-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: var(--gray-light);
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-border);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .collection-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary);
+        }
+        .collection-card .icon {
+            font-size: 2.8rem;
+            margin-bottom: 0.8rem;
+            display: inline-block;
+        }
+        .collection-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.3rem;
+            color: var(--dark);
+        }
+        .collection-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .collection-card .learn-more {
+            display: inline-block;
+            margin-top: 0.8rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .collection-card .learn-more i {
+            transition: transform 0.2s;
+        }
+        .collection-card:hover .learn-more i {
+            transform: translateX(4px);
+        }
+
         /* features */
         .features-section {
             padding: 4rem 0;
+            background: #fff;
         }
         .features-grid {
             display: grid;
@@ -315,10 +460,72 @@
         .feature-card {
             text-align: center;
             padding: 1.5rem;
+            background: var(--gray-light);
+            border-radius: var(--radius);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
         }
         .feature-icon {
             font-size: 2.2rem;
             margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .feature-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        .feature-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* process */
+        .process-section {
+            padding: 4rem 0;
+            background: var(--gray-light);
+        }
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .process-step {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: #fff;
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-border);
+            transition: all 0.3s;
+        }
+        .process-step:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .process-number {
+            width: 3rem;
+            height: 3rem;
+            background: var(--primary);
+            color: #1e2a3a;
+            font-size: 1.3rem;
+            font-weight: 800;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.8rem;
+        }
+        .process-step h3 {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+        .process-step p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.5;
         }
 
         /* about */
@@ -367,10 +574,10 @@
             min-width: 2rem;
         }
 
-        /* keywords grid */
+        /* keywords */
         .keywords-section {
             padding: 4rem 0;
-            background: white;
+            background: var(--gray-light);
         }
         .keywords-grid {
             display: grid;
@@ -378,11 +585,12 @@
             gap: 1.5rem;
         }
         .keyword-item {
-            background: var(--gray-light);
+            background: #fff;
             padding: 1.2rem;
             border-radius: 1rem;
             transition: 0.2s;
             border-left: 4px solid var(--primary);
+            border: 1px solid var(--gray-border);
         }
         .keyword-item strong {
             font-size: 1.1rem;
@@ -396,7 +604,7 @@
             margin: 0;
         }
 
-        /* inquiry section - 使用新表单替换 */
+        /* inquiry */
         .inquiry-section {
             padding: 4rem 0;
             background: #ffffff;
@@ -416,7 +624,6 @@
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
         }
-        /* 新表单样式微调（与原有容器协调） */
         .inquiry-container form {
             max-width: 100% !important;
             padding: 0 !important;
@@ -464,7 +671,7 @@
             background: var(--primary-dark);
             transform: translateY(-2px);
         }
-        /* 社交图标 */
+
         .social-icons {
             display: flex;
             justify-content: center;
@@ -534,6 +741,9 @@
             color: var(--primary);
             text-decoration: none;
         }
+        .footer a:hover {
+            color: #fff;
+        }
         .footer-address {
             font-size: 0.85rem;
             margin-top: 0.8rem;
@@ -542,7 +752,7 @@
         /* faq */
         .faq-section {
             padding: 4rem 0;
-            background: var(--gray-light);
+            background: #fff;
         }
         .faq-item {
             border-bottom: 1px solid var(--gray-border);
@@ -609,6 +819,12 @@
         .contact-icon.whatsapp:hover { background: #25D366; color: white; }
         .contact-icon.wechat:hover { background: #07C160; color: white; }
 
+        /* latest articles */
+        .latest-articles-section {
+            padding: 4rem 0 2rem 0;
+            background: #ffffff;
+        }
+
         /* responsive */
         @media (max-width: 768px) {
             .floating-contact {
@@ -646,6 +862,10 @@
             .stat {
                 min-width: 120px;
                 flex: 1 0 auto;
+                text-align: center;
+            }
+            .stat-num {
+                justify-content: center;
             }
             .contact-links {
                 flex-direction: column;
@@ -658,6 +878,9 @@
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+            }
+            .collection-grid {
+                grid-template-columns: 1fr;
             }
             .img-keyword-tag {
                 font-size: 0.6rem;
@@ -672,12 +895,52 @@
                 flex-direction: column;
                 gap: 0;
             }
+            .trust-badges {
+                justify-content: center;
+            }
         }
 
-        /* 新增：最新文章模块样式 */
-        .latest-articles-section {
-            padding: 4rem 0 2rem 0;
-            background: #ffffff;
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .hero {
+                padding: 2rem 0;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .hero-desc {
+                font-size: 0.95rem;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+            .collection-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-head h2 {
+                font-size: 1.4rem;
+            }
+            .trust-badges {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.4rem;
+            }
         }
     </style>
 </head>
@@ -693,46 +956,93 @@
     </div>
 </div>
 
+<!-- ===== 导航栏 ===== -->
 <nav class="navbar">
     <div class="container nav-inner">
-        <a href="https://www.insectscreen.cc/" class="logo">MBORMC</a>
+        <a href="https://www.insectscreen.cc/" class="logo">
+            MBORMC<span> InsectScreen</span>
+            <span class="tagline">Custom Mosquito & Insect Protection</span>
+        </a>
         <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
-            <li><a href="#products">DIY Screens</a></li>
+            <li><a href="#collection">InsectScreen</a></li>
+            <li><a href="#products">Products</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#why">Why MBORMC</a></li>
-            <li><a href="https://www.insectscreen.cc/news/news">News</a></li>
+            <li><a href="#articles">Articles</a></li>
             <li><a href="#inquiry">Get Quote</a></li>
         </ul>
         <a href="https://wa.me/8613536600067" class="btn btn-dark" target="_blank" rel="noopener">📱 WhatsApp</a>
     </div>
 </nav>
 
+<!-- ===== HERO ===== -->
 <section id="home" class="hero">
     <div class="container hero-grid">
         <div>
             <span class="hero-badge">DIY Easy Install · Ships from Foshan, China</span>
-            <h1>Keep Flies & Mosquitoes Out — <em>UK • Australia • USA • Japan • Europe</em></h1>
-            <p class="hero-desc">Custom‑fit insect screens for any window or door. No tools required, install yourself in minutes. Direct from our factory to your doorstep — cheaper than local stores.</p>
-            <div class="hero-stats">
-                <div class="stat"><div class="stat-num">10k+</div><div>Global customers</div></div>
-                <div class="stat"><div class="stat-num">DIY</div><div>Easy fit in 10min</div></div>
-                <div class="stat"><div class="stat-num">7-15 days</div><div>Fast delivery</div></div>
-                <div class="stat"><div class="stat-num">🚢</div><div>Global sea shipping</div></div>
+            <h1>Protect Your Home with <em>MBORMC</em> <span class="highlight">InsectScreen</span></h1>
+            <p class="hero-desc">Custom‑fit insect screens for any window or door. <strong>Any size, any shape</strong> — we cut to your exact measurements. No tools required, DIY install in minutes. Factory direct pricing with global shipping.</p>
+
+            <div class="trust-badges">
+                <span><i class="fas fa-check-circle"></i> BSCI Certified</span>
+                <span><i class="fas fa-check-circle"></i> ISO9001 Quality</span>
+                <span><i class="fas fa-check-circle"></i> 15+ Years Experience</span>
+                <span><i class="fas fa-check-circle"></i> 50+ Countries Served</span>
             </div>
-            <div style="margin-top: 2rem;">
-                <a href="#inquiry" class="btn">Get DIY Quote →</a>
-                <a href="#products" class="btn btn-outline" style="margin-left: 1rem;">See Screen Types</a>
+
+            <div class="hero-stats">
+                <div class="stat"><div class="stat-num">10k+</div><div class="stat-label">Global customers</div></div>
+                <div class="stat"><div class="stat-num">DIY</div><div class="stat-label">Easy fit in 10min</div></div>
+                <div class="stat"><div class="stat-num">7-15 days</div><div class="stat-label">Fast delivery</div></div>
+                <div class="stat"><div class="stat-num">🚢</div><div class="stat-label">Global sea shipping</div></div>
+            </div>
+            <div style="margin-top: 1.5rem;">
+                <a href="#inquiry" class="btn"><i class="fas fa-paper-plane"></i> Get Free Quote</a>
+                <a href="#collection" class="btn btn-outline" style="margin-left: 1rem;">Explore InsectScreen</a>
             </div>
         </div>
         <div class="hero-img">
-            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="DIY fly screen installation example">
+            <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/mborcc.jpg" alt="MBORMC InsectScreen DIY fly screen installation example" loading="eager" fetchpriority="high">
         </div>
     </div>
 </section>
 
-<!-- 产品区域 -->
+<!-- ===== InsectScreen Collection 专区（新增） ===== -->
+<section id="collection" class="collection-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>The MBORMC <span style="color:var(--primary-dark);">InsectScreen</span> Collection</h2>
+            <p>Protection for every corner of your home — choose the perfect screen for your lifestyle</p>
+        </div>
+        <div class="collection-grid">
+            <a href="#products" class="collection-card">
+                <div class="icon">🪟</div>
+                <h3>Window Screens</h3>
+                <p>Retractable, adhesive, and magnetic options for sash, sliding, and casement windows. Custom cut to any size.</p>
+                <span class="learn-more">Browse Window Screens <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="#products" class="collection-card">
+                <div class="icon">🚪</div>
+                <h3>Door Systems</h3>
+                <p>Folding, sliding, and trackless designs for French doors, patio doors, and main entrances. Pet-resistant options available.</p>
+                <span class="learn-more">Browse Door Screens <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="#products" class="collection-card">
+                <div class="icon">🐾</div>
+                <h3>Pet-Proof Screens</h3>
+                <p>Heavy-duty stainless steel mesh that withstands scratching, pushing, and daily wear from your furry friends.</p>
+                <span class="learn-more">Browse Pet Screens <i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+        <p style="text-align:center; margin-top:1.8rem; font-size:0.85rem; color:var(--text-muted);">
+            All <strong>MBORMC InsectScreen</strong> products are custom made to your exact window/door measurements. 
+            <a href="#inquiry" style="color:var(--primary); font-weight:600;">Request a free quote →</a>
+        </p>
+    </div>
+</section>
+
+<!-- ===== 产品区域 ===== -->
 <section id="products" class="products-section">
     <div class="container">
         <div class="section-head">
@@ -740,111 +1050,151 @@
             <p>Perfect for sash windows, sliding doors, French doors, and patio openings</p>
         </div>
         <div class="product-grid">
-            <!-- 产品1: 回卷式防蚊纱窗 -->
+            <!-- 产品1 -->
             <a href="https://www.insectscreen.cc/h01" class="product-card" target="_blank" rel="noopener">
                 <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="Retractable Roll-Up Screen – Mosquito Screen, Fly Mesh, Insect Protection">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h01.jpg" alt="MBORMC InsectScreen Retractable Roll-Up Screen">
                     <span class="img-keyword-tag">Mosquito Screen · Fly Mesh</span>
                 </div>
                 <div class="product-body">
                     <div class="diy-badge">🔧 DIY in 10 mins</div>
                     <div class="product-title">MBORMC® H01: Retractable Roll-Up Screen</div>
+                    <div class="product-rating">★★★★★ <span>(142 reviews)</span></div>
                     <div class="product-desc">PET fiber mesh – excellent mosquito protection. Aluminum frame. Simple installation with included adhesive tape or screws. Rolls up when not needed.</div>
                     <div class="product-materials">Materials: PET mesh + Aluminum frame</div>
                     <div class="product-price">Quote by size</div>
                 </div>
             </a>
-            <!-- 产品2: 防蚊折叠纱门 -->
+            <!-- 产品2 -->
             <a href="https://www.insectscreen.cc/product-fd02" class="product-card" target="_blank" rel="noopener">
                 <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="Folding Screen Door – Insect Screen, Door Mosquito Screen, Pet Resistant">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h02.jpg" alt="MBORMC InsectScreen Folding Screen Door">
                     <span class="img-keyword-tag">Door Screen · Pet Proof</span>
                 </div>
                 <div class="product-body">
                     <div class="diy-badge">🐾 Pet resistant</div>
                     <div class="product-title">Folding Screen Door (Combo)</div>
+                    <div class="product-rating">★★★★★ <span>(98 reviews)</span></div>
                     <div class="product-desc">Aluminum frame + 304 stainless steel folding mesh – prevents mosquitoes, pet scratching/biting. Also available with clear crystal folding panels.</div>
                     <div class="product-materials">304 SS mesh / Crystal panel + Aluminum frame</div>
                     <div class="product-price">Quote by size</div>
                 </div>
             </a>
-            <!-- 产品3: 回卷+折叠组合 -->
+            <!-- 产品3 -->
             <a href="https://www.insectscreen.cc/product-h03" class="product-card" target="_blank" rel="noopener">
                 <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="Roll-up + Folding Screen Door – 2-in-1 Insect Screen, Mosquito Net Screen">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h03.jpg" alt="MBORMC InsectScreen Roll-up + Folding Door">
                     <span class="img-keyword-tag">2-in-1 · Mosquito Net</span>
                 </div>
                 <div class="product-body">
                     <div class="diy-badge">2-in-1 design</div>
                     <div class="product-title">Roll-up + Folding Screen Door</div>
+                    <div class="product-rating">★★★★★ <span>(76 reviews)</span></div>
                     <div class="product-desc">Combination of retractable roll-up and folding screen door. PET fiber mesh + 304 folding mesh options available.</div>
                     <div class="product-materials">PET mesh / 304 mesh + Aluminum frame</div>
                     <div class="product-price">Custom quote</div>
                 </div>
             </a>
-            <!-- 产品4: 自粘贴式魔术贴纱窗 -->
+            <!-- 产品4 -->
             <a href="https://www.insectscreen.cc/product-fd04" class="product-card" target="_blank" rel="noopener">
                 <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="Self-Adhesive Velcro Screen – DIY Fly Screen, Window Mosquito Screen, Tool-Free">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h04.jpg" alt="MBORMC InsectScreen Self-Adhesive Velcro Screen">
                     <span class="img-keyword-tag">Self-Adhesive · Velcro</span>
                 </div>
                 <div class="product-body">
                     <div class="diy-badge">No tools required</div>
                     <div class="product-title">Self-Adhesive Velcro Screen</div>
+                    <div class="product-rating">★★★★★ <span>(215 reviews)</span></div>
                     <div class="product-desc">304 stainless steel mesh with hook-and-loop (Velcro) tape. Peel-and-stick installation – no frame needed.</div>
                     <div class="product-materials">304 SS mesh + Self-adhesive Velcro</div>
                     <div class="product-price">Quote by size</div>
                 </div>
             </a>
-            <!-- 产品5: 遮阳卷帘 -->
+            <!-- 产品5 -->
             <a href="https://www.insectscreen.cc/product-cellular-shade" class="product-card" target="_blank" rel="noopener">
                 <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="Solar Shading – Insect Protection Screen, Anti Mosquito, Heat Blocking">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h07.jpg" alt="MBORMC InsectScreen Solar Shading">
                     <span class="img-keyword-tag">Solar Shade · Anti Mosquito</span>
                 </div>
                 <div class="product-body">
                     <div class="diy-badge">Heat blocking</div>
                     <div class="product-title">Solar Shading / Roller Blinds</div>
+                    <div class="product-rating">★★★★☆ <span>(64 reviews)</span></div>
                     <div class="product-desc">Aluminum or fabric external roller blinds – reduce heat and glare, protect furniture. DIY mounting brackets included.</div>
                     <div class="product-materials">Aluminum cassette / UV-block fabric</div>
                     <div class="product-price">Quote by size</div>
                 </div>
             </a>
-            <!-- 产品6: 防蚊磁吸门帘 -->
+            <!-- 产品6 -->
             <a href="https://www.insectscreen.cc/product-magic-tape" class="product-card" target="_blank" rel="noopener">
                 <div class="product-img">
-                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="Magnetic Mosquito Curtain – Fly Screen, Mesh Screen, Easy Walk-Through">
+                    <img src="https://raw.githubusercontent.com/oxxecn-spec/MBORMC..github.io/refs/heads/main/jpg/h05.jpg" alt="MBORMC InsectScreen Magnetic Mosquito Curtain">
                     <span class="img-keyword-tag">Magnetic · Fly Screen</span>
                 </div>
                 <div class="product-body">
                     <div class="diy-badge">Hangs like a curtain</div>
                     <div class="product-title">Mosquito Net Curtain / Magnetic Curtain</div>
+                    <div class="product-rating">★★★★★ <span>(183 reviews)</span></div>
                     <div class="product-desc">Fine fiberglass mesh curtain with magnetic middle split or weighted hem. Walk through easily – snaps shut automatically.</div>
                     <div class="product-materials">Fiberglass mesh + magnetic strip / weights</div>
                     <div class="product-price">Quote by size</div>
                 </div>
             </a>
         </div>
-        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">Click any product for more details. All screens are custom made to your exact window/door measurements. <a href="#inquiry" style="color: var(--primary);">Request a free quote →</a></p>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">All products are part of the <strong style="color:var(--primary-dark);">MBORMC InsectScreen</strong> collection. <a href="#inquiry" style="color: var(--primary); font-weight: 600;">Request a free quote →</a></p>
     </div>
 </section>
 
-<!-- 公司介绍模块 -->
+<!-- ===== 定制流程 ===== -->
+<section class="process-section">
+    <div class="container">
+        <div class="section-head">
+            <h2>How Your <span style="color:var(--primary-dark);">InsectScreen</span> Comes to Life</h2>
+            <p>From measurement to delivery, we make it easy</p>
+        </div>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <h3>Measure Your Window</h3>
+                <p>Use a tape measure — width x height. Send us the numbers.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <h3>Choose Your Screen</h3>
+                <p>Retractable, adhesive, pet-proof, or blinds — pick the right type.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <h3>Get Quote & Sample</h3>
+                <p>We respond within 24 hours. Samples available for quality check.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">4</div>
+                <h3>Production & Shipping</h3>
+                <p>Bulk: 15-25 days. Samples: 3-7 days. Global shipping available.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
 <section id="about" class="about-section">
     <div class="container">
         <div class="section-head">
-            <h2>About MBORMC</h2>
+            <h2>About MBORMC <span style="color:var(--primary-dark);">InsectScreen</span></h2>
             <p>Global custom insect screen brand – engineered in Foshan, delivered worldwide</p>
         </div>
         <div class="about-grid">
             <div class="about-text">
-                <p><strong>MBORMC</strong> is a global cross‑border brand specializing in custom‑made retractable insect screens and folding door systems. With over <strong>15 years of aluminium extrusion and precision engineering experience</strong>, we serve residential, hotel, and commercial projects in more than <strong>50 countries</strong>.</p>
+                <p><strong>MBORMC InsectScreen</strong> is a global cross‑border brand specializing in custom‑made retractable insect screens and folding door systems. With over <strong>15 years of aluminium extrusion and precision engineering experience</strong>, we serve residential, hotel, and commercial projects in more than <strong>50 countries</strong>.</p>
                 <p>All our products are manufactured in our Foshan, China facility using premium <strong>6063‑T5 aluminium alloy</strong> – offering high strength, corrosion resistance, and a beautiful finish. We combine factory‑direct pricing with global shipping and local installation guidance to make DIY insect protection accessible everywhere.</p>
                 <div class="about-highlights">
                     <span class="highlight-badge">15+ years experience</span>
                     <span class="highlight-badge">6063-T5 aluminium</span>
                     <span class="highlight-badge">50+ countries served</span>
                     <span class="highlight-badge">Factory direct</span>
+                    <span class="highlight-badge">BSCI Certified</span>
+                    <span class="highlight-badge">ISO9001 Certified</span>
                 </div>
             </div>
             <div>
@@ -859,37 +1209,81 @@
     </div>
 </section>
 
+<!-- ===== WHY MBORMC ===== -->
 <section id="why" class="features-section">
     <div class="container">
-        <div class="section-head"><h2>Why Homeowners Worldwide Choose MBORMC</h2><p>Direct from China — no middleman, premium DIY quality</p></div>
+        <div class="section-head">
+            <h2>Why Homeowners Choose MBORMC <span style="color:var(--primary-dark);">InsectScreen</span></h2>
+            <p>Direct from China — no middleman, premium DIY quality</p>
+        </div>
         <div class="features-grid">
-            <div class="feature-card"><div class="feature-icon">📏</div><h3>Self‑measure, custom cut</h3><p>We produce screens to your exact window dimensions — no need for professional installation.</p></div>
-            <div class="feature-card"><div class="feature-icon">✈️</div><h3>Fast shipping globally</h3><p>Orders dispatched within 3 days, delivery by express air or sea freight with tracking.</p></div>
-            <div class="feature-card"><div class="feature-icon">💰</div><h3>Save 40-60% vs local shops</h3><p>Direct factory pricing — pay in GBP, AUD, USD, EUR, JPY. No hidden import fees.</p></div>
-            <div class="feature-card"><div class="feature-icon">🦟</div><h3>Proven mosquito protection</h3><p>Fine mesh blocks mosquitoes, flies, midges — tested in diverse climates worldwide.</p></div>
+            <div class="feature-card">
+                <div class="feature-icon">📏</div>
+                <h3>Custom Fit Guaranteed</h3>
+                <p>We produce screens to your exact window dimensions. Send your measurements, we do the rest.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✈️</div>
+                <h3>Fast Global Delivery</h3>
+                <p>Orders dispatched within 3 days. Express air or sea freight with full tracking.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Factory Direct Pricing</h3>
+                <p>No middleman markups. Pay in GBP, USD, EUR, AUD, JPY — no hidden fees.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🦟</div>
+                <h3>Effective Mosquito Barrier</h3>
+                <p>Fine mesh blocks mosquitoes, flies, midges. Tested in diverse climates worldwide.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- FAQ -->
+<!-- ===== FAQ ===== -->
 <section class="faq-section">
     <div class="container">
         <div class="section-head"><h2>Quick Answers for DIY Buyers</h2></div>
         <div style="max-width: 800px; margin: 0 auto;">
-            <div class="faq-item"><button class="faq-question">How do I measure my window for a DIY screen?<span>+</span></button><div class="faq-answer">We provide a simple guide with every order — just use a tape measure, width and height. We cut the screen to your numbers.</div></div>
-            <div class="faq-item"><button class="faq-question">Do I need special tools?<span>+</span></button><div class="faq-answer">No. All screens come with easy‑clip frames, adhesive tape or spring tension — a screwdriver is enough.</div></div>
-            <div class="faq-item"><button class="faq-question">What about customs & import duties?<span>+</span></button><div class="faq-answer">For personal orders under certain thresholds (e.g., £135 / €150 / $800), no extra duties. We also offer DDP shipping for businesses.</div></div>
-            <div class="faq-item"><button class="faq-question">Can I get a sample before bulk order?<span>+</span></button><div class="faq-answer">Yes, sample kits sent worldwide within 7 days. Contact us via WhatsApp.</div></div>
+            <div class="faq-item">
+                <button class="faq-question">What is an MBORMC InsectScreen?<span>+</span></button>
+                <div class="faq-answer">MBORMC InsectScreen is a custom-made, DIY-installable mosquito and insect barrier designed for windows and doors of any size. It combines factory-direct quality with easy installation — no professional help needed.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do I measure my window for a DIY screen?<span>+</span></button>
+                <div class="faq-answer">We provide a simple guide with every order — just use a tape measure, width and height. We cut the screen to your numbers. For best results, measure width at top, middle, and bottom — use the smallest measurement.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do I need special tools for installation?<span>+</span></button>
+                <div class="faq-answer">No. All screens come with easy‑clip frames, adhesive tape or spring tension — a screwdriver is enough. Full instructions included.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What about customs & import duties?<span>+</span></button>
+                <div class="faq-answer">For personal orders under certain thresholds (e.g., £135 / €150 / $800), no extra duties. We also offer DDP shipping for businesses — all customs handled by us.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I get a sample before bulk order?<span>+</span></button>
+                <div class="faq-answer">Yes, sample kits sent worldwide within 7 days. Contact us via WhatsApp or email to request a sample.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How long does shipping take to my country?<span>+</span></button>
+                <div class="faq-answer">We ship worldwide. Express delivery takes 3-7 days, sea freight 15-35 days depending on destination. Tracking number provided for all orders.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer DDP shipping for businesses?<span>+</span></button>
+                <div class="faq-answer">Yes, we offer DDP (Delivered Duty Paid) shipping for business orders. All customs and duties are handled by us — you receive the goods without any extra charges.</div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- 产品关键词模块 -->
+<!-- ===== 产品关键词 ===== -->
 <section class="keywords-section">
     <div class="container">
         <div class="section-head">
             <h2>Our Main Product Keywords</h2>
-            <p>Explore the full range of screens we offer – custom made for your home</p>
+            <p>Explore the full range of MBORMC InsectScreen products – custom made for your home</p>
         </div>
         <div class="keywords-grid">
             <div class="keyword-item"><strong>Mosquito Screen</strong><p>High-density fine mesh that blocks even the smallest mosquitoes while maintaining airflow. Perfect for bedrooms and living areas.</p></div>
@@ -899,12 +1293,12 @@
             <div class="keyword-item"><strong>Door Mosquito Screen</strong><p>Heavy‑duty screens for French doors, patio doors and main entrances. Magnetic or roller options available.</p></div>
             <div class="keyword-item"><strong>Anti Mosquito Screen</strong><p>Specifically designed to repel and block disease‑carrying mosquitoes. Chemical‑free, physical barrier.</p></div>
         </div>
-        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">All screens are custom made to your exact window/door measurements. <a href="#inquiry" style="color: var(--primary);">Request a free quote →</a></p>
+        <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">All screens are custom made to your exact window/door measurements. <a href="#inquiry" style="color: var(--primary); font-weight: 600;">Request a free quote →</a></p>
     </div>
 </section>
 
-<!-- ========= 最新文章模块（移至询价表单上方，显示3篇，并删除描述中的"custom"） ========= -->
-<section class="latest-articles-section">
+<!-- ===== 最新文章 ===== -->
+<section id="articles" class="latest-articles-section">
     <div class="container">
         <div class="section-head">
             <h2>📝 Latest News & DIY Tips</h2>
@@ -918,30 +1312,30 @@
         </div>
     </div>
 </section>
-<!-- ========= 最新文章模块结束 ========= -->
 
-<!-- ====== 询价表单区域（已替换为您提供的新表单） ====== -->
+<!-- ===== 询价表单 ===== -->
 <section id="inquiry" class="inquiry-section">
     <div class="inquiry-container">
-        <h2>Submit a Support Request</h2>
+        <h2>Get Your <span style="color:var(--primary-dark);">InsectScreen</span> Quote</h2>
         <form action="https://api.formsubmit.cc/submit" method="POST">
             <input type="hidden" name="_to_id" value="biy0grk2w8">
             <div class="form-row">
-                <input type="text" name="order_number" placeholder="Order #" required>
+                <input type="text" name="order_number" placeholder="Order # (if applicable)">
                 <input type="text" name="name" placeholder="Your Name" required>
             </div>
-            <input type="email" name="email" placeholder="Email used for order" required>
-            <select name="issue_type" required>
-                <option value="">Select an issue</option>
-                <option value="Shipping & Delivery">Shipping & Delivery</option>
-                <option value="Returns & Refunds">Returns & Refunds</option>
-                <option value="Product Issue">Product Issue</option>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="product_type" required>
+                <option value="">Select Product Type</option>
+                <option value="Window Screen">Window Screen</option>
+                <option value="Door Screen">Door Screen</option>
+                <option value="Pet-Proof Screen">Pet-Proof Screen</option>
+                <option value="Roller Blind">Roller Blind</option>
+                <option value="Other">Other</option>
             </select>
-            <textarea name="message" rows="4" placeholder="Please describe your issue" required></textarea>
-            <button type="submit">Submit Request →</button>
+            <textarea name="message" rows="4" placeholder="Please describe your window/door size and requirements" required></textarea>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send Request</button>
         </form>
 
-        <!-- 保留社交图标 -->
         <div class="social-icons">
             <a href="https://www.facebook.com/share/1bGhMhrg7d/" class="social-icon facebook" target="_blank" rel="noopener" title="Facebook">
                 <i class="fab fa-facebook-f"></i>
@@ -956,33 +1350,43 @@
     </div>
 </section>
 
-<!-- 底部联系栏 -->
+<!-- ===== CONTACT BAR ===== -->
 <div class="contact-bar">
     <div class="container">
         <div class="contact-links">
             <a href="https://wa.me/8613536600067" target="_blank" rel="noopener">📱 WhatsApp: +86 135 3660 0067</a>
             <a href="#" id="wechatCopyBtn" style="cursor: pointer;">💬 WeChat: FSMBOR (click to copy)</a>
-            <a href="mailto:dpor@qq.com">✉️ dporo@qq.com</a>
+            <a href="mailto:dporo@qq.com">✉️ dporo@qq.com</a>
             <span>📍 MBORMC Production Base, Dali Town, Nanhai District, Foshan, Guangdong, China</span>
         </div>
     </div>
 </div>
 
-<!-- 页脚 -->
+<!-- ===== FOOTER ===== -->
 <footer class="footer">
     <div class="container">
-        <p>© 2025 MBORMC® — DIY Insect Screen Manufacturer for Global Markets</p>
+        <p>© 2025 MBORMC <span style="color:var(--primary);">InsectScreen</span>® — Custom Mosquito Screen Manufacturer for Global Markets</p>
         <p class="footer-address">Factory direct pricing · Worldwide shipping · 2-year DIY warranty</p>
-        <p><a href="#home">Home</a> | <a href="#products">Products</a> | <a href="#inquiry">Contact</a> | <a href="https://www.insectscreen.cc/sitemap.xml">Sitemap</a> | <a href="https://www.insectscreen.cc/Global">Global sites</a> </p>
+        <p>
+            <a href="#home">Home</a> |
+            <a href="#collection">InsectScreen</a> |
+            <a href="#products">Products</a> |
+            <a href="#inquiry">Contact</a> |
+            <a href="https://www.insectscreen.cc/sitemap.xml">Sitemap</a> |
+            <a href="https://www.insectscreen.cc/Global">Global sites</a>
+        </p>
     </div>
 </footer>
 
 <script>
+    // ===== Mobile Menu =====
     const menuToggle = document.getElementById('mobileMenuBtn');
     const navList = document.getElementById('navLinks');
     if(menuToggle) {
         menuToggle.addEventListener('click', () => navList.classList.toggle('show'));
     }
+
+    // ===== FAQ Toggle =====
     document.querySelectorAll('.faq-question').forEach(btn => {
         btn.addEventListener('click', () => {
             const ans = btn.nextElementSibling;
@@ -991,6 +1395,8 @@
             if (span) span.innerText = ans.classList.contains('show') ? '−' : '+';
         });
     });
+
+    // ===== Copy WeChat =====
     function copyWechat() {
         navigator.clipboard.writeText('FSMBOR').then(() => {
             alert('WeChat ID "FSMBOR" copied to clipboard');
@@ -1003,7 +1409,7 @@
     const wechatFloating = document.getElementById('wechatFloatingBtn');
     if(wechatFloating) wechatFloating.addEventListener('click', copyWechat);
 
-    // 加载最新3篇文章，并删除描述中的 "custom" 单词（不区分大小写）
+    // ===== 加载最新文章 =====
     fetch('/articles.json')
         .then(response => {
             if (!response.ok) throw new Error('Network response was not ok');
@@ -1016,12 +1422,10 @@
                 container.innerHTML = '<div style="grid-column:1/-1; text-align:center;">No articles yet. Check back soon.</div>';
                 return;
             }
-            // 按日期倒序排序并取前3篇
             const sorted = [...articles].sort((a, b) => (a.date < b.date ? 1 : -1));
             const latest3 = sorted.slice(0, 3);
             container.innerHTML = latest3.map(article => {
                 let desc = article.description || 'Click to read full article';
-                // 删除所有的 "custom" 单词（不区分大小写），注意保留单词前后的空格
                 desc = desc.replace(/custom\s*/gi, '').replace(/\s{2,}/g, ' ').trim();
                 if (desc === '') desc = 'Click to read full article';
                 return `
