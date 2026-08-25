@@ -98,6 +98,10 @@
             text-decoration: none;
             color: var(--dark);
             letter-spacing: -0.3px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 1.2;
         }
         .logo span {
             color: var(--primary);
@@ -107,9 +111,35 @@
             font-weight: 400;
             color: var(--text-muted);
             letter-spacing: 1px;
-            display: block;
-            margin-top: -2px;
+            margin-top: 0px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px 12px;
         }
+        .lang-switch {
+            font-size: 0.6rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+            border: 1.5px solid var(--primary);
+            padding: 0.1rem 0.6rem;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            line-height: 1.5;
+            transition: all 0.2s;
+            background: transparent;
+        }
+        .lang-switch:hover {
+            background: var(--primary);
+            color: #1e2a3a;
+        }
+        .lang-switch i {
+            font-size: 0.7em;
+        }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -392,7 +422,7 @@
             margin-top: 0.5rem;
         }
 
-        /* ===== InsectScreen Collection 专区（新增） ===== */
+        /* collection */
         .collection-section {
             padding: 4rem 0;
             background: #ffffff;
@@ -898,6 +928,16 @@
             .trust-badges {
                 justify-content: center;
             }
+            .logo .tagline {
+                font-size: 0.55rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+            .lang-switch {
+                font-size: 0.55rem;
+                padding: 0.05rem 0.5rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -961,7 +1001,12 @@
     <div class="container nav-inner">
         <a href="https://www.insectscreen.cc/" class="logo">
             MBORMC<span> InsectScreen</span>
-            <span class="tagline">Custom Mosquito & Insect Protection</span>
+            <span class="tagline">
+                Custom Mosquito &amp; Insect Protection
+                <a href="https://www.insectscreen.cc/zh.html" class="lang-switch">
+                    <i class="fas fa-globe"></i> 繁體中文
+                </a>
+            </span>
         </a>
         <button class="menu-toggle" id="mobileMenuBtn" aria-label="Menu">☰</button>
         <ul class="nav-links" id="navLinks">
@@ -1008,7 +1053,7 @@
     </div>
 </section>
 
-<!-- ===== InsectScreen Collection 专区（新增） ===== -->
+<!-- ===== InsectScreen Collection 专区 ===== -->
 <section id="collection" class="collection-section">
     <div class="container">
         <div class="section-head">
